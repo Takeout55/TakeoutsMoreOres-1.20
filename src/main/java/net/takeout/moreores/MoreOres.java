@@ -12,6 +12,7 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.takeout.moreores.item.ModCreativeModeTabs;
 import net.takeout.moreores.item.Moditems;
 import org.slf4j.Logger;
 
@@ -24,6 +25,9 @@ public class MoreOres {
     public MoreOres() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         Moditems.register(modEventBus);
+
+        ModCreativeModeTabs.register(modEventBus);
+
         modEventBus.addListener(this::commonSetup);
 
         MinecraftForge.EVENT_BUS.register(this);
@@ -41,7 +45,8 @@ public class MoreOres {
             event.accept(Moditems.REFINED_DIAMOND_SHARD);
             event.accept(Moditems.RAW_ZIRCON);
             event.accept(Moditems.ZIRCON);
-
+            event.accept(Moditems.RAW_SAPPHIRE);
+            event.accept(Moditems.SAPPHIRE);
         }
     }
 

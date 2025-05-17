@@ -10,5 +10,8 @@
   "block.takeoutsmoreores.zircon_lamp": "Zircon lamp",
   "item.takeoutsmoreores.refined_diamond": "Refined Diamond",
   "item.takeoutsmoreores.refined_diamond_shard": "Refined Diamond Shard",
-  "block.takeoutsmoreores.refined_diamond_block": "Refined Diamond Block"
+  "block.takeoutsmoreores.refined_diamond_block": "Refined Diamond Block",
+  "item.takeoutsmoreores.sapphire": "Sapphire",
+  "item.takeoutsmoreores.raw_sapphire": "Raw Sapphire",
+  "creativetab.more_ores": "More Ores!"
 }

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients" : [
+    {
+      "item": "takeoutsmoreores:refined_diamond_block"
+    }
+  ],
+  "result": {
+    "item": "takeoutsmoreores:refined_diamond",
+    "count": 9
+  }
+}

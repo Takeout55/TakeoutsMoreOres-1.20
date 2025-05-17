@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients" : [
+    {
+      "item": "takeoutsmoreores:zircon_block"
+    }
+  ],
+  "result": {
+    "item": "takeoutsmoreores:zircon",
+    "count": 9
+  }
+}
