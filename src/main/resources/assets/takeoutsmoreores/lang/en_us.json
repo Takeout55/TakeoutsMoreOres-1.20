@@ -1,0 +1,14 @@
+{
+  "item.takeoutsmoreores.zircon": "Zircon",
+  "item.takeoutsmoreores.raw_zircon": "Raw Zircon",
+  "itemGroup.takeoutsmoreores": "Zircon Tutorial Tab",
+  "block.takeoutsmoreores.zircon_block" : "Block of Zircon",
+  "block.takeoutsmoreores.zircon_ore" : "Zircon ore",
+  "block.takeoutsmoreores.deepslate_zircon_ore" : "Deepslate Zircon ore",
+  "block.takeoutsmoreores.netherrack_zircon_ore" : "Netherrack Zircon ore",
+  "block.takeoutsmoreores.endstone_zircon_ore" : "Endstone Zircon ore",
+  "block.takeoutsmoreores.zircon_lamp": "Zircon lamp",
+  "item.takeoutsmoreores.refined_diamond": "Refined Diamond",
+  "item.takeoutsmoreores.refined_diamond_shard": "Refined Diamond Shard",
+  "block.takeoutsmoreores.refined_diamond_block": "Refined Diamond Block"
+}
