@@ -5,7 +5,7 @@
   "block.takeoutsmoreores.zircon_block" : "Block of Zircon",
   "block.takeoutsmoreores.zircon_ore" : "Zircon ore",
   "block.takeoutsmoreores.deepslate_zircon_ore" : "Deepslate Zircon ore",
-  "block.takeoutsmoreores.netherrack_zircon_ore" : "Netherrack Zircon ore",
+  "block.takeoutsmoreores.netherrack_zircon_ore" : "Nether Zircon ore",
   "block.takeoutsmoreores.endstone_zircon_ore" : "Endstone Zircon ore",
   "block.takeoutsmoreores.zircon_lamp": "Zircon lamp",
   "item.takeoutsmoreores.refined_diamond": "Refined Diamond",
@@ -14,5 +14,12 @@
   "item.takeoutsmoreores.sapphire": "Sapphire",
   "item.takeoutsmoreores.raw_sapphire": "Raw Sapphire",
   "creativetab.more_ores": "More Ores!",
-  "block.takeoutsmoreores.sapphire_block": "Sapphire Block"
+  "block.takeoutsmoreores.sapphire_block": "Sapphire Block",
+  "block.takeoutsmoreores.raw_sapphire_block": "Raw Sapphire Block",
+  "block.takeoutsmoreores.sapphire_ore" : "Sapphire ore",
+  "block.takeoutsmoreores.deepslate_sapphire_ore" : "Deepslate Sapphire ore",
+  "block.takeoutsmoreores.endstone_sapphire_ore" : "Endstone Sapphire ore",
+  "block.takeoutsmoreores.netherrack_sapphire_ore" : "Nether Sapphire ore",
+  "item.takeoutsmoreores.metal_detector": "Metal Detector"
+
 }

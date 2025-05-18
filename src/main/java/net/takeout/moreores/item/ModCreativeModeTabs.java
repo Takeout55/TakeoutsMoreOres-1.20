@@ -31,6 +31,17 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.ZIRCON_BLOCK.get());
                         pOutput.accept(ModBlocks.ZIRCON_ORE.get());
+                        pOutput.accept(ModBlocks.ENDSTONE_ZIRCON_ORE.get());
+                        pOutput.accept(ModBlocks.NETHERRACK_ZIRCON_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_BLOCK.get());
+                        pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.ENDSTONE_SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.NETHERRACK_SAPPHIRE_ORE.get());
+                        pOutput.accept(Moditems.METAL_DETECTOR.get());
+
                     })
                     .build());
 

@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "S  ",
+    " I ",
+    " ##"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:iron_ingot"
+    },
+    "I": {
+      "item": "minecraft:stick"
+    },
+    "S": {
+      "item": "takeoutsmoreores:refined_diamond"
+    }
+  },
+  "result": {
+    "item": "takeoutsmoreores:metal_detector"
+  }
+}
