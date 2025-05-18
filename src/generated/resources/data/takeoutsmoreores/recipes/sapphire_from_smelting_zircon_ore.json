@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "mod_smelt",
+  "ingredient": {
+    "item": "takeoutsmoreores:zircon_ore"
+  },
+  "result": "takeoutsmoreores:sapphire"
+}

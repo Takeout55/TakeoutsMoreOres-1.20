@@ -56,6 +56,13 @@ public class ModBlocks {
     public static final RegistryObject<Block> NETHERRACK_SAPPHIRE_ORE = registerBlock("netherrack_sapphire_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_ORE).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> GASNITE_ORE = registerBlock("gasnite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> NETHER_GASNITE_ORE = registerBlock("nether_gasnite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops()));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

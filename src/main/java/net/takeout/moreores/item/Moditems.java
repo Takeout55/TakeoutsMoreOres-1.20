@@ -7,6 +7,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
 import net.takeout.moreores.MoreOres;
+import net.takeout.moreores.item.custom.FuelItem;
 import net.takeout.moreores.item.custom.MetalDetectorItem;
 
 public class Moditems {
@@ -36,6 +37,9 @@ public class Moditems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> METAL_DETECTOR = ITEMS.register("metal_detector",
-            () -> new MetalDetectorItem(new Item.Properties().durability(500).stacksTo(1)));
+            () -> new MetalDetectorItem(new Item.Properties().durability(500)));
+
+    public static final RegistryObject<Item> GASNITE = ITEMS.register("gasnite",
+            () -> new FuelItem(new Item.Properties(), 2000));
 
 }

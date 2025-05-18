@@ -1,0 +1,17 @@
+{
+  "values": [
+    "#forge:ores",
+    "takeoutsmoreores:zircon_ore",
+    "takeoutsmoreores:zircon_block",
+    "takeoutsmoreores:deepslate_zircon_ore",
+    "takeoutsmoreores:sapphire_block",
+    "takeoutsmoreores:raw_sapphire_block",
+    "takeoutsmoreores:netherrack_zircon_ore",
+    "takeoutsmoreores:endstone_zircon_ore",
+    "takeoutsmoreores:deepslate_sapphire_ore",
+    "takeoutsmoreores:endstone_sapphire_ore",
+    "takeoutsmoreores:netherrack_sapphire_ore",
+    "takeoutsmoreores:nether_gasnite_ore",
+    "takeoutsmoreores:gasnite_ore"
+  ]
+}

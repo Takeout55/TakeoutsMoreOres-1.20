@@ -20,6 +20,10 @@
   "block.takeoutsmoreores.deepslate_sapphire_ore" : "Deepslate Sapphire ore",
   "block.takeoutsmoreores.endstone_sapphire_ore" : "Endstone Sapphire ore",
   "block.takeoutsmoreores.netherrack_sapphire_ore" : "Nether Sapphire ore",
-  "item.takeoutsmoreores.metal_detector": "Metal Detector"
-
+  "item.takeoutsmoreores.metal_detector": "Metal Detector",
+  "item.takeoutsmoreores.gasnite": "Gasnite",
+  "block.takeoutsmoreores.gasnite_ore": "Gasnite Ore",
+  "block.takeoutsmoreores.nether_gasnite_ore": "Nether Gasnite Ore",
+  "tooltip.moreores.metal_detector": "Finds valuable underground!",
+  "tooltip.moreores.fuel_item": "Use as furnace fuel!"
 }
