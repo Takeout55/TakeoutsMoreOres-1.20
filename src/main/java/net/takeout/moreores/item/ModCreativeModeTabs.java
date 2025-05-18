@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.takeout.moreores.MoreOres;
+import net.takeout.moreores.block.ModBlocks;
 
 import javax.security.auth.login.Configuration;
 import java.lang.reflect.Parameter;
@@ -27,6 +28,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(Moditems.RAW_ZIRCON.get());
                         pOutput.accept(Moditems.SAPPHIRE.get());
                         pOutput.accept(Moditems.RAW_SAPPHIRE.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.ZIRCON_BLOCK.get());
+                        pOutput.accept(ModBlocks.ZIRCON_ORE.get());
                     })
                     .build());
 
