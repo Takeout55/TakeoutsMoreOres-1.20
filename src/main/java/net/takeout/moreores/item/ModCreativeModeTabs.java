@@ -51,7 +51,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.SAPPHIRE_FENCE.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_WALL.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
-                        pOutput.accept(ModBlocks.ENDSTONE_ZIRCON_ORE.get());
+                        pOutput.accept(ModBlocks.ZIRCON_STAIRS.get());
+                        pOutput.accept(ModBlocks.ZIRCON_SLAB.get());
+                        pOutput.accept(ModBlocks.ZIRCON_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.ZIRCON_DOOR.get());
+                        pOutput.accept(ModBlocks.ZIRCON_BUTTON.get());
+                        pOutput.accept(ModBlocks.ZIRCON_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.ZIRCON_FENCE.get());
+                        pOutput.accept(ModBlocks.ZIRCON_WALL.get());
+                        pOutput.accept(ModBlocks.ZIRCON_PRESSURE_PLATE.get());
 
 
                     })

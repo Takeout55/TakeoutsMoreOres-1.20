@@ -33,5 +33,15 @@
   "block.takeoutsmoreores.sapphire_fence": "Sapphire Fence",
   "block.takeoutsmoreores.sapphire_wall": "Sapphire Wall",
   "block.takeoutsmoreores.sapphire_fence_gate": "Sapphire Fence Gate",
-  "block.takeoutsmoreores.sapphire_pressure_plate": "Sapphire Pressure Plate"
+  "block.takeoutsmoreores.sapphire_pressure_plate": "Sapphire Pressure Plate",
+
+  "block.takeoutsmoreores.zircon_stairs": "Zircon Stairs",
+  "block.takeoutsmoreores.zircon_slab": "Zircon Slab",
+  "block.takeoutsmoreores.zircon_door": "Zircon Door",
+  "block.takeoutsmoreores.zircon_trapdoor": "Zircon Trapdoor",
+  "block.takeoutsmoreores.zircon_button": "Zircon Button",
+  "block.takeoutsmoreores.zircon_fence": "Zircon Fence",
+  "block.takeoutsmoreores.zircon_wall": "Zircon Wall",
+  "block.takeoutsmoreores.zircon_fence_gate": "Zircon Fence Gate",
+  "block.takeoutsmoreores.zircon_pressure_plate": "Zircon Pressure Plate"
 }

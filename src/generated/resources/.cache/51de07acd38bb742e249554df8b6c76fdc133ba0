@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-19T19:28:41.362861	Item Models: takeoutsmoreores
+// 1.20.1	2025-05-19T21:24:55.1791447	Item Models: takeoutsmoreores
 553c84175ede44e4e494e41384e6c7b4b6fb4ede assets/takeoutsmoreores/models/item/gasnite.json
 e64924e922ae83dd25768ddd565922cc2bc67644 assets/takeoutsmoreores/models/item/metal_detector.json
 cec69bcbadcb80d27992c7f3d732eab743d71682 assets/takeoutsmoreores/models/item/raw_sapphire.json
@@ -16,3 +16,10 @@ d282797765a839549b67e58a5eedba54774832dc assets/takeoutsmoreores/models/item/sap
 b3247511164f7b737bedb074fd8ccd2aab4e31d5 assets/takeoutsmoreores/models/item/sapphire_trapdoor.json
 e2a03e753a590a80cb3831cbe6aa14d28715d3f6 assets/takeoutsmoreores/models/item/sapphire_wall.json
 7b72c45cf5d42906b3a223c294fe76f07e54aafa assets/takeoutsmoreores/models/item/zircon.json
+d56d6929f57a97f9ab8dc50941542d863b50e2a8 assets/takeoutsmoreores/models/item/zircon_button.json
+96d7c3b4f52d970fb21fd0ad0449555c69005d50 assets/takeoutsmoreores/models/item/zircon_fence.json
+12875c8e33d9af0c36beeefa3d1fe13fb71278c0 assets/takeoutsmoreores/models/item/zircon_fence_gate.json
+b63f786b1f1f0e5e48c054eb97a898d617a05163 assets/takeoutsmoreores/models/item/zircon_pressure_plate.json
+1c4f8049c9e30205a1ca4944407159cd6f442046 assets/takeoutsmoreores/models/item/zircon_slab.json
+01458ada2f3458db4f42420c24bea5b222e51925 assets/takeoutsmoreores/models/item/zircon_stairs.json
+f84666a0622685dd31815221ffd08829aec2e45c assets/takeoutsmoreores/models/item/zircon_wall.json

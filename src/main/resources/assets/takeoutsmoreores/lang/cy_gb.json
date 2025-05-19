@@ -33,5 +33,14 @@
   "block.takeoutsmoreores.sapphire_fence": "Ffens Saffir",
   "block.takeoutsmoreores.sapphire_wall": "Wall Saffir",
   "block.takeoutsmoreores.sapphire_fence_gate": "Gat Saffir",
-  "block.takeoutsmoreores.sapphire_pressure_plate": "Plat pwysau Saffir"
+  "block.takeoutsmoreores.sapphire_pressure_plate": "Plat pwysau Saffir",
+  "block.takeoutsmoreores.zircon_stairs": "Grisiau Ddircon",
+  "block.takeoutsmoreores.zircon_slab": "Slab Ddircon",
+  "block.takeoutsmoreores.zircon_door": "Drws Ddircon",
+  "block.takeoutsmoreores.zircon_trapdoor": "Drws Trap Ddircon",
+  "block.takeoutsmoreores.zircon_button": "Bwttwn Ddircon",
+  "block.takeoutsmoreores.zircon_fence": "Ffens Ddircon",
+  "block.takeoutsmoreores.zircon_wall": "Wall Ddircon",
+  "block.takeoutsmoreores.zircon_fence_gate": "Gat Ddircon",
+  "block.takeoutsmoreores.zircon_pressure_plate": "Plat pwysau Ddircon"
 }
