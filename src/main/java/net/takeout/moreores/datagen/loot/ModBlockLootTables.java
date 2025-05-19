@@ -40,11 +40,20 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.ZIRCON_FENCE.get());
         this.dropSelf(ModBlocks.ZIRCON_FENCE_GATE.get());
         this.dropSelf(ModBlocks.ZIRCON_WALL.get());
-         this.dropSelf(ModBlocks.ZIRCON_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.ZIRCON_TRAPDOOR.get());
         this.dropSelf(ModBlocks.ZIRCON_WALL.get());
         this.dropSelf(ModBlocks.ZIRCON_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.ZIRCON_BUTTON.get());
         this.dropSelf(ModBlocks.ZIRCON_STAIRS.get());
+        this.dropSelf(ModBlocks.NETHER_BRICK_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.REFINED_DIAMOND_FENCE.get());
+        this.dropSelf(ModBlocks.REFINED_DIAMOND_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.REFINED_DIAMOND_WALL.get());
+        this.dropSelf(ModBlocks.REFINED_DIAMOND_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.REFINED_DIAMOND_WALL.get());
+        this.dropSelf(ModBlocks.REFINED_DIAMOND_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.REFINED_DIAMOND_BUTTON.get());
+        this.dropSelf(ModBlocks.REFINED_DIAMOND_STAIRS.get());
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
@@ -55,6 +64,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.ZIRCON_SLAB.get()));
         this.add(ModBlocks.ZIRCON_DOOR.get(),
                 block -> createDoorTable(ModBlocks.ZIRCON_DOOR.get()));
+
+        this.add(ModBlocks.REFINED_DIAMOND_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.REFINED_DIAMOND_SLAB.get()));
+        this.add(ModBlocks.REFINED_DIAMOND_DOOR.get(),
+                block -> createDoorTable(ModBlocks.REFINED_DIAMOND_DOOR.get()));
 
 
         this.add(ModBlocks.SAPPHIRE_ORE.get(),

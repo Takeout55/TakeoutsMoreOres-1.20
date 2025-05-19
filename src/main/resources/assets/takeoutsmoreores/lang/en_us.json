@@ -34,7 +34,6 @@
   "block.takeoutsmoreores.sapphire_wall": "Sapphire Wall",
   "block.takeoutsmoreores.sapphire_fence_gate": "Sapphire Fence Gate",
   "block.takeoutsmoreores.sapphire_pressure_plate": "Sapphire Pressure Plate",
-
   "block.takeoutsmoreores.zircon_stairs": "Zircon Stairs",
   "block.takeoutsmoreores.zircon_slab": "Zircon Slab",
   "block.takeoutsmoreores.zircon_door": "Zircon Door",
@@ -43,5 +42,20 @@
   "block.takeoutsmoreores.zircon_fence": "Zircon Fence",
   "block.takeoutsmoreores.zircon_wall": "Zircon Wall",
   "block.takeoutsmoreores.zircon_fence_gate": "Zircon Fence Gate",
-  "block.takeoutsmoreores.zircon_pressure_plate": "Zircon Pressure Plate"
+  "block.takeoutsmoreores.zircon_pressure_plate": "Zircon Pressure Plate",
+  "item.takeoutsmoreores.sapphire_sword": "Sapphire Sword",
+  "item.takeoutsmoreores.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.takeoutsmoreores.sapphire_axe": "Sapphire Axe",
+  "item.takeoutsmoreores.sapphire_shovel": "Sapphire Shovel",
+  "item.takeoutsmoreores.sapphire_hoe": "Sapphire Hoe",
+  "block.takeoutsmoreores.nether_brick_fence_gate": "Nether Bricks Fence Gate",
+  "block.takeoutsmoreores.refined_diamond_stairs": "Refined Diamond Stairs",
+  "block.takeoutsmoreores.refined_diamond_slab": "Refined Diamond Slab",
+  "block.takeoutsmoreores.refined_diamond_door": "Refined Diamond Door",
+  "block.takeoutsmoreores.refined_diamond_trapdoor": "Refined Diamond Trapdoor",
+  "block.takeoutsmoreores.refined_diamond_button": "Refined Diamond Button",
+  "block.takeoutsmoreores.refined_diamond_fence": "Refined Diamond Fence",
+  "block.takeoutsmoreores.refined_diamond_wall": "Refined Diamond Wall",
+  "block.takeoutsmoreores.refined_diamond_fence_gate": "Refined Diamond Fence Gate",
+  "block.takeoutsmoreores.refined_diamond_pressure_plate": "Refined Diamond Pressure Plate"
 }

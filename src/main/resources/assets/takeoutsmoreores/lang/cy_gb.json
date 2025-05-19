@@ -42,5 +42,20 @@
   "block.takeoutsmoreores.zircon_fence": "Ffens Ddircon",
   "block.takeoutsmoreores.zircon_wall": "Wall Ddircon",
   "block.takeoutsmoreores.zircon_fence_gate": "Gat Ddircon",
-  "block.takeoutsmoreores.zircon_pressure_plate": "Plat pwysau Ddircon"
+  "block.takeoutsmoreores.zircon_pressure_plate": "Plat pwysau Ddircon",
+  "item.takeoutsmoreores.sapphire_sword": "Sapphire Sword",
+  "item.takeoutsmoreores.sapphire_pickaxe": "Sapphire Pickaxe",
+  "item.takeoutsmoreores.sapphire_axe": "Sapphire Axe",
+  "item.takeoutsmoreores.sapphire_shovel": "Sapphire Shovel",
+  "item.takeoutsmoreores.sapphire_hoe": "Sapphire Hoe",
+  "block.takeoutsmoreores.nether_brick_fence_gate": "Gat bric y Nether",
+  "block.takeoutsmoreores.refined_diamond_stairs": "Grisiau Deimwnt Coeth",
+  "block.takeoutsmoreores.refined_diamond_slab": "Slab Deimwnt Coeth",
+  "block.takeoutsmoreores.refined_diamond_door": "Drws Deimwnt Coeth",
+  "block.takeoutsmoreores.refined_diamond_trapdoor": "Drws Trap Deimwnt Coeth",
+  "block.takeoutsmoreores.refined_diamond_button": "Bwttwn Deimwnt Coeth",
+  "block.takeoutsmoreores.refined_diamond_fence": "Ffens Deimwnt Coeth",
+  "block.takeoutsmoreores.refined_diamond_wall": "Wall Deimwnt Coeth",
+  "block.takeoutsmoreores.refined_diamond_fence_gate": "Gat Deimwnt Coeth",
+  "block.takeoutsmoreores.refined_diamond_pressure_plate": "Plat pwysau Deimwnt Coeth"
 }

@@ -1,6 +1,8 @@
 {
   "values": [
     "takeoutsmoreores:sapphire_fence_gate",
-    "takeoutsmoreores:zircon_fence_gate"
+    "takeoutsmoreores:zircon_fence_gate",
+    "takeoutsmoreores:nether_brick_fence_gate",
+    "takeoutsmoreores:refined_diamond_fence"
   ]
 }

@@ -93,7 +93,7 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> ZIRCON_STAIRS = registerBlock("zircon_stairs",
-            () -> new StairBlock(() -> ModBlocks.SAPPHIRE_BLOCK.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.ZIRCON_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> ZIRCON_SLAB = registerBlock("zircon_slab",
@@ -122,6 +122,38 @@ public class ModBlocks {
     public static final RegistryObject<Block> ZIRCON_TRAPDOOR = registerBlock("zircon_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
 
+    public static final RegistryObject<Block> NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS), SoundEvents.NETHER_BRICKS_PLACE, SoundEvents.NETHER_BRICKS_BREAK));
+
+    public static final RegistryObject<Block> REFINED_DIAMOND_STAIRS = registerBlock("refined_diamond_stairs",
+            () -> new StairBlock(() -> ModBlocks.REFINED_DIAMOND_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> REFINED_DIAMOND_SLAB = registerBlock("refined_diamond_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> REFINED_DIAMOND_BUTTON = registerBlock("refined_diamond_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
+                    BlockSetType.IRON, 10, true));
+
+    public static final RegistryObject<Block> REFINED_DIAMOND_PRESSURE_PLATE = registerBlock("refined_diamond_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).instabreak(),
+                    BlockSetType.IRON));
+
+    public static final RegistryObject<Block> REFINED_DIAMOND_FENCE = registerBlock("refined_diamond_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> REFINED_DIAMOND_FENCE_GATE = registerBlock("refined_diamond_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+
+    public static final RegistryObject<Block> REFINED_DIAMOND_WALL = registerBlock("refined_diamond_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> REFINED_DIAMOND_DOOR = registerBlock("refined_diamond_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> REFINED_DIAMOND_TRAPDOOR = registerBlock("refined_diamond_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).noOcclusion(), BlockSetType.IRON));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -50,6 +50,25 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.ZIRCON_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.ZIRCON_FENCE_GATE);
 
+        evenSimplerBlockItem(ModBlocks.NETHER_BRICK_FENCE_GATE);
+
+        handheldItem(ModItems.SAPPHIRE_SWORD);
+        handheldItem(ModItems.SAPPHIRE_PICKAXE);
+        handheldItem(ModItems.SAPPHIRE_AXE);
+        handheldItem(ModItems.SAPPHIRE_HOE);
+        handheldItem(ModItems.SAPPHIRE_SHOVEL);
+
+        fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
+        buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);
+        wallItem(ModBlocks.REFINED_DIAMOND_WALL, ModBlocks.REFINED_DIAMOND_BLOCK);
+
+        evenSimplerBlockItem(ModBlocks.REFINED_DIAMOND_STAIRS);
+        evenSimplerBlockItem(ModBlocks.REFINED_DIAMOND_SLAB);
+        evenSimplerBlockItem(ModBlocks.REFINED_DIAMOND_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.REFINED_DIAMOND_FENCE_GATE);
+
+        evenSimplerBlockItem(ModBlocks.NETHER_BRICK_FENCE_GATE);
+
        // trapdoorItem(ModBlocks.ZIRCON_TRAPDOOR);
     }
 
@@ -88,6 +107,12 @@ public class ModItemModelProvider extends ItemModelProvider {
     public void evenSimplerBlockItem(RegistryObject<Block> block) {
         this.withExistingParent(MoreOres.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
                 modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
+    }
+
+    private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/handheld")).texture("layer0",
+                new ResourceLocation(MoreOres.MOD_ID,"item/" + item.getId().getPath()));
     }
 
 }

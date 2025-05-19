@@ -60,7 +60,21 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ZIRCON_FENCE.get());
                         pOutput.accept(ModBlocks.ZIRCON_WALL.get());
                         pOutput.accept(ModBlocks.ZIRCON_PRESSURE_PLATE.get());
-
+                        pOutput.accept(ModItems.SAPPHIRE_SWORD.get());
+                        pOutput.accept(ModItems.SAPPHIRE_PICKAXE.get());
+                        pOutput.accept(ModItems.SAPPHIRE_AXE.get());
+                        pOutput.accept(ModItems.SAPPHIRE_SHOVEL.get());
+                        pOutput.accept(ModItems.SAPPHIRE_HOE.get());
+                        pOutput.accept(ModBlocks.NETHER_BRICK_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_STAIRS.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_SLAB.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_DOOR.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_BUTTON.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_FENCE.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_WALL.get());
+                        pOutput.accept(ModBlocks.REFINED_DIAMOND_PRESSURE_PLATE.get());
 
                     })
                     .build());
