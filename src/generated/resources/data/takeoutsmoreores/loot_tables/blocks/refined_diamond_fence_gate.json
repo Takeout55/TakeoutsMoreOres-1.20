@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "bonus_rolls": 0.0,
+      "conditions": [
+        {
+          "condition": "minecraft:survives_explosion"
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "takeoutsmoreores:refined_diamond_fence_gate"
+        }
+      ],
+      "rolls": 1.0
+    }
+  ],
+  "random_sequence": "takeoutsmoreores:blocks/refined_diamond_fence_gate"
+}

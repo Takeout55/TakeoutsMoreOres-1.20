@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/wall_inventory",
+  "textures": {
+    "wall": "takeoutsmoreores:block/refined_diamond_block"
+  }
+}
