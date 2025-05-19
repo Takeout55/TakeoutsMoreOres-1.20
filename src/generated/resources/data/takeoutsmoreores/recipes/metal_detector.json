@@ -15,7 +15,7 @@
   "pattern": [
     "S  ",
     " S ",
-    " DI"
+    " ID"
   ],
   "result": {
     "item": "takeoutsmoreores:metal_detector"

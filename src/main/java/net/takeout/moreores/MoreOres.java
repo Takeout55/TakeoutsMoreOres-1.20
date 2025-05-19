@@ -14,7 +14,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.takeout.moreores.block.ModBlocks;
 import net.takeout.moreores.item.ModCreativeModeTabs;
-import net.takeout.moreores.item.Moditems;
+import net.takeout.moreores.item.ModItems;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -25,7 +25,7 @@ public class MoreOres {
 
     public MoreOres() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
-        Moditems.register(modEventBus);
+        ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
 
@@ -42,12 +42,12 @@ public class MoreOres {
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event) {
         if(event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
-            event.accept(Moditems.REFINED_DIAMOND);
-            event.accept(Moditems.REFINED_DIAMOND_SHARD);
-            event.accept(Moditems.RAW_ZIRCON);
-            event.accept(Moditems.ZIRCON);
-            event.accept(Moditems.RAW_SAPPHIRE);
-            event.accept(Moditems.SAPPHIRE);
+            event.accept(ModItems.REFINED_DIAMOND);
+            event.accept(ModItems.REFINED_DIAMOND_SHARD);
+            event.accept(ModItems.RAW_ZIRCON);
+            event.accept(ModItems.ZIRCON);
+            event.accept(ModItems.RAW_SAPPHIRE);
+            event.accept(ModItems.SAPPHIRE);
         }
     }
 

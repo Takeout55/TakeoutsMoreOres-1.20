@@ -1,6 +1,0 @@
-{
-  "variants": {
-    "lit=false": { "model": "takeoutsmoreores:block/zircon_lamp_off" },
-    "lit=true": { "model":  "takeoutsmoreores:block/zircon_lamp_on"}
-  }
-}

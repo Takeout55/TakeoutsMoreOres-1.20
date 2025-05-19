@@ -10,9 +10,6 @@ import net.minecraftforge.registries.RegistryObject;
 import net.takeout.moreores.MoreOres;
 import net.takeout.moreores.block.ModBlocks;
 
-import javax.security.auth.login.Configuration;
-import java.lang.reflect.Parameter;
-
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, MoreOres.MOD_ID);
@@ -22,14 +19,15 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.GASNITE_ORE.get()))
                     .title(Component.translatable("creativetab.more_ores"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(Moditems.REFINED_DIAMOND.get());
-                        pOutput.accept(Moditems.REFINED_DIAMOND_SHARD.get());
-                        pOutput.accept(Moditems.ZIRCON.get());
-                        pOutput.accept(Moditems.SAPPHIRE.get());
-                        pOutput.accept(Moditems.GASNITE.get());
-                        pOutput.accept(Moditems.RAW_ZIRCON.get());
-                        pOutput.accept(Moditems.RAW_SAPPHIRE.get());
-                        pOutput.accept(Moditems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.REFINED_DIAMOND.get());
+                        pOutput.accept(ModItems.REFINED_DIAMOND_SHARD.get());
+                        pOutput.accept(ModItems.ZIRCON.get());
+                        pOutput.accept(ModItems.SAPPHIRE.get());
+                        pOutput.accept(ModItems.GASNITE.get());
+                        pOutput.accept(ModItems.RAW_ZIRCON.get());
+                        pOutput.accept(ModItems.RAW_SAPPHIRE.get());
+                        pOutput.accept(ModItems.METAL_DETECTOR.get());
+                        pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
                         pOutput.accept(ModBlocks.REFINED_DIAMOND_BLOCK.get());
                         pOutput.accept(ModBlocks.ZIRCON_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
@@ -44,6 +42,18 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.NETHER_GASNITE_ORE.get());
                         pOutput.accept(ModBlocks.ENDSTONE_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.ENDSTONE_SAPPHIRE_ORE.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_SLAB.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_DOOR.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_BUTTON.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_FENCE.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_WALL.get());
+                        pOutput.accept(ModBlocks.SAPPHIRE_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.ENDSTONE_ZIRCON_ORE.get());
+
+
                     })
                     .build());
 

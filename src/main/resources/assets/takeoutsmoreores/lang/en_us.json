@@ -1,13 +1,11 @@
 {
   "item.takeoutsmoreores.zircon": "Zircon",
   "item.takeoutsmoreores.raw_zircon": "Raw Zircon",
-  "itemGroup.takeoutsmoreores": "Zircon Tutorial Tab",
   "block.takeoutsmoreores.zircon_block" : "Block of Zircon",
   "block.takeoutsmoreores.zircon_ore" : "Zircon ore",
   "block.takeoutsmoreores.deepslate_zircon_ore" : "Deepslate Zircon ore",
   "block.takeoutsmoreores.netherrack_zircon_ore" : "Nether Zircon ore",
   "block.takeoutsmoreores.endstone_zircon_ore" : "Endstone Zircon ore",
-  "block.takeoutsmoreores.zircon_lamp": "Zircon lamp",
   "item.takeoutsmoreores.refined_diamond": "Refined Diamond",
   "item.takeoutsmoreores.refined_diamond_shard": "Refined Diamond Shard",
   "block.takeoutsmoreores.refined_diamond_block": "Refined Diamond Block",
@@ -25,5 +23,15 @@
   "block.takeoutsmoreores.gasnite_ore": "Gasnite Ore",
   "block.takeoutsmoreores.nether_gasnite_ore": "Nether Gasnite Ore",
   "tooltip.moreores.metal_detector": "Finds valuable underground!",
-  "tooltip.moreores.fuel_item": "Use as furnace fuel!"
+  "tooltip.moreores.fuel_item": "Use as furnace fuel!",
+  "item.takeoutsmoreores.sapphire_staff": "Sapphire Staff",
+  "block.takeoutsmoreores.sapphire_stairs": "Sapphire Stairs",
+  "block.takeoutsmoreores.sapphire_slab": "Sapphire Slab",
+  "block.takeoutsmoreores.sapphire_door": "Sapphire Door",
+  "block.takeoutsmoreores.sapphire_trapdoor": "Sapphire Trapdoor",
+  "block.takeoutsmoreores.sapphire_button": "Sapphire Button",
+  "block.takeoutsmoreores.sapphire_fence": "Sapphire Fence",
+  "block.takeoutsmoreores.sapphire_wall": "Sapphire Wall",
+  "block.takeoutsmoreores.sapphire_fence_gate": "Sapphire Fence Gate",
+  "block.takeoutsmoreores.sapphire_pressure_plate": "Sapphire Pressure Plate"
 }

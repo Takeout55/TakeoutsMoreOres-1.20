@@ -4,13 +4,12 @@ import net.minecraft.world.item.Item;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
-import net.minecraftforge.registries.RegisterEvent;
 import net.minecraftforge.registries.RegistryObject;
 import net.takeout.moreores.MoreOres;
 import net.takeout.moreores.item.custom.FuelItem;
 import net.takeout.moreores.item.custom.MetalDetectorItem;
 
-public class Moditems {
+public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MoreOres.MOD_ID);
 
@@ -41,5 +40,8 @@ public class Moditems {
 
     public static final RegistryObject<Item> GASNITE = ITEMS.register("gasnite",
             () -> new FuelItem(new Item.Properties(), 2000));
+
+    public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
+            () -> new Item(new Item.Properties().stacksTo(1)));
 
 }
