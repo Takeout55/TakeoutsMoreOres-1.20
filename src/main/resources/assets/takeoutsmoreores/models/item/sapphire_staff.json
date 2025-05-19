@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "takeoutsmoreores:item/sapphire_staff_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "takeoutsmoreores:item/sapphire_staff_2d"
+    },
+    "ground": {
+      "parent": "takeoutsmoreores:item/sapphire_staff_2d"
+    },
+    "fixed": {
+      "parent": "takeoutsmoreores:item/sapphire_staff_2d"
+    }
+  }
+}

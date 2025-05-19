@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "takeoutsmoreores:block/sapphire_block",
+    "side": "takeoutsmoreores:block/sapphire_block",
+    "top": "takeoutsmoreores:block/sapphire_block"
+  }
+}
