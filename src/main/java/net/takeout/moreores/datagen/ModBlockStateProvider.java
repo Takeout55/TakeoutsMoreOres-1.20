@@ -48,7 +48,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock(((FenceBlock) ModBlocks.ZIRCON_FENCE.get()), blockTexture(ModBlocks.ZIRCON_BLOCK.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.ZIRCON_FENCE_GATE.get()), blockTexture(ModBlocks.ZIRCON_BLOCK.get()));
         wallBlock(((WallBlock) ModBlocks.ZIRCON_WALL.get()), blockTexture(ModBlocks.ZIRCON_BLOCK.get()));
-        // doorBlockWithRenderType(((DoorBlock) ModBlocks.ZIRCON_DOOR.get()), modLoc("block/sapphire_door_bottom"), modLoc("block/sapphire_door_top"), "cutout");
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.ZIRCON_DOOR.get()), modLoc("block/zircon_door_bottom"), modLoc("block/zircon_door_top"), "cutout");
         // trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.ZIRCON_TRAPDOOR.get()), modLoc("block/sapphire_trapdoor"), true, "cutout");
 
         stairsBlock(((StairBlock) ModBlocks.REFINED_DIAMOND_STAIRS.get()), blockTexture(ModBlocks.REFINED_DIAMOND_BLOCK.get()));

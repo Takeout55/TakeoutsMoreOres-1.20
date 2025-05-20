@@ -28,27 +28,26 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.REFINED_DIAMOND_SHARD);
         simpleItem(ModItems.GASNITE);
         simpleItem(ModItems.METAL_DETECTOR);
-        simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
 
+        simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
         buttonItem(ModBlocks.SAPPHIRE_BUTTON, ModBlocks.SAPPHIRE_BLOCK);
         wallItem(ModBlocks.SAPPHIRE_WALL, ModBlocks.SAPPHIRE_BLOCK);
-
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_STAIRS);
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_SLAB);
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.SAPPHIRE_FENCE_GATE);
-
         trapdoorItem(ModBlocks.SAPPHIRE_TRAPDOOR);
 
+        simpleBlockItem(ModBlocks.ZIRCON_DOOR);
         fenceItem(ModBlocks.ZIRCON_FENCE, ModBlocks.ZIRCON_BLOCK);
         buttonItem(ModBlocks.ZIRCON_BUTTON, ModBlocks.ZIRCON_BLOCK);
         wallItem(ModBlocks.ZIRCON_WALL, ModBlocks.ZIRCON_BLOCK);
-
         evenSimplerBlockItem(ModBlocks.ZIRCON_STAIRS);
         evenSimplerBlockItem(ModBlocks.ZIRCON_SLAB);
         evenSimplerBlockItem(ModBlocks.ZIRCON_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.ZIRCON_FENCE_GATE);
+        // trapdoorItem(ModBlocks.ZIRCON_TRAPDOOR);
 
         evenSimplerBlockItem(ModBlocks.NETHER_BRICK_FENCE_GATE);
 
