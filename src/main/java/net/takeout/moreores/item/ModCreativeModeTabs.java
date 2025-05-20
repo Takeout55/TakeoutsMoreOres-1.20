@@ -77,6 +77,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.REFINED_DIAMOND_PRESSURE_PLATE.get());
                         pOutput.accept(ModItems.EARIUM.get());
                         pOutput.accept(ModItems.RAW_EARIUM.get());
+                        pOutput.accept(ModItems.RAW_PINKITE.get());
 
                     })
                     .build());
