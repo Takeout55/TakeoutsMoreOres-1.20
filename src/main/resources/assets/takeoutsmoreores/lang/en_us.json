@@ -57,5 +57,18 @@
   "block.takeoutsmoreores.refined_diamond_fence": "Refined Diamond Fence",
   "block.takeoutsmoreores.refined_diamond_wall": "Refined Diamond Wall",
   "block.takeoutsmoreores.refined_diamond_fence_gate": "Refined Diamond Fence Gate",
-  "block.takeoutsmoreores.refined_diamond_pressure_plate": "Refined Diamond Pressure Plate"
+  "block.takeoutsmoreores.refined_diamond_pressure_plate": "Refined Diamond Pressure Plate",
+  "item.takeoutsmoreores.earium": "Earium",
+  "item.takeoutsmoreores.raw_earium": "Raw Earium",
+  "item.takeoutsmoreores.raw_pinkite": "Raw Pinkite",
+  "item.takeoutsmoreores.sapphire_helmet": "Sapphire Helmet",
+  "item.takeoutsmoreores.sapphire_chestplate": "Sapphire Chestplate",
+  "item.takeoutsmoreores.sapphire_leggings": "Sapphire Leggings",
+  "item.takeoutsmoreores.sapphire_boots": "Sapphire Boots",
+  "item.takeoutsmoreores.metal_rod": "Metal Rod",
+  "block.takeoutsmoreores.earium_ore": "Earium Ore",
+  "block.takeoutsmoreores.nether_earium_ore": "Nether Earium Ore",
+  "block.takeoutsmoreores.end_stone_earium_ore": "End Stone Earium Ore",
+  "block.takeoutsmoreores.deepslate_earium_ore": "Deepslate Earium Ore",
+  "block.takeoutsmoreores.earium_block": "Earium Block"
 }

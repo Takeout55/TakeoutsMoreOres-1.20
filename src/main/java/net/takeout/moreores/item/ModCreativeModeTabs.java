@@ -78,6 +78,16 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.EARIUM.get());
                         pOutput.accept(ModItems.RAW_EARIUM.get());
                         pOutput.accept(ModItems.RAW_PINKITE.get());
+                        pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
+                        pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());
+                        pOutput.accept(ModItems.SAPPHIRE_BOOTS.get());
+                        pOutput.accept(ModItems.METAL_ROD.get());
+                        pOutput.accept(ModBlocks.EARIUM_ORE.get());
+                        pOutput.accept(ModBlocks.END_STONE_EARIUM_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_EARIUM_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_EARIUM_ORE.get());
+                        pOutput.accept(ModBlocks.EARIUM_BLOCK.get());
 
                     })
                     .build());

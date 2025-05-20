@@ -155,6 +155,21 @@ public class ModBlocks {
     public static final RegistryObject<Block> REFINED_DIAMOND_TRAPDOOR = registerBlock("refined_diamond_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).noOcclusion(), BlockSetType.IRON));
 
+    public static final RegistryObject<Block> EARIUM_ORE = registerBlock("earium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_EARIUM_ORE = registerBlock("deepslate_earium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_STONE_EARIUM_ORE = registerBlock("end_stone_earium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> NETHER_EARIUM_ORE = registerBlock("nether_earium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> EARIUM_BLOCK = registerBlock("earium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.COPPER).requiresCorrectToolForDrops()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

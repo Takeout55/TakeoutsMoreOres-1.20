@@ -10,6 +10,10 @@
     "takeoutsmoreores:endstone_sapphire_ore",
     "takeoutsmoreores:nether_gasnite_ore",
     "takeoutsmoreores:gasnite_ore",
+    "takeoutsmoreores:earium_ore",
+    "takeoutsmoreores:nether_earium_ore",
+    "takeoutsmoreores:deepslate_earium_ore",
+    "takeoutsmoreores:end_stone_earium_ore",
     "#forge:ores"
   ]
 }

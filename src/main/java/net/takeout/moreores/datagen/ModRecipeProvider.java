@@ -1,5 +1,6 @@
 package net.takeout.moreores.datagen;
 
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.takeout.moreores.MoreOres;
@@ -21,6 +22,18 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.SAPPHIRE_ORE.get(), ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get(), ModBlocks.NETHERRACK_SAPPHIRE_ORE.get(),
             ModBlocks.ENDSTONE_SAPPHIRE_ORE.get());
 
+    private static final List<ItemLike> ZIRCON_SMELTABLES = List.of(ModItems.RAW_ZIRCON.get(),
+            ModBlocks.ZIRCON_ORE.get(), ModBlocks.DEEPSLATE_ZIRCON_ORE.get(), ModBlocks.NETHERRACK_ZIRCON_ORE.get(),
+            ModBlocks.ENDSTONE_ZIRCON_ORE.get());
+
+    private static final List<ItemLike> REFINED_DIAMOND_SMELTABLES = List.of(Items.DIAMOND);
+
+    private static final List<ItemLike> GASNITE_SMELTABLES = List.of(ModBlocks.GASNITE_ORE.get());
+
+    private static final List<ItemLike> EARIUM_SMELTABLES = List.of(ModItems.RAW_ZIRCON.get(),
+            ModBlocks.EARIUM_ORE.get(), ModBlocks.DEEPSLATE_EARIUM_ORE.get(), ModBlocks.NETHER_EARIUM_ORE.get(),
+            ModBlocks.END_STONE_EARIUM_ORE.get());
+
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -28,7 +41,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 100, "sapphire");
+        oreBlasting(pWriter, ZIRCON_SMELTABLES, RecipeCategory.MISC, ModItems.ZIRCON.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, ZIRCON_SMELTABLES, RecipeCategory.MISC, ModItems.ZIRCON.get(), 0.25f, 200, "sapphire");
+        oreBlasting(pWriter, REFINED_DIAMOND_SMELTABLES, RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, REFINED_DIAMOND_SMELTABLES, RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get(), 0.25f, 200, "sapphire");
+        oreBlasting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 200, "sapphire");
+        oreBlasting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.GASNITE.get(), 0.25f, 100, "sapphire");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
@@ -44,6 +63,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SSS")
                 .define('S', ModItems.ZIRCON.get())
                 .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.EARIUM.get())
+                .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.EARIUM.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_SAPPHIRE_BLOCK.get())
@@ -72,13 +99,195 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
                 .save(pWriter);
 
-       // ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get())
-          //      .pattern("SS ")
-          //      .pattern("SS ")
-          //      .pattern("   ")
-          //      .define('S', ModItems.REFINED_DIAMOND_SHARD.get())
-          //      .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
-          //      .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.METAL_ROD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("S")
+                .define('S', Items.IRON_NUGGET)
+                .unlockedBy(getHasName(Items.IRON_NUGGET), has(Items.IRON_NUGGET))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_STAIRS.get())
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModBlocks.ZIRCON_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_STAIRS.get())
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_STAIRS.get())
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModBlocks.REFINED_DIAMOND_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_SLAB.get())
+                .pattern("SSS")
+                .define('S', ModBlocks.ZIRCON_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_SLAB.get())
+                .pattern("SSS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_SLAB.get())
+                .pattern("SSS")
+                .define('S', ModBlocks.REFINED_DIAMOND_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_DOOR.get(), 3)
+                .pattern("SS ")
+                .pattern("SS ")
+                .pattern("SS ")
+                .define('S', ModBlocks.REFINED_DIAMOND_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_DOOR.get(), 3)
+                .pattern("SS ")
+                .pattern("SS ")
+                .pattern("SS ")
+                .define('S', ModBlocks.ZIRCON_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_DOOR.get(), 3)
+                .pattern("SS ")
+                .pattern("SS ")
+                .pattern("SS ")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_TRAPDOOR.get(), 2)
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_TRAPDOOR.get(), 2)
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.ZIRCON.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_TRAPDOOR.get(), 2)
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.REFINED_DIAMOND.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_PRESSURE_PLATE.get())
+                .pattern("SS")
+                .define('S', ModBlocks.REFINED_DIAMOND_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_PRESSURE_PLATE.get())
+                .pattern("SS")
+                .define('S', ModBlocks.ZIRCON_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_PRESSURE_PLATE.get())
+                .pattern("SS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_WALL.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModBlocks.ZIRCON_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.ZIRCON_BLOCK.get()), has(ModBlocks.ZIRCON_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_WALL.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_WALL.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModBlocks.REFINED_DIAMOND_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.REFINED_DIAMOND_BLOCK.get()), has(ModBlocks.REFINED_DIAMOND_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get())
+                .pattern("SS ")
+                .pattern("SS ")
+                .pattern("   ")
+                .define('S', ModItems.REFINED_DIAMOND_SHARD.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter, new ResourceLocation(MoreOres.MOD_ID, "refined_diamond_from_shards"));
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_FENCE.get())
+                .pattern("SMS")
+                .pattern("SMS")
+                .define('S', ModBlocks.ZIRCON_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.ZIRCON_BLOCK.get()), has(ModBlocks.ZIRCON_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_FENCE.get())
+                .pattern("SMS")
+                .pattern("SMS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_FENCE.get())
+                .pattern("SMS")
+                .pattern("SMS")
+                .define('S', ModBlocks.REFINED_DIAMOND_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.REFINED_DIAMOND_BLOCK.get()), has(ModBlocks.REFINED_DIAMOND_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_FENCE_GATE.get())
+                .pattern("MSM")
+                .pattern("MSM")
+                .define('S', ModBlocks.REFINED_DIAMOND_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.REFINED_DIAMOND_BLOCK.get()), has(ModBlocks.REFINED_DIAMOND_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_FENCE_GATE.get())
+                .pattern("MSM")
+                .pattern("MSM")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_FENCE_GATE.get())
+                .pattern("MSM")
+                .pattern("MSM")
+                .define('S', ModBlocks.ZIRCON_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.ZIRCON_BLOCK.get()), has(ModBlocks.ZIRCON_BLOCK.get()))
+                .save(pWriter);
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
@@ -99,11 +308,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get(), 9)
                 .requires(ModBlocks.REFINED_DIAMOND_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.REFINED_DIAMOND_BLOCK.get()), has(ModBlocks.REFINED_DIAMOND_BLOCK.get()))
-                .save(pWriter);
+                .save(pWriter, new ResourceLocation(MoreOres.MOD_ID, "refined_diamond_from_block"));
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.REFINED_DIAMOND_SHARD.get(), 4)
-                .requires(ModItems.REFINED_DIAMOND_SHARD.get())
+                .requires(ModItems.REFINED_DIAMOND.get())
                 .unlockedBy(getHasName(ModItems.REFINED_DIAMOND_SHARD.get()), has(ModItems.REFINED_DIAMOND_SHARD.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BUTTON.get())
+                .requires(ModBlocks.SAPPHIRE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ZIRCON_BUTTON.get())
+                .requires(ModBlocks.ZIRCON_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.ZIRCON_BLOCK.get()), has(ModBlocks.ZIRCON_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_BUTTON.get())
+                .requires(ModBlocks.REFINED_DIAMOND_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.REFINED_DIAMOND_BLOCK.get()), has(ModBlocks.REFINED_DIAMOND_BLOCK.get()))
                 .save(pWriter);
     }
 

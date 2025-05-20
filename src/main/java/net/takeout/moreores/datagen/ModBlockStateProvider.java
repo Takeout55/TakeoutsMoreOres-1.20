@@ -29,6 +29,12 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.GASNITE_ORE);
         blockWithItem(ModBlocks.NETHER_GASNITE_ORE);
         blockWithItem(ModBlocks.REFINED_DIAMOND_BLOCK);
+        blockWithItem(ModBlocks.EARIUM_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_EARIUM_ORE);
+        blockWithItem(ModBlocks.NETHER_EARIUM_ORE);
+        blockWithItem(ModBlocks.END_STONE_EARIUM_ORE);
+        blockWithItem(ModBlocks.EARIUM_BLOCK);
+
 
         stairsBlock(((StairBlock) ModBlocks.SAPPHIRE_STAIRS.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
         slabBlock(((SlabBlock) ModBlocks.SAPPHIRE_SLAB.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
@@ -49,7 +55,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock(((FenceGateBlock) ModBlocks.ZIRCON_FENCE_GATE.get()), blockTexture(ModBlocks.ZIRCON_BLOCK.get()));
         wallBlock(((WallBlock) ModBlocks.ZIRCON_WALL.get()), blockTexture(ModBlocks.ZIRCON_BLOCK.get()));
         doorBlockWithRenderType(((DoorBlock) ModBlocks.ZIRCON_DOOR.get()), modLoc("block/zircon_door_bottom"), modLoc("block/zircon_door_top"), "cutout");
-        // trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.ZIRCON_TRAPDOOR.get()), modLoc("block/sapphire_trapdoor"), true, "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.ZIRCON_TRAPDOOR.get()), modLoc("block/zircon_trapdoor"), true, "cutout");
 
         stairsBlock(((StairBlock) ModBlocks.REFINED_DIAMOND_STAIRS.get()), blockTexture(ModBlocks.REFINED_DIAMOND_BLOCK.get()));
         slabBlock(((SlabBlock) ModBlocks.REFINED_DIAMOND_SLAB.get()), blockTexture(ModBlocks.REFINED_DIAMOND_BLOCK.get()), blockTexture(ModBlocks.REFINED_DIAMOND_BLOCK.get()));
@@ -58,8 +64,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock(((FenceBlock) ModBlocks.REFINED_DIAMOND_FENCE.get()), blockTexture(ModBlocks.REFINED_DIAMOND_BLOCK.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.REFINED_DIAMOND_FENCE_GATE.get()), blockTexture(ModBlocks.REFINED_DIAMOND_BLOCK.get()));
         wallBlock(((WallBlock) ModBlocks.REFINED_DIAMOND_WALL.get()), blockTexture(ModBlocks.REFINED_DIAMOND_BLOCK.get()));
-        // doorBlockWithRenderType(((DoorBlock) ModBlocks.REFINED_DIAMOND_DOOR.get()), modLoc("block/REFINED_DIAMOND_door_bottom"), modLoc("block/REFINED_DIAMOND_door_top"), "cutout");
-        // trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.REFINED_DIAMOND_TRAPDOOR.get()), modLoc("block/REFINED_DIAMOND_trapdoor"), true, "cutout");
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.REFINED_DIAMOND_DOOR.get()), modLoc("block/refined_diamond_door_bottom"), modLoc("block/refined_diamond_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.REFINED_DIAMOND_TRAPDOOR.get()), modLoc("block/refined_diamond_trapdoor"), true, "cutout");
 
         fenceGateBlock(((FenceGateBlock) ModBlocks.NETHER_BRICK_FENCE_GATE.get()), blockTexture(Blocks.NETHER_BRICKS));
     }
