@@ -58,4 +58,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
             () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> EARIUM = ITEMS.register("earium",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAW_EARIUM = ITEMS.register("raw_earium",
+            () -> new Item(new Item.Properties()));
 }
