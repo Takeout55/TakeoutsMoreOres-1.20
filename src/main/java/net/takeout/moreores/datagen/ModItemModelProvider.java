@@ -85,6 +85,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SAPPHIRE_HOE);
         handheldItem(ModItems.SAPPHIRE_SHOVEL);
 
+        handheldItem(ModItems.GLITCHITE_SWORD);
+        handheldItem(ModItems.GLITCHITE_PICKAXE);
+        handheldItem(ModItems.GLITCHITE_AXE);
+        handheldItem(ModItems.GLITCHITE_HOE);
+        handheldItem(ModItems.GLITCHITE_SHOVEL);
+
         fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
         buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);
         wallItem(ModBlocks.REFINED_DIAMOND_WALL, ModBlocks.REFINED_DIAMOND_BLOCK);
