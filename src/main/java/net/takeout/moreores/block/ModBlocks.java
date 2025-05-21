@@ -275,6 +275,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> CHEESIUM_TRAPDOOR = registerBlock("cheesium_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
 
+    public static final RegistryObject<Block> OCARITE_BLOCK = registerBlock("ocarite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).requiresCorrectToolForDrops()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
