@@ -94,4 +94,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> REFINED_DIAMOND_BOOTS = ITEMS.register("refined_diamond_boots",
             () -> new ArmorItem(ModArmorMaterials.REFINED_DIAMOND, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+     public static final RegistryObject<Item> GLITCHITE_INGOT = ITEMS.register("glitchite_ingot",
+            () -> new Item(new Item.Properties()));
 }
