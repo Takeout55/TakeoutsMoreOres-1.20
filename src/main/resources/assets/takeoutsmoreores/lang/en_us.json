@@ -115,5 +115,10 @@
   "block.takeoutsmoreores.end_stone_gasnite_ore": "End Stone Gasnite Ore",
   "block.takeoutsmoreores.deepslate_gasnite_ore": "Deepslate Gasnite Ore",
   "item.takeoutsmoreores.glitchite_ingot": "Glitchite Ingot",
-  "block.takeoutsmoreores.glitchite_block": "Glitchite Block"
+  "block.takeoutsmoreores.glitchite_block": "Glitchite Block",
+  "item.takeoutsmoreores.glitchite_sword": "Glitchite Sword",
+  "item.takeoutsmoreores.glitchite_pickaxe": "Glitchite Pickaxe",
+  "item.takeoutsmoreores.glitchite_shovel": "Glitchite Shovel",
+  "item.takeoutsmoreores.glitchite_hoe": "Glitchite Hoe",
+  "item.takeoutsmoreores.glitchite_axe": "Glitchite Axe"
 }
