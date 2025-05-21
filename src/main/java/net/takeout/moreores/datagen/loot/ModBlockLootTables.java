@@ -56,6 +56,31 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.REFINED_DIAMOND_STAIRS.get());
         this.dropSelf(ModBlocks.EARIUM_BLOCK.get());
         this.dropSelf(ModBlocks.GLITCHITE_BLOCK.get());
+        this.dropSelf(ModBlocks.GLITCHITE_FENCE.get());
+        this.dropSelf(ModBlocks.GLITCHITE_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.GLITCHITE_WALL.get());
+        this.dropSelf(ModBlocks.GLITCHITE_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.GLITCHITE_WALL.get());
+        this.dropSelf(ModBlocks.GLITCHITE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.GLITCHITE_BUTTON.get());
+        this.dropSelf(ModBlocks.GLITCHITE_STAIRS.get());
+        this.dropSelf(ModBlocks.EARIUM_FENCE.get());
+        this.dropSelf(ModBlocks.EARIUM_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.EARIUM_WALL.get());
+        this.dropSelf(ModBlocks.EARIUM_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.EARIUM_WALL.get());
+        this.dropSelf(ModBlocks.EARIUM_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.EARIUM_BUTTON.get());
+        this.dropSelf(ModBlocks.EARIUM_STAIRS.get());
+        this.dropSelf(ModBlocks.CHEESIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.CHEESIUM_FENCE.get());
+        this.dropSelf(ModBlocks.CHEESIUM_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.CHEESIUM_WALL.get());
+        this.dropSelf(ModBlocks.CHEESIUM_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.CHEESIUM_WALL.get());
+        this.dropSelf(ModBlocks.CHEESIUM_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.CHEESIUM_BUTTON.get());
+        this.dropSelf(ModBlocks.CHEESIUM_STAIRS.get())
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
@@ -105,6 +130,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_EARIUM_ORE.get(), ModItems.GASNITE.get()));
         this.add(ModBlocks.DEEPSLATE_GASNITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_GASNITE_ORE.get(), ModItems.GASNITE.get()));
+         this.add(ModBlocks.GLITCHITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
 
     }
 
