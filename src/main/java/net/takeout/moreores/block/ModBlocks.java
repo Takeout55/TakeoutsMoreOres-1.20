@@ -170,6 +170,15 @@ public class ModBlocks {
     public static final RegistryObject<Block> EARIUM_BLOCK = registerBlock("earium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.COPPER).requiresCorrectToolForDrops()));
 
+     public static final RegistryObject<Block> DEEPSLATE_GASNITE_ORE = registerBlock("deepslate_gasnite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops()));
+
+     public static final RegistryObject<Block> END_STONE_GASNITE_ORE = registerBlock("end_stone_gasnite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops()));
+
+     public static final RegistryObject<Block> GLITCHITE_BLOCK = registerBlock("glitchite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
