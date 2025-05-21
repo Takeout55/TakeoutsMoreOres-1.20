@@ -23,6 +23,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> SAPPHIRE_BLOCK = registerBlock("sapphire_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> CHEESIUM_BLOCK = registerBlock("cheesium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> ZIRCON_BLOCK = registerBlock("zircon_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.COPPER).requiresCorrectToolForDrops()));
 
@@ -158,6 +161,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> EARIUM_ORE = registerBlock("earium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> GLITCHITE_ORE = registerBlock("glitchite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> DEEPSLATE_EARIUM_ORE = registerBlock("deepslate_earium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
 
@@ -178,6 +184,96 @@ public class ModBlocks {
 
      public static final RegistryObject<Block> GLITCHITE_BLOCK = registerBlock("glitchite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+     public static final RegistryObject<Block> EARIUM_STAIRS = registerBlock("earium_stairs",
+            () -> new StairBlock(() -> ModBlocks.ZIRCON_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> EARIUM_SLAB = registerBlock("earium_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> EARIUM_BUTTON = registerBlock("earium_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
+                    BlockSetType.IRON, 10, true));
+
+    public static final RegistryObject<Block> EARIUM_PRESSURE_PLATE = registerBlock("earium_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak(),
+                    BlockSetType.IRON));
+
+    public static final RegistryObject<Block> EARIUM_FENCE = registerBlock("earium_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> EARIUM_FENCE_GATE = registerBlock("earium_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+
+    public static final RegistryObject<Block> EARIUM_WALL = registerBlock("earium_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> EARIUM_DOOR = registerBlock("earium_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> EARIUM_TRAPDOOR = registerBlock("earium_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+    
+    public static final RegistryObject<Block> GLITCHITE_STAIRS = registerBlock("glitchite_stairs",
+            () -> new StairBlock(() -> ModBlocks.ZIRCON_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GLITCHITE_SLAB = registerBlock("glitchite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GLITCHITE_BUTTON = registerBlock("glitchite_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
+                    BlockSetType.IRON, 10, true));
+
+    public static final RegistryObject<Block> GLITCHITE_PRESSURE_PLATE = registerBlock("glitchite_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak(),
+                    BlockSetType.IRON));
+
+    public static final RegistryObject<Block> GLITCHITE_FENCE = registerBlock("glitchite_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GLITCHITE_FENCE_GATE = registerBlock("glitchite_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+
+    public static final RegistryObject<Block> GLITCHITE_WALL = registerBlock("glitchite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> GLITCHITE_DOOR = registerBlock("glitchite_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> GLITCHITE_TRAPDOOR = registerBlock("glitchite_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> CHEESIUM_STAIRS = registerBlock("cheesium_stairs",
+            () -> new StairBlock(() -> ModBlocks.ZIRCON_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHEESIUM_SLAB = registerBlock("cheesium_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHEESIUM_BUTTON = registerBlock("cheesium_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
+                    BlockSetType.IRON, 10, true));
+
+    public static final RegistryObject<Block> CHEESIUM_PRESSURE_PLATE = registerBlock("cheesium_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak(),
+                    BlockSetType.IRON));
+
+    public static final RegistryObject<Block> CHEESIUM_FENCE = registerBlock("cheesium_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHEESIUM_FENCE_GATE = registerBlock("cheesium_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+
+    public static final RegistryObject<Block> CHEESIUM_WALL = registerBlock("cheesium_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHEESIUM_DOOR = registerBlock("cheesium_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+
+    public static final RegistryObject<Block> CHEESIUM_TRAPDOOR = registerBlock("cheesium_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
