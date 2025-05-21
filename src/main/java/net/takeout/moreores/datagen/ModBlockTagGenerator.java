@@ -62,7 +62,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.END_STONE_EARIUM_ORE.get(),
                         ModBlocks.DEEPSLATE_GASNITE_ORE.get(),
                         ModBlocks.END_STONE_GASNITE_ORE.get(),
-                        ModBlocks.GLITCHITE_BLOCK.get());
+                        ModBlocks.GLITCHITE_BLOCK.get(),
+                        ModBlocks.OCARITE_BLOCK.get());
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -81,7 +82,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.NETHER_EARIUM_ORE.get(),
                         ModBlocks.DEEPSLATE_EARIUM_ORE.get(),
                         ModBlocks.END_STONE_EARIUM_ORE.get(),
-                        ModBlocks.GLITCHITE_BLOCK.get());
+                        ModBlocks.GLITCHITE_BLOCK.get(),
+                        ModBlocks.OCARITE_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.REFINED_DIAMOND_BLOCK.get());
