@@ -97,4 +97,19 @@ public class ModItems {
 
      public static final RegistryObject<Item> GLITCHITE_INGOT = ITEMS.register("glitchite_ingot",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> GLITCHITE_SWORD = ITEMS.register("glitchite_sword",
+            () -> new SwordItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> GLITCHITE_PICKAXE = ITEMS.register("glitchite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> GLITCHITE_AXE = ITEMS.register("glitchite_axe",
+            () -> new AxeItem(ModToolTiers.SAPPHIRE, 5, 1, new Item.Properties()));
+
+    public static final RegistryObject<Item> GLITCHITE_SHOVEL = ITEMS.register("glitchite_shovel",
+            () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> GLITCHITE_HOE = ITEMS.register("glitchite_hoe",
+            () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
 }
