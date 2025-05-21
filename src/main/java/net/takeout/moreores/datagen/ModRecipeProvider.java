@@ -404,6 +404,52 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EARIUM_STAIRS.get())
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModItems.EARIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.EARIUM_BLOCK.get()))
+                .save(pWriter);
+
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EARIUM_TRAPDOOR.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.EARIUM.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.EARIUM.get()))
+                .save(pWriter);
+
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EARIUM_WALL.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.EARIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.EARIUM_BLOCK.get()))
+                .save(pWriter);
+
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EARIUM_DOOR.get())
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', ModItems.EARIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.EARIUM_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_FENCE_GATE.get())
+                .pattern("MSM")
+                .pattern("MSM")
+                .define('S', ModBlocks.EARIUM_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.EARIUM_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_FENCE.get())
+                .pattern("SMS")
+                .pattern("SMS")
+                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
