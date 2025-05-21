@@ -82,6 +82,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHEESIUM_BUTTON.get());
         this.dropSelf(ModBlocks.CHEESIUM_STAIRS.get());
         this.dropSelf(ModBlocks.OCARITE_BLOCK.get());
+        this.dropSelf(ModBlocks.THIMEITE_BLOCK.get());
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
@@ -148,6 +149,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_GASNITE_ORE.get(), ModItems.GASNITE.get()));
          this.add(ModBlocks.GLITCHITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
+        this.add(ModBlocks.ANCIENT_VOIDSTONE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.ANCIENT_VOIDSTONE.get(), ModItems.RAW_ENDITE.get()));
+        this.add(ModBlocks.DEEPSLATE_GLITCHITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
+        this.add(ModBlocks.END_STONE_GLITCHITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
+        this.add(ModBlocks.NETHER_GLITCHITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
+        this.add(ModBlocks.THIMEITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.THIMEITE_BLOCK.get(), ModItems.THIMEITE.get()));
+        this.add(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
+        this.add(ModBlocks.NETHER_THIMEITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
+        this.add(ModBlocks.END_STONE_THIMEITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
 
     }
 

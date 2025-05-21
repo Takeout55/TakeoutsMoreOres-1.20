@@ -57,13 +57,13 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NETHERRACK_SAPPHIRE_ORE = registerBlock("netherrack_sapphire_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.LAPIS_ORE).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> GASNITE_ORE = registerBlock("gasnite_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NETHER_GASNITE_ORE = registerBlock("nether_gasnite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.COAL_ORE).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> SAPPHIRE_STAIRS = registerBlock("sapphire_stairs",
             () -> new StairBlock(() -> ModBlocks.SAPPHIRE_BLOCK.get().defaultBlockState(),
@@ -171,7 +171,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NETHER_EARIUM_ORE = registerBlock("nether_earium_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> EARIUM_BLOCK = registerBlock("earium_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.COPPER).requiresCorrectToolForDrops()));
@@ -243,7 +243,7 @@ public class ModBlocks {
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> GLITCHITE_TRAPDOOR = registerBlock("glitchite_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.SPRUCE));
 
     public static final RegistryObject<Block> CHEESIUM_STAIRS = registerBlock("cheesium_stairs",
             () -> new StairBlock(() -> ModBlocks.ZIRCON_BLOCK.get().defaultBlockState(),
@@ -277,6 +277,33 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> OCARITE_BLOCK = registerBlock("ocarite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> ANCIENT_VOIDSTONE = registerBlock("ancient_voidstone",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ANCIENT_DEBRIS).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_GLITCHITE_ORE = registerBlock("deepslate_glitchite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_STONE_GLITCHITE_ORE = registerBlock("end_stone_glitchite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> NETHER_GLITCHITE_ORE = registerBlock("nether_glitchite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> THIMEITE_BLOCK = registerBlock("thimeite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> THIMEITE_ORE = registerBlock("thimeite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_THIMEITE_ORE = registerBlock("deepslate_thimeite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> NETHER_THIMEITE_ORE = registerBlock("nether_thimeite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_STONE_THIMEITE_ORE = registerBlock("end_stone_thimeite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -133,4 +133,28 @@ public class ModItems {
 
     public static final RegistryObject<Item> OCARITE = ITEMS.register("ocarite",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAW_ENDITE = ITEMS.register("raw_endite",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ENDITE = ITEMS.register("endite",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE = ITEMS.register("thimeite",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_SCYTHE = ITEMS.register("thimeite_scythe",
+            () -> new SwordItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_PICKAXE = ITEMS.register("thimeite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_AXE = ITEMS.register("thimeite_axe",
+            () -> new AxeItem(ModToolTiers.SAPPHIRE, 5, 1, new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_SHOVEL = ITEMS.register("thimeite_shovel",
+            () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_HOE = ITEMS.register("thimeite_hoe",
+            () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
 }

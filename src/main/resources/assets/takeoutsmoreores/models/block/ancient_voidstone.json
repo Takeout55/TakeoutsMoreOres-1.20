@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_column",
+  "textures": {
+    "end": "takeoutsmoreores:block/ancient_voidstone_top",
+    "side": "takeoutsmoreores:block/ancient_voidstone_side"
+  }
+}

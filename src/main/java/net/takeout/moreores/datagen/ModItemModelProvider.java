@@ -59,6 +59,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CHEESIUM);
         simpleItem(ModItems.RAW_CHEESIUM);
         simpleItem(ModItems.OCARITE);
+        simpleItem(ModItems.RAW_ENDITE);
+        simpleItem(ModItems.ENDITE);
+        simpleItem(ModItems.THIMEITE);
         
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
@@ -98,7 +101,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.GLITCHITE_SLAB);
         evenSimplerBlockItem(ModBlocks.GLITCHITE_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.GLITCHITE_FENCE_GATE);
-        // trapdoorItem(ModBlocks.GLITCHITE_TRAPDOOR);
+        trapdoorItem(ModBlocks.GLITCHITE_TRAPDOOR);
 
         simpleBlockItem(ModBlocks.EARIUM_DOOR);
         fenceItem(ModBlocks.EARIUM_FENCE, ModBlocks.EARIUM_BLOCK);
@@ -123,6 +126,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.GLITCHITE_AXE);
         handheldItem(ModItems.GLITCHITE_HOE);
         handheldItem(ModItems.GLITCHITE_SHOVEL);
+
+        handheldItem(ModItems.THIMEITE_SCYTHE);
+        handheldItem(ModItems.THIMEITE_PICKAXE);
+        handheldItem(ModItems.THIMEITE_AXE);
+        handheldItem(ModItems.THIMEITE_HOE);
+        handheldItem(ModItems.THIMEITE_SHOVEL);
 
         fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
         buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);
