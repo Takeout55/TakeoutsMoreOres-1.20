@@ -34,6 +34,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NETHER_EARIUM_ORE);
         blockWithItem(ModBlocks.END_STONE_EARIUM_ORE);
         blockWithItem(ModBlocks.EARIUM_BLOCK);
+        blockWithItem(ModBlocks.GLITCHITE_BLOCK);
+        blockWithItem(ModBlocks.DEEPSLATE_GASNITE_ORE);
+        blockWithItem(ModBlocks.END_STONE_GASNITE_ORE);
 
 
         stairsBlock(((StairBlock) ModBlocks.SAPPHIRE_STAIRS.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
