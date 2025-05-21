@@ -77,6 +77,36 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.ZIRCON_FENCE_GATE);
         trapdoorItem(ModBlocks.ZIRCON_TRAPDOOR);
 
+        simpleBlockItem(ModBlocks.CHEESIUM_DOOR);
+        fenceItem(ModBlocks.CHEESIUM_FENCE, ModBlocks.CHEESIUM_BLOCK);
+        buttonItem(ModBlocks.CHEESIUM_BUTTON, ModBlocks.CHEESIUM_BLOCK);
+        wallItem(ModBlocks.CHEESIUM_WALL, ModBlocks.CHEESIUM_BLOCK);
+        evenSimplerBlockItem(ModBlocks.CHEESIUM_STAIRS);
+        evenSimplerBlockItem(ModBlocks.CHEESIUM_SLAB);
+        evenSimplerBlockItem(ModBlocks.CHEESIUM_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.CHEESIUM_FENCE_GATE);
+        trapdoorItem(ModBlocks.CHEESIUM_TRAPDOOR);
+
+        simpleBlockItem(ModBlocks.GLITCHITE_DOOR);
+        fenceItem(ModBlocks.GLITCHITE_FENCE, ModBlocks.GLITCHITE_BLOCK);
+        buttonItem(ModBlocks.GLITCHITE_BUTTON, ModBlocks.GLITCHITE_BLOCK);
+        wallItem(ModBlocks.GLITCHITE_WALL, ModBlocks.GLITCHITE_BLOCK);
+        evenSimplerBlockItem(ModBlocks.GLITCHITE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.GLITCHITE_SLAB);
+        evenSimplerBlockItem(ModBlocks.GLITCHITE_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.GLITCHITE_FENCE_GATE);
+        trapdoorItem(ModBlocks.GLITCHITE_TRAPDOOR);
+
+        simpleBlockItem(ModBlocks.EARIUM_DOOR);
+        fenceItem(ModBlocks.EARIUM_FENCE, ModBlocks.EARIUM_BLOCK);
+        buttonItem(ModBlocks.EARIUM_BUTTON, ModBlocks.EARIUM_BLOCK);
+        wallItem(ModBlocks.EARIUM_WALL, ModBlocks.EARIUM_BLOCK);
+        evenSimplerBlockItem(ModBlocks.EARIUM_STAIRS);
+        evenSimplerBlockItem(ModBlocks.EARIUM_SLAB);
+        evenSimplerBlockItem(ModBlocks.EARIUM_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.EARIUM_FENCE_GATE);
+        trapdoorItem(ModBlocks.EARIUM_TRAPDOOR);
+
         evenSimplerBlockItem(ModBlocks.NETHER_BRICK_FENCE_GATE);
 
         handheldItem(ModItems.SAPPHIRE_SWORD);
