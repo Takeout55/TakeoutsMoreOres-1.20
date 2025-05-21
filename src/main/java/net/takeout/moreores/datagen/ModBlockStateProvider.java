@@ -37,6 +37,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.GLITCHITE_BLOCK);
         blockWithItem(ModBlocks.DEEPSLATE_GASNITE_ORE);
         blockWithItem(ModBlocks.END_STONE_GASNITE_ORE);
+        blockWithItem(ModBlocks.OCARITE_BLOCK);
 
 
         stairsBlock(((StairBlock) ModBlocks.SAPPHIRE_STAIRS.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
