@@ -70,6 +70,36 @@ public class ModBlockStateProvider extends BlockStateProvider {
         doorBlockWithRenderType(((DoorBlock) ModBlocks.REFINED_DIAMOND_DOOR.get()), modLoc("block/refined_diamond_door_bottom"), modLoc("block/refined_diamond_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.REFINED_DIAMOND_TRAPDOOR.get()), modLoc("block/refined_diamond_trapdoor"), true, "cutout");
 
+        stairsBlock(((StairBlock) ModBlocks.EARIUM_STAIRS.get()), blockTexture(ModBlocks.EARIUM_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.EARIUM_SLAB.get()), blockTexture(ModBlocks.EARIUM_BLOCK.get()), blockTexture(ModBlocks.EARIUM_BLOCK.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.EARIUM_BUTTON.get()), blockTexture(ModBlocks.EARIUM_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.EARIUM_PRESSURE_PLATE.get()), blockTexture(ModBlocks.EARIUM_BLOCK.get()));
+        fenceBlock(((FenceBlock) ModBlocks.EARIUM_FENCE.get()), blockTexture(ModBlocks.EARIUM_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.EARIUM_FENCE_GATE.get()), blockTexture(ModBlocks.EARIUM_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.EARIUM_WALL.get()), blockTexture(ModBlocks.EARIUM_BLOCK.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.EARIUM_DOOR.get()), modLoc("block/earium_door_bottom"), modLoc("block/earium_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.EARIUM_TRAPDOOR.get()), modLoc("block/earium_trapdoor"), true, "cutout");
+
+        stairsBlock(((StairBlock) ModBlocks.GLITCHITE_STAIRS.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.GLITCHITE_SLAB.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.GLITCHITE_BUTTON.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.GLITCHITE_PRESSURE_PLATE.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        fenceBlock(((FenceBlock) ModBlocks.GLITCHITE_FENCE.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.GLITCHITE_FENCE_GATE.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.GLITCHITE_WALL.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.GLITCHITE_DOOR.get()), modLoc("block/glitchite_door_bottom"), modLoc("block/glitchite_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.GLITCHITE_TRAPDOOR.get()), modLoc("block/glitchite_trapdoor"), true, "cutout");
+
+        stairsBlock(((StairBlock) ModBlocks.CHEESIUM_STAIRS.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.GLITCHITE_SLAB.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.GLITCHITE_BUTTON.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.GLITCHITE_PRESSURE_PLATE.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        fenceBlock(((FenceBlock) ModBlocks.GLITCHITE_FENCE.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.GLITCHITE_FENCE_GATE.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.GLITCHITE_WALL.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.GLITCHITE_DOOR.get()), modLoc("block/glitchite_door_bottom"), modLoc("block/glitchite_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.GLITCHITE_TRAPDOOR.get()), modLoc("block/glitchite_trapdoor"), true, "cutout");
+
         fenceGateBlock(((FenceGateBlock) ModBlocks.NETHER_BRICK_FENCE_GATE.get()), blockTexture(Blocks.NETHER_BRICKS));
     }
 
