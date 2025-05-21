@@ -28,6 +28,10 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.REFINED_DIAMOND_CHESTPLATE.get(),
                         ModItems.REFINED_DIAMOND_LEGGINGS.get(),
                         ModItems.REFINED_DIAMOND_BOOTS.get(),
-                        ModItems.REFINED_DIAMOND_HELMET.get());
+                        ModItems.REFINED_DIAMOND_HELMET.get(),
+                        ModItems.GLITCHITE_HELMET.get(),
+                        ModItems.GLITCHITE_CHESTPLATE.get(),
+                        ModItems.GLITCHITE_LEGGINGS.get(),
+                        ModItems.GLITCHITE_BOOTS.get());
     }
 }
