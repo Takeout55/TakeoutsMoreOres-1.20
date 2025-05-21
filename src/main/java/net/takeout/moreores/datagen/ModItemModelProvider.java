@@ -101,6 +101,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);
         trimmedArmorItem(ModItems.SAPPHIRE_BOOTS);
         trimmedArmorItem(ModItems.SAPPHIRE_LEGGINGS);
+
+        trimmedArmorItem(ModItems.REFINED_DIAMOND_HELMET);
+        trimmedArmorItem(ModItems.REFINED_DIAMOND_CHESTPLATE);
+        trimmedArmorItem(ModItems.REFINED_DIAMOND_BOOTS);
+        trimmedArmorItem(ModItems.REFINED_DIAMOND_LEGGINGS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

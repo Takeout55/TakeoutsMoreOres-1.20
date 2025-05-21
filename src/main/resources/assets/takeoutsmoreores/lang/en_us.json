@@ -11,7 +11,7 @@
   "block.takeoutsmoreores.refined_diamond_block": "Refined Diamond Block",
   "item.takeoutsmoreores.sapphire": "Sapphire",
   "item.takeoutsmoreores.raw_sapphire": "Raw Sapphire",
-  "creativetab.more_ores": "More Ores!",
+  "creativetab.more_ores_blocks": "More Ore Blocks!",
   "block.takeoutsmoreores.sapphire_block": "Sapphire Block",
   "block.takeoutsmoreores.raw_sapphire_block": "Raw Sapphire Block",
   "block.takeoutsmoreores.sapphire_ore" : "Sapphire ore",
@@ -70,5 +70,10 @@
   "block.takeoutsmoreores.nether_earium_ore": "Nether Earium Ore",
   "block.takeoutsmoreores.end_stone_earium_ore": "End Stone Earium Ore",
   "block.takeoutsmoreores.deepslate_earium_ore": "Deepslate Earium Ore",
-  "block.takeoutsmoreores.earium_block": "Earium Block"
+  "block.takeoutsmoreores.earium_block": "Earium Block",
+  "item.takeoutsmoreores.refined_diamond_helmet": "Refined Diamond Helmet",
+  "item.takeoutsmoreores.refined_diamond_chestplate": "Refined Diamond Chestplate",
+  "item.takeoutsmoreores.refined_diamond_leggings": "Refined Diamond Leggings",
+  "item.takeoutsmoreores.refined_diamond_boots": "Refined Diamond Boots",
+  "creativetab.more_ores_items": "More Ore Items!"
 }

@@ -82,4 +82,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> METAL_ROD = ITEMS.register("metal_rod",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> REFINED_DIAMOND_HELMET = ITEMS.register("refined_diamond_helmet",
+            () -> new ArmorItem(ModArmorMaterials.REFINED_DIAMOND, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> REFINED_DIAMOND_CHESTPLATE = ITEMS.register("refined_diamond_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.REFINED_DIAMOND, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> REFINED_DIAMOND_LEGGINGS = ITEMS.register("refined_diamond_leggings",
+            () -> new ArmorItem(ModArmorMaterials.REFINED_DIAMOND, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> REFINED_DIAMOND_BOOTS = ITEMS.register("refined_diamond_boots",
+            () -> new ArmorItem(ModArmorMaterials.REFINED_DIAMOND, ArmorItem.Type.BOOTS, new Item.Properties()));
 }
