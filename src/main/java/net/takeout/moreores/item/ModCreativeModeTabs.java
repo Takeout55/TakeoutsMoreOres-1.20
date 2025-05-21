@@ -23,6 +23,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ZIRCON_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_BLOCK.get());
                         pOutput.accept(ModBlocks.EARIUM_BLOCK.get());
                         pOutput.accept(ModBlocks.ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
@@ -30,7 +31,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.EARIUM_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
-                       // pOutput.accept(ModBlocks.DEEPSLATE_GASNITE_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_GASNITE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_EARIUM_ORE.get());
                         pOutput.accept(ModBlocks.NETHERRACK_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.NETHERRACK_SAPPHIRE_ORE.get());
@@ -39,7 +40,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ENDSTONE_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.ENDSTONE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_EARIUM_ORE.get());
-                        // pOutput.accept(ModBlocks.END_STONE_GASNITE_ORE.get()
+                        pOutput.accept(ModBlocks.END_STONE_GASNITE_ORE.get()
                         pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_SLAB.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
@@ -82,6 +83,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.GASNITE.get());
                         pOutput.accept(ModItems.EARIUM.get());
+                        pOutput.accept(ModItems.GLITCHITE_INGOT.get());
                         pOutput.accept(ModItems.RAW_ZIRCON.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_EARIUM.get());
@@ -93,6 +95,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SAPPHIRE_AXE.get());
                         pOutput.accept(ModItems.SAPPHIRE_SHOVEL.get());
                         pOutput.accept(ModItems.SAPPHIRE_HOE.get());
+                        pOutput.accept(ModItems.GLITCHITE_SWORD.get());
+                        pOutput.accept(ModItems.GLITCHITE_PICKAXE.get());
+                        pOutput.accept(ModItems.GLITCHITE_AXE.get());
+                        pOutput.accept(ModItems.GLITCHITE_SHOVEL.get());
+                        pOutput.accept(ModItems.GLITCHITE_HOE.get());
                         pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
                         pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
                         pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());
@@ -101,6 +108,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.REFINED_DIAMOND_CHESTPLATE.get());
                         pOutput.accept(ModItems.REFINED_DIAMOND_LEGGINGS.get());
                         pOutput.accept(ModItems.REFINED_DIAMOND_BOOTS.get());
+                        pOutput.accept(ModItems.GLITCHITE_HELMET.get());
+                        pOutput.accept(ModItems.GLITCHITE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.GLITCHITE_LEGGINGS.get());
+                        pOutput.accept(ModItems.GLITCHITE_BOOTS.get());
 
                     })
                     .build());
