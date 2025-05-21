@@ -66,6 +66,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.OCARITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.OCARITE.get())
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
@@ -413,50 +422,120 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
-         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EARIUM_STAIRS.get())
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_STAIRS.get())
                 .pattern("S  ")
                 .pattern("SS ")
                 .pattern("SSS")
                 .define('S', ModItems.EARIUM_BLOCK.get())
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.EARIUM_BLOCK.get()))
+                .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.EARIUM_BLOCK.get()))
                 .save(pWriter);
 
-         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EARIUM_TRAPDOOR.get())
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_TRAPDOOR.get())
                 .pattern("SSS")
                 .pattern("SSS")
                 .define('S', ModItems.EARIUM.get())
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.EARIUM.get()))
+                .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.EARIUM.get()))
                 .save(pWriter);
 
-         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EARIUM_WALL.get())
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_WALL.get())
                 .pattern("SSS")
                 .pattern("SSS")
                 .define('S', ModItems.EARIUM_BLOCK.get())
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.EARIUM_BLOCK.get()))
+                .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.EARIUM_BLOCK.get()))
                 .save(pWriter);
 
-         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.EARIUM_DOOR.get())
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_DOOR.get())
                 .pattern("SS")
                 .pattern("SS")
                 .pattern("SS")
                 .define('S', ModItems.EARIUM_BLOCK.get())
-                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.EARIUM_BLOCK.get()))
+                .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.EARIUM.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_FENCE_GATE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_FENCE_GATE.get())
                 .pattern("MSM")
                 .pattern("MSM")
                 .define('S', ModBlocks.EARIUM_BLOCK.get())
                 .define('M', ModItems.METAL_ROD.get())
-                .unlockedBy(getHasName(ModBlocks.EARIUM_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .unlockedBy(getHasName(ModBlocks.EARIUM_BLOCK.get()), has(ModBlocks.EARIUM_BLOCK.get()))
                 .save(pWriter);
 
-         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_FENCE.get())
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_FENCE.get())
                 .pattern("SMS")
                 .pattern("SMS")
-                .define('S', ModBlocks.SAPPHIRE_BLOCK.get())
+                .define('S', ModBlocks.EARIUM_BLOCK.get())
                 .define('M', ModItems.METAL_ROD.get())
-                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .unlockedBy(getHasName(ModBlocks.EARIUM_BLOCK.get()), has(ModBlocks.EARIUM_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_SLAB.get())
+                .pattern("SSS")
+                .define('S', ModBlocks.EARIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.EARIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_PRESSURE_PLATE.get())
+                .pattern("SS")
+                .define('S', ModBlocks.EARIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.EARIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESIUM_STAIRS.get())
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModItems.CHEESIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.CHEESIUM.get()), has(ModItems.CHEESIUM_BLOCK.get()))
+                .save(pWriter);
+
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESIUM_TRAPDOOR.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.CHEESIUM.get())
+                .unlockedBy(getHasName(ModItems.CHEESIUM.get()), has(ModItems.CHEESIUM.get()))
+                .save(pWriter);
+
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESIUM_WALL.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.CHEESIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.CHEESIUM_BLOCK.get()))
+                .save(pWriter);
+
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESIUM_DOOR.get())
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', ModItems.CHEESIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.CHEESIUM.get()), has(ModItems.CHEESIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.EARIUM_CHEESIUM_GATE.get())
+                .pattern("MSM")
+                .pattern("MSM")
+                .define('S', ModBlocks.CHEESIUM_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.CHEESIUM_BLOCK.get()), has(ModBlocks.CHEESIUM_BLOCK.get()))
+                .save(pWriter);
+
+         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESIUM_FENCE.get())
+                .pattern("SMS")
+                .pattern("SMS")
+                .define('S', ModBlocks.CHEESIUM_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.CHEESIUM_BLOCK.get()), has(ModBlocks.CHEESIUM_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESIUM_SLAB.get())
+                .pattern("SSS")
+                .define('S', ModBlocks.EARIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.CHEESIUM.get()), has(ModItems.CHEESIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESIUM_PRESSURE_PLATE.get())
+                .pattern("SS")
+                .define('S', ModBlocks.EARIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.CHEESIUM.get()), has(ModItems.CHEESIUM.get()))
                 .save(pWriter);
 
 
@@ -474,6 +553,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.ZIRCON.get(), 9)
                 .requires(ModBlocks.ZIRCON_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.ZIRCON_BLOCK.get()), has(ModBlocks.ZIRCON_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.OCARITE.get(), 9)
+                .requires(ModBlocks.OCARITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.OCARITE_BLOCK.get()), has(ModBlocks.OCARITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.CHEESIUM.get(), 9)
+                .requires(ModBlocks.CHEESIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.CHEESIUM_BLOCK.get()), has(ModBlocks.CHEESIUM_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GLITCHITE_INGOT.get(), 9)
+                .requires(ModBlocks.GLITCHITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.GLITCHITE_BLOCK.get()), has(ModBlocks.GLITCHITE_BLOCK.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get(), 9)
@@ -499,6 +593,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_BUTTON.get())
                 .requires(ModBlocks.REFINED_DIAMOND_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.REFINED_DIAMOND_BLOCK.get()), has(ModBlocks.REFINED_DIAMOND_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.EARIUM_BUTTON.get())
+                .requires(ModBlocks.EARIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.EARIUM_BLOCK.get()), has(ModBlocks.EARIUM_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CHEESIUM_BUTTON.get())
+                .requires(ModBlocks.CHEESIUM_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.CHEESIUM_BLOCK.get()), has(ModBlocks.CHEESIUM_BLOCK.get()))
                 .save(pWriter);
     }
 
