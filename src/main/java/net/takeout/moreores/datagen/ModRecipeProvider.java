@@ -34,6 +34,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.EARIUM_ORE.get(), ModBlocks.DEEPSLATE_EARIUM_ORE.get(), ModBlocks.NETHER_EARIUM_ORE.get(),
             ModBlocks.END_STONE_EARIUM_ORE.get());
 
+    private static final List<ItemLike> CHEESIUM_SMELTABLES = List.of(ModItems.RAW_CHEESIUM.get());
+
+    private static final List<ItemLIke> GLITCHITE_SMELTABLES = List.of(ModBlock.GLITCHITE_INGOT.get());
+
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -48,6 +52,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 200, "sapphire");
         oreBlasting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.GASNITE.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 200, "sapphire");
+        oreBlasting(pWriter, CHEESIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, GHEESIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 200, "sapphire");
+        oreBlasting(pWriter, GLITCHITE_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, GLITCHITE_SMELTABLES, RecipeCategory.MISC, ModItems.GLITCHITE.get(), 0.25f, 200, "sapphire");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
