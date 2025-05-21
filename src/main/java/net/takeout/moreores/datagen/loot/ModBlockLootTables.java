@@ -55,6 +55,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.REFINED_DIAMOND_BUTTON.get());
         this.dropSelf(ModBlocks.REFINED_DIAMOND_STAIRS.get());
         this.dropSelf(ModBlocks.EARIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.GLITCHITE_BLOCK.get());
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
@@ -100,6 +101,10 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_EARIUM_ORE.get(), ModItems.RAW_EARIUM.get()));
         this.add(ModBlocks.DEEPSLATE_EARIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_EARIUM_ORE.get(), ModItems.RAW_EARIUM.get()));
+        this.add(ModBlocks.END_STONE_GASNITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_EARIUM_ORE.get(), ModItems.GASNITE.get()));
+        this.add(ModBlocks.DEEPSLATE_GASNITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_GASNITE_ORE.get(), ModItems.GASNITE.get()));
 
     }
 
