@@ -56,6 +56,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_EARIUM);
         simpleItem(ModItems.METAL_ROD);
         simpleItem(ModItems.GLITCHITE_INGOT);
+        simpleItem(ModItems.CHEESIUM);
+        simpleItem(ModItems.RAW_CHEESIUM);
 
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
