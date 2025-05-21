@@ -68,7 +68,34 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.REFINED_DIAMOND_FENCE.get());
                         pOutput.accept(ModBlocks.REFINED_DIAMOND_WALL.get());
                         pOutput.accept(ModBlocks.REFINED_DIAMOND_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_STAIRS.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_SLAB.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_DOOR.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_BUTTON.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_FENCE.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_WALL.get());
+                        pOutput.accept(ModBlocks.GLITCHITE_PRESSURE_PLATE.get());
                         pOutput.accept(ModBlocks.NETHER_BRICK_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.EARIUM_STAIRS.get());
+                        pOutput.accept(ModBlocks.EARIUM_SLAB.get());
+                        pOutput.accept(ModBlocks.EARIUM_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.EARIUM_DOOR.get());
+                        pOutput.accept(ModBlocks.EARIUM_BUTTON.get());
+                        pOutput.accept(ModBlocks.EARIUM_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.EARIUM_FENCE.get());
+                        pOutput.accept(ModBlocks.EARIUM_WALL.get());
+                        pOutput.accept(ModBlocks.EARIUM_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks_CHEESIUM_STAIRS.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_SLAB.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_DOOR.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_BUTTON.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_FENCE.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_WALL.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_PRESSURE_PLATE.get());
                     })
                     .build());
 
