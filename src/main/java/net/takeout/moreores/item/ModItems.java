@@ -114,16 +114,16 @@ public class ModItems {
             () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_HELMET = ITEMS.register("glitchite_helmet",
-            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.GLITCHITE, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_CHESTPLATE = ITEMS.register("glitchite_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.GLITCHITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_LEGGINGS = ITEMS.register("glitchite_leggings",
-            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.GLITCHITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_BOOTS = ITEMS.register("glitchite_boots",
-            () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new ArmorItem(ModArmorMaterials.GLITCHITE, ArmorItem.Type.BOOTS, new Item.Properties()));
 
     public static final RegistryObject<Item> CHEESIUM = ITEMS.register("cheesium",
             () -> new Item(new Item.Properties()));
@@ -132,5 +132,5 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> OCARITE = ITEMS.register("ocarite",
-            () -> new Ite(new Item.Properties()));
+            () -> new Item(new Item.Properties()));
 }

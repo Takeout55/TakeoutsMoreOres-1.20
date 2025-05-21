@@ -90,7 +90,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.CHEESIUM_FENCE_GATE);
         trapdoorItem(ModBlocks.CHEESIUM_TRAPDOOR);
 
-        simpleBlockItem(ModBlocks.GLITCHITE_DOOR);
+        // simpleBlockItem(ModBlocks.GLITCHITE_DOOR);
         fenceItem(ModBlocks.GLITCHITE_FENCE, ModBlocks.GLITCHITE_BLOCK);
         buttonItem(ModBlocks.GLITCHITE_BUTTON, ModBlocks.GLITCHITE_BLOCK);
         wallItem(ModBlocks.GLITCHITE_WALL, ModBlocks.GLITCHITE_BLOCK);
@@ -98,7 +98,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.GLITCHITE_SLAB);
         evenSimplerBlockItem(ModBlocks.GLITCHITE_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.GLITCHITE_FENCE_GATE);
-        trapdoorItem(ModBlocks.GLITCHITE_TRAPDOOR);
+        // trapdoorItem(ModBlocks.GLITCHITE_TRAPDOOR);
 
         simpleBlockItem(ModBlocks.EARIUM_DOOR);
         fenceItem(ModBlocks.EARIUM_FENCE, ModBlocks.EARIUM_BLOCK);
@@ -118,11 +118,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.SAPPHIRE_HOE);
         handheldItem(ModItems.SAPPHIRE_SHOVEL);
 
-        handheldItem(ModItems.GLITCHITE_SWORD);
-        handheldItem(ModItems.GLITCHITE_PICKAXE);
-        handheldItem(ModItems.GLITCHITE_AXE);
-        handheldItem(ModItems.GLITCHITE_HOE);
-        handheldItem(ModItems.GLITCHITE_SHOVEL);
+        // handheldItem(ModItems.GLITCHITE_SWORD);
+        // handheldItem(ModItems.GLITCHITE_PICKAXE);
+        // handheldItem(ModItems.GLITCHITE_AXE);
+        // handheldItem(ModItems.GLITCHITE_HOE);
+        // handheldItem(ModItems.GLITCHITE_SHOVEL);
 
         fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
         buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);

@@ -81,7 +81,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHEESIUM_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.CHEESIUM_BUTTON.get());
         this.dropSelf(ModBlocks.CHEESIUM_STAIRS.get());
-        this.dropSelf(ModBlocks.OCARITE_BLOCK.get();
+        this.dropSelf(ModBlocks.OCARITE_BLOCK.get());
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
@@ -97,6 +97,21 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createSlabItemTable(ModBlocks.REFINED_DIAMOND_SLAB.get()));
         this.add(ModBlocks.REFINED_DIAMOND_DOOR.get(),
                 block -> createDoorTable(ModBlocks.REFINED_DIAMOND_DOOR.get()));
+
+        this.add(ModBlocks.EARIUM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.EARIUM_SLAB.get()));
+        this.add(ModBlocks.EARIUM_DOOR.get(),
+                block -> createDoorTable(ModBlocks.EARIUM_DOOR.get()));
+
+        this.add(ModBlocks.CHEESIUM_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.CHEESIUM_SLAB.get()));
+        this.add(ModBlocks.CHEESIUM_DOOR.get(),
+                block -> createDoorTable(ModBlocks.CHEESIUM_DOOR.get()));
+
+        this.add(ModBlocks.GLITCHITE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.GLITCHITE_SLAB.get()));
+        this.add(ModBlocks.GLITCHITE_DOOR.get(),
+                block -> createDoorTable(ModBlocks.GLITCHITE_DOOR.get()));
 
 
         this.add(ModBlocks.SAPPHIRE_ORE.get(),

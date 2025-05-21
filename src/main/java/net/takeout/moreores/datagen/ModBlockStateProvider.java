@@ -38,6 +38,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.DEEPSLATE_GASNITE_ORE);
         blockWithItem(ModBlocks.END_STONE_GASNITE_ORE);
         blockWithItem(ModBlocks.OCARITE_BLOCK);
+        blockWithItem(ModBlocks.CHEESIUM_BLOCK);
 
 
         stairsBlock(((StairBlock) ModBlocks.SAPPHIRE_STAIRS.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
@@ -88,8 +89,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock(((FenceBlock) ModBlocks.GLITCHITE_FENCE.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.GLITCHITE_FENCE_GATE.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
         wallBlock(((WallBlock) ModBlocks.GLITCHITE_WALL.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
-        doorBlockWithRenderType(((DoorBlock) ModBlocks.GLITCHITE_DOOR.get()), modLoc("block/glitchite_door_bottom"), modLoc("block/glitchite_door_top"), "cutout");
-        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.GLITCHITE_TRAPDOOR.get()), modLoc("block/glitchite_trapdoor"), true, "cutout");
+        // doorBlockWithRenderType(((DoorBlock) ModBlocks.GLITCHITE_DOOR.get()), modLoc("block/glitchite_door_bottom"), modLoc("block/glitchite_door_top"), "cutout");
+        // trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.GLITCHITE_TRAPDOOR.get()), modLoc("block/glitchite_trapdoor"), true, "cutout");
 
         stairsBlock(((StairBlock) ModBlocks.CHEESIUM_STAIRS.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()));
         slabBlock(((SlabBlock) ModBlocks.CHEESIUM_SLAB.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()));

@@ -25,6 +25,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.GLITCHITE_BLOCK.get());
                         pOutput.accept(ModBlocks.EARIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_BLOCK.get());
+                        pOutput.accept(ModBlocks.OCARITE_BLOCK.get());
                         pOutput.accept(ModBlocks.ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.GASNITE_ORE.get());
@@ -40,7 +42,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ENDSTONE_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.ENDSTONE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_EARIUM_ORE.get());
-                        pOutput.accept(ModBlocks.END_STONE_GASNITE_ORE.get()
+                        pOutput.accept(ModBlocks.END_STONE_GASNITE_ORE.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_SLAB.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
@@ -87,7 +89,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.EARIUM_FENCE.get());
                         pOutput.accept(ModBlocks.EARIUM_WALL.get());
                         pOutput.accept(ModBlocks.EARIUM_PRESSURE_PLATE.get());
-                        pOutput.accept(ModBlocks_CHEESIUM_STAIRS.get());
+                        pOutput.accept(ModBlocks.CHEESIUM_STAIRS.get());
                         pOutput.accept(ModBlocks.CHEESIUM_SLAB.get());
                         pOutput.accept(ModBlocks.CHEESIUM_TRAPDOOR.get());
                         pOutput.accept(ModBlocks.CHEESIUM_DOOR.get());
@@ -110,11 +112,14 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.SAPPHIRE.get());
                         pOutput.accept(ModItems.GASNITE.get());
                         pOutput.accept(ModItems.EARIUM.get());
+                        pOutput.accept(ModItems.CHEESIUM.get());
                         pOutput.accept(ModItems.GLITCHITE_INGOT.get());
+                        pOutput.accept(ModItems.OCARITE.get());
                         pOutput.accept(ModItems.RAW_ZIRCON.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_EARIUM.get());
                         pOutput.accept(ModItems.RAW_PINKITE.get());
+                        pOutput.accept(ModItems.RAW_CHEESIUM.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
                         pOutput.accept(ModItems.SAPPHIRE_SWORD.get());

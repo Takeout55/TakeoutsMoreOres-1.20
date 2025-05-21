@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "takeoutsmoreores:block/earium_pressure_plate"
+    },
+    "powered=true": {
+      "model": "takeoutsmoreores:block/earium_pressure_plate_down"
+    }
+  }
+}

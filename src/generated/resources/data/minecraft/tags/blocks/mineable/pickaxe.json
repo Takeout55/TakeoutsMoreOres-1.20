@@ -17,6 +17,10 @@
     "takeoutsmoreores:earium_ore",
     "takeoutsmoreores:nether_earium_ore",
     "takeoutsmoreores:deepslate_earium_ore",
-    "takeoutsmoreores:end_stone_earium_ore"
+    "takeoutsmoreores:end_stone_earium_ore",
+    "takeoutsmoreores:deepslate_gasnite_ore",
+    "takeoutsmoreores:end_stone_gasnite_ore",
+    "takeoutsmoreores:glitchite_block",
+    "takeoutsmoreores:ocarite_block"
   ]
 }

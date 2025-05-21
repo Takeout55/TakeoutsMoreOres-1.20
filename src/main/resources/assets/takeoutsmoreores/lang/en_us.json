@@ -107,5 +107,13 @@
   "block.takeoutsmoreores.ocarite_block": "Ocarite Block",
   "item.takeoutsmoreores.cheesium": "Cheesium",
   "item.takeoutsmoreores.raw_cheesium": "Raw Cheesium",
-  "block.takeotsmoreores.cheesium_block": "Cheesium Block"
+  "block.takeoutsmoreores.cheesium_block": "Cheesium Block",
+  "item.takeoutsmoreores.glitchite_helmet": "Glitchite Helmet",
+  "item.takeoutsmoreores.glitchite_chestplate": "Glitchite Chestplate",
+  "item.takeoutsmoreores.glitchite_leggings": "Glitchite Leggings",
+  "item.takeoutsmoreores.glitchite_boots": "Glitchite Boots",
+  "block.takeoutsmoreores.end_stone_gasnite_ore": "End Stone Gasnite Ore",
+  "block.takeoutsmoreores.deepslate_gasnite_ore": "Deepslate Gasnite Ore",
+  "item.takeoutsmoreores.glitchite_ingot": "Glitchite Ingot",
+  "block.takeoutsmoreores.glitchite_block": "Glitchite Block"
 }

@@ -35,8 +35,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.NETHER_EARIUM_ORE.get(),
                         ModBlocks.DEEPSLATE_EARIUM_ORE.get(),
                         ModBlocks.END_STONE_EARIUM_ORE.get(),
-                        ModBlocks.END_STONE_GASNITE_ORE,
-                        ModBlocks.DEEPSLATE_GSANITE_ORE
+                        ModBlocks.END_STONE_GASNITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_GASNITE_ORE.get()
                     ).addTag(Tags.Blocks.ORES);
 
 
@@ -101,7 +101,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                 .add(ModBlocks.SAPPHIRE_FENCE.get(),
                         ModBlocks.ZIRCON_FENCE.get(),
                         ModBlocks.REFINED_DIAMOND_FENCE.get(),
-                        ModBlocks.CHEESIUMM_FENCE.get(),
+                        ModBlocks.CHEESIUM_FENCE.get(),
                         ModBlocks.EARIUM_FENCE.get(),
                         ModBlocks.GLITCHITE_FENCE.get());
 
@@ -110,14 +110,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.ZIRCON_FENCE_GATE.get(),
                         ModBlocks.NETHER_BRICK_FENCE_GATE.get(),
                         ModBlocks.REFINED_DIAMOND_FENCE_GATE.get(),
-                        ModBlocks.CHEESIUMM_FENCE_GATE.get(),
+                        ModBlocks.CHEESIUM_FENCE_GATE.get(),
                         ModBlocks.EARIUM_FENCE_GATE.get(),
                         ModBlocks.GLITCHITE_FENCE_GATE.get());
 
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.SAPPHIRE_WALL.get(),
                         ModBlocks.ZIRCON_WALL.get(),
-                        ModBlocks.REFINED_DIAMOND_WALL.get()
+                        ModBlocks.REFINED_DIAMOND_WALL.get(),
                         ModBlocks.CHEESIUM_WALL.get(),
                         ModBlocks.EARIUM_WALL.get(),
                         ModBlocks.GLITCHITE_WALL.get());
