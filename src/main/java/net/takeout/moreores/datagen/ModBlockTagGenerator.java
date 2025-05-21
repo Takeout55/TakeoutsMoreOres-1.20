@@ -98,18 +98,27 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.FENCES)
                 .add(ModBlocks.SAPPHIRE_FENCE.get(),
                         ModBlocks.ZIRCON_FENCE.get(),
-                        ModBlocks.REFINED_DIAMOND_FENCE.get());
+                        ModBlocks.REFINED_DIAMOND_FENCE.get(),
+                        ModBlocks.CHEESIUMM_FENCE.get(),
+                        ModBlocks.EARIUM_FENCE.get(),
+                        ModBlocks.GLITCHITE_FENCE.get());
 
         this.tag(BlockTags.FENCE_GATES)
                 .add(ModBlocks.SAPPHIRE_FENCE_GATE.get(),
                         ModBlocks.ZIRCON_FENCE_GATE.get(),
                         ModBlocks.NETHER_BRICK_FENCE_GATE.get(),
-                        ModBlocks.REFINED_DIAMOND_FENCE.get());
+                        ModBlocks.REFINED_DIAMOND_FENCE_GATE.get(),
+                        ModBlocks.CHEESIUMM_FENCE_GATE.get(),
+                        ModBlocks.EARIUM_FENCE_GATE.get(),
+                        ModBlocks.GLITCHITE_FENCE_GATE.get());
 
         this.tag(BlockTags.WALLS)
                 .add(ModBlocks.SAPPHIRE_WALL.get(),
                         ModBlocks.ZIRCON_WALL.get(),
-                        ModBlocks.REFINED_DIAMOND_WALL.get());
+                        ModBlocks.REFINED_DIAMOND_WALL.get()
+                        ModBlocks.CHEESIUM_WALL.get(),
+                        ModBlocks.EARIUM_WALL.get(),
+                        ModBlocks.GLITCHITE_WALL.get());
 
 
     }
