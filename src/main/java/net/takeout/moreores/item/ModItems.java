@@ -130,4 +130,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> RAW_CHEESIUM = ITEMS.register("raw_cheesium",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE = ITEMS.register("ocarite",
+            () -> new Ite(new Item.Properties()));
 }
