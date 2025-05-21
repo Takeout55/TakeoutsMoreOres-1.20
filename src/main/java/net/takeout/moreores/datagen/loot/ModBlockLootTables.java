@@ -80,7 +80,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.CHEESIUM_WALL.get());
         this.dropSelf(ModBlocks.CHEESIUM_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.CHEESIUM_BUTTON.get());
-        this.dropSelf(ModBlocks.CHEESIUM_STAIRS.get())
+        this.dropSelf(ModBlocks.CHEESIUM_STAIRS.get());
+        this.dropSelf(ModBlocks.OCARITE_BLOCK.get();
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
