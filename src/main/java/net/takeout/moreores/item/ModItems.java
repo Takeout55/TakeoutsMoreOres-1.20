@@ -124,4 +124,10 @@ public class ModItems {
 
     public static final RegistryObject<Item> GLITCHITE_BOOTS = ITEMS.register("glitchite_boots",
             () -> new ArmorItem(ModArmorMaterials.SAPPHIRE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEESIUM = ITEMS.register("cheesium",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> RAW_CHEESIUM = ITEMS.register("raw_cheesium",
+            () -> new Item(new Item.Properties()));
 }
