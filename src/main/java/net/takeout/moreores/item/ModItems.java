@@ -157,4 +157,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> THIMEITE_HOE = ITEMS.register("thimeite_hoe",
             () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> REFINED_DIAMOND_SWORD = ITEMS.register("refined_diamond_sword",
+            () -> new SwordItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
 }
