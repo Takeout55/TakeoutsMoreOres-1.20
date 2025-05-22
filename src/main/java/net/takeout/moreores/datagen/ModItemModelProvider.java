@@ -134,6 +134,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.THIMEITE_SHOVEL);
 
         handheldItem(ModItems.REFINED_DIAMOND_SWORD);
+        handheldItem(ModItems.REFINED_DIAMOND_PICKAXE);
+        handheldItem(ModItems.REFINED_DIAMOND_AXE);
+        handheldItem(ModItems.REFINED_DIAMOND_HOE);
+        handheldItem(ModItems.REFINED_DIAMOND_SHOVEL);
 
         fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
         buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);
