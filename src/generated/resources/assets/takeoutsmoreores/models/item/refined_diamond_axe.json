@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "takeoutsmoreores:item/refined_diamond_axe"
+  }
+}

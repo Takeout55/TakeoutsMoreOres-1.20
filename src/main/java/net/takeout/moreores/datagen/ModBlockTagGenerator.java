@@ -142,5 +142,6 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.THIMEITE_BLOCK.get(),
                         ModBlocks.GLITCHITE_ORE.get(),
                         ModBlocks.REFINED_DIAMOND_BLOCK.get());
+
     }
 }

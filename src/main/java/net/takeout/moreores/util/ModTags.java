@@ -12,6 +12,9 @@ public class ModTags {
     public static class Blocks {
         public static final TagKey<Block> METAL_DETECTOR_VALUABLES = tag("metal_detector_valuables");
         public static final TagKey<Block> NEEDS_SAPPHIRE_TOOL = tag("needs_sapphire_tool");
+        public static final TagKey<Block> NEEDS_GLITCHITE_TOOL = tag("needs_glitchite_tool");
+        public static final TagKey<Block> NEEDS_REFINED_DIAMOND_TOOL = tag("needs_refined_diamond_tool");
+        public static final TagKey<Block> NEEDS_THIMEITE_TOOL = tag("needs_thimeite_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(MoreOres.MOD_ID, name));

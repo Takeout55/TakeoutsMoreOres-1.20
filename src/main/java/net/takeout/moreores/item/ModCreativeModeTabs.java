@@ -150,6 +150,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.THIMEITE_AXE.get());
                         pOutput.accept(ModItems.THIMEITE_SHOVEL.get());
                         pOutput.accept(ModItems.THIMEITE_HOE.get());
+                        pOutput.accept(ModItems.REFINED_DIAMOND_SWORD.get());
+                        pOutput.accept(ModItems.REFINED_DIAMOND_PICKAXE.get());
+                        pOutput.accept(ModItems.REFINED_DIAMOND_AXE.get());
+                        pOutput.accept(ModItems.REFINED_DIAMOND_SHOVEL.get());
+                        pOutput.accept(ModItems.REFINED_DIAMOND_HOE.get());
                         pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
                         pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
                         pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());

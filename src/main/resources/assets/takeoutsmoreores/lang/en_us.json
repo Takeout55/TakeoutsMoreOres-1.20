@@ -138,5 +138,10 @@
   "item.takeoutsmoreores.thimeite": "Thimeite",
   "block.takeoutsmoreores.nether_thimeite_ore": "Nether Thimeite Ore",
   "block.takeoutsmoreores.deepslate_thimeite_ore": "Deepslate Thimeite Ore",
-  "block.takeoutsmoreores.end_stone_thimeite_ore": "End Stone Thimeite Ore"
+  "block.takeoutsmoreores.end_stone_thimeite_ore": "End Stone Thimeite Ore",
+  "item.takeoutsmoreores.refined_diamond_sword": "Refined Diamond Sword",
+  "item.takeoutsmoreores.refined_diamond_pickaxe": "Refined Diamond Pickaxe",
+  "item.takeoutsmoreores.refined_diamond_shovel": "Refined Diamond Shovel",
+  "item.takeoutsmoreores.refined_diamond_hoe": "Refined Diamond Hoe",
+  "item.takeoutsmoreores.refined_diamond_axe": "Refined Diamond Axe"
 }

@@ -671,7 +671,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
                 .save(pWriter);
 
-        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_AXE.get())
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THIMEITE_AXE.get())
                 .pattern("SS")
                 .pattern("ST")
                 .pattern(" T")
@@ -703,6 +703,42 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("S")
                 .pattern("S")
                 .pattern("T")
+                .define('S', ModItems.REFINED_DIAMOND.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REFINED_DIAMOND_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.REFINED_DIAMOND.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REFINED_DIAMOND_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.REFINED_DIAMOND.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REFINED_DIAMOND_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.REFINED_DIAMOND.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REFINED_DIAMOND_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
                 .define('S', ModItems.REFINED_DIAMOND.get())
                 .define('T', ModItems.METAL_ROD.get())
                 .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))

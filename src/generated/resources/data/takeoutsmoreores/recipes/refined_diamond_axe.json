@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "takeoutsmoreores:refined_diamond"
+    },
+    "T": {
+      "item": "takeoutsmoreores:metal_rod"
+    }
+  },
+  "pattern": [
+    "SS",
+    "ST",
+    " T"
+  ],
+  "result": {
+    "item": "takeoutsmoreores:refined_diamond_axe"
+  },
+  "show_notification": true
+}
