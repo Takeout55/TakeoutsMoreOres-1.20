@@ -28,6 +28,8 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_NETHER_GLITCHITE_ORE = registerKey("add_nether_glitchite_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_GLITCHITE_ORE = registerKey("add_end_glitchite_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_END_ENDITE_ORE = registerKey("add_end_endite_ore");
+
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
@@ -85,6 +87,11 @@ public class ModBiomeModifiers {
         context.register(ADD_END_GLITCHITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_GLITCHITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_END_ENDITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_END),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_ENDITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }
