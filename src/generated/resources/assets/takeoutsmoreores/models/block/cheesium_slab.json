@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "takeoutsmoreores:block/cheesium_block",
+    "side": "takeoutsmoreores:block/cheesium_block",
+    "top": "takeoutsmoreores:block/cheesium_block"
+  }
+}

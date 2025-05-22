@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "takeoutsmoreores:refined_diamond"
+    }
+  ],
+  "result": {
+    "count": 4,
+    "item": "takeoutsmoreores:refined_diamond_shard"
+  }
+}

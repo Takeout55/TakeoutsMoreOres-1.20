@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "takeoutsmoreores:block/refined_diamond_slab"
+    },
+    "type=double": {
+      "model": "takeoutsmoreores:block/refined_diamond_block"
+    },
+    "type=top": {
+      "model": "takeoutsmoreores:block/refined_diamond_slab_top"
+    }
+  }
+}

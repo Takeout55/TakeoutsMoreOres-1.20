@@ -1,0 +1,21 @@
+{
+  "values": [
+    "takeoutsmoreores:sapphire_ore",
+    "takeoutsmoreores:zircon_ore",
+    "takeoutsmoreores:deepslate_zircon_ore",
+    "takeoutsmoreores:netherrack_zircon_ore",
+    "takeoutsmoreores:endstone_zircon_ore",
+    "takeoutsmoreores:deepslate_sapphire_ore",
+    "takeoutsmoreores:netherrack_sapphire_ore",
+    "takeoutsmoreores:endstone_sapphire_ore",
+    "takeoutsmoreores:nether_gasnite_ore",
+    "takeoutsmoreores:gasnite_ore",
+    "takeoutsmoreores:earium_ore",
+    "takeoutsmoreores:nether_earium_ore",
+    "takeoutsmoreores:deepslate_earium_ore",
+    "takeoutsmoreores:end_stone_earium_ore",
+    "takeoutsmoreores:end_stone_gasnite_ore",
+    "takeoutsmoreores:deepslate_gasnite_ore",
+    "#forge:ores"
+  ]
+}
