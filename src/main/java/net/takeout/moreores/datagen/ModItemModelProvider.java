@@ -54,7 +54,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_PINKITE);
         simpleItem(ModItems.EARIUM);
         simpleItem(ModItems.RAW_EARIUM);
-        simpleItem(ModItems.METAL_ROD);
+        handheldItem(ModItems.METAL_ROD);
         simpleItem(ModItems.GLITCHITE_INGOT);
         simpleItem(ModItems.CHEESIUM);
         simpleItem(ModItems.RAW_CHEESIUM);
@@ -132,6 +132,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.THIMEITE_AXE);
         handheldItem(ModItems.THIMEITE_HOE);
         handheldItem(ModItems.THIMEITE_SHOVEL);
+
+        handheldItem(ModItems.REFINED_DIAMOND_SWORD);
 
         fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
         buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);
