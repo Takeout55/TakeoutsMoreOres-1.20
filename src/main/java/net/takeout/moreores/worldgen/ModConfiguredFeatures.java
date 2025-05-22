@@ -103,12 +103,12 @@ public class ModConfiguredFeatures {
 
         List<OreConfiguration.TargetBlockState> overworldGasniteOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.GASNITE_ORE.get().defaultBlockState()),
-                OreConfiguration.target(deepslateReplaceable, ModBlocks.GASNITE_EARIUM_ORE.get().defaultBlockState()));
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_GASNITE_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_GASNITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldGasniteOres, 9));
         register(context, NETHER_GASNITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
                 ModBlocks.NETHER_GASNITE_ORE.get().defaultBlockState(),  9));
-        register(context, ENDSTONE_GASNTIE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+        register(context, ENDSTONE_GASNITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 ModBlocks.END_STONE_GASNITE_ORE.get().defaultBlockState(),  9));
     }
 

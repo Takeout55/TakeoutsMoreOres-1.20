@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/door_top_right",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "bottom": "takeoutsmoreores:block/earium_door_bottom",
-    "top": "takeoutsmoreores:block/earium_door_top"
-  }
-}

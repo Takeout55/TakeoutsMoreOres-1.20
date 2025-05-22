@@ -92,7 +92,7 @@ public class ModPlacedFeatures {
 
         register(context, END_ENDITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_ENDITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(30), VerticalAnchor.absolute(50))));
 
         register(context, GASNITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_GASNITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,

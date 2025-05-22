@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/stairs",
-  "textures": {
-    "bottom": "takeoutsmoreores:block/zircon_block",
-    "side": "takeoutsmoreores:block/zircon_block",
-    "top": "takeoutsmoreores:block/zircon_block"
-  }
-}

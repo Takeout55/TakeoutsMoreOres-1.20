@@ -1,6 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "takeoutsmoreores:block/end_stone_glitchite_ore"
-  }
-}
