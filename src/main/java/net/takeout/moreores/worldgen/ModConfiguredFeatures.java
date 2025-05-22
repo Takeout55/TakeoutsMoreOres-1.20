@@ -39,6 +39,8 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_EARIUM_ORE_KEY = registerKey("nether_earium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_EARIUM_ORE_KEY = registerKey("end_stone_earium_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_ENDITE_ORE_KEY = registerKey("end_stone_endite_ore");
+
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -92,7 +94,8 @@ public class ModConfiguredFeatures {
         register(context, ENDSTONE_EARIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 ModBlocks.END_STONE_EARIUM_ORE.get().defaultBlockState(),  9));
 
-
+        register(context, ENDSTONE_ENDITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.ANCIENT_VOIDSTONE.get().defaultBlockState(),  9));
     }
 
 
