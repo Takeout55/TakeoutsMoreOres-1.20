@@ -41,6 +41,10 @@ public class ModConfiguredFeatures {
 
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_ENDITE_ORE_KEY = registerKey("end_stone_endite_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_GASNITE_ORE_KEY = registerKey("gasnite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_GASNITE_ORE_KEY = registerKey("nether_gasnite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_GASNITE_ORE_KEY = registerKey("end_stone_gasnite_ore");
+
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -96,6 +100,16 @@ public class ModConfiguredFeatures {
 
         register(context, ENDSTONE_ENDITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 ModBlocks.ANCIENT_VOIDSTONE.get().defaultBlockState(),  9));
+
+        List<OreConfiguration.TargetBlockState> overworldGasniteOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.GASNITE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.GASNITE_EARIUM_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_GASNITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldGasniteOres, 9));
+        register(context, NETHER_GASNITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
+                ModBlocks.NETHER_GASNITE_ORE.get().defaultBlockState(),  9));
+        register(context, ENDSTONE_GASNTIE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.END_STONE_GASNITE_ORE.get().defaultBlockState(),  9));
     }
 
 
