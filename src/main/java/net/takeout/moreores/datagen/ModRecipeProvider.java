@@ -3,6 +3,7 @@ package net.takeout.moreores.datagen;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.level.block.Blocks;
 import net.takeout.moreores.MoreOres;
 import net.takeout.moreores.block.ModBlocks;
 import net.takeout.moreores.item.ModItems;
@@ -28,15 +29,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     private static final List<ItemLike> REFINED_DIAMOND_SMELTABLES = List.of(Items.DIAMOND);
 
-    private static final List<ItemLike> GASNITE_SMELTABLES = List.of(ModBlocks.GASNITE_ORE.get());
+    private static final List<ItemLike> GASNITE_SMELTABLES = List.of(ModBlocks.GASNITE_ORE.get(),
+            ModBlocks.END_STONE_GASNITE_ORE.get(), ModBlocks.DEEPSLATE_GASNITE_ORE.get(), ModBlocks.NETHER_GASNITE_ORE.get());
 
-    private static final List<ItemLike> EARIUM_SMELTABLES = List.of(ModItems.RAW_ZIRCON.get(),
+    private static final List<ItemLike> EARIUM_SMELTABLES = List.of(ModItems.RAW_EARIUM.get(),
             ModBlocks.EARIUM_ORE.get(), ModBlocks.DEEPSLATE_EARIUM_ORE.get(), ModBlocks.NETHER_EARIUM_ORE.get(),
             ModBlocks.END_STONE_EARIUM_ORE.get());
 
     private static final List<ItemLike> CHEESIUM_SMELTABLES = List.of(ModItems.RAW_CHEESIUM.get());
 
-    private static final List<ItemLike> GLITCHITE_SMELTABLES = List.of(ModBlocks.GLITCHITE_ORE.get());
+    private static final List<ItemLike> GLITCHITE_SMELTABLES = List.of(ModBlocks.GLITCHITE_ORE.get(),
+            ModBlocks.DEEPSLATE_GLITCHITE_ORE.get(), ModBlocks.END_STONE_GLITCHITE_ORE.get(), ModBlocks.NETHER_GLITCHITE_ORE.get());
+
+    private static final List<ItemLike> ENDITE_SMELTABLES = List.of(ModItems.RAW_ENDITE.get());
+
+    private static final List<ItemLike> THIMEITE_SMELTABLES = List.of(ModBlocks.THIMEITE_ORE.get(),
+            ModBlocks.DEEPSLATE_THIMEITE_ORE.get(), ModBlocks.END_STONE_THIMEITE_ORE.get(), ModBlocks.NETHER_THIMEITE_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
@@ -44,6 +52,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     @Override
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
+        oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 200, "sapphire");
         oreBlasting(pWriter, ZIRCON_SMELTABLES, RecipeCategory.MISC, ModItems.ZIRCON.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, ZIRCON_SMELTABLES, RecipeCategory.MISC, ModItems.ZIRCON.get(), 0.25f, 200, "sapphire");
@@ -52,11 +61,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 200, "sapphire");
         oreBlasting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.GASNITE.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 200, "sapphire");
+        oreSmelting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.GASNITE.get(), 0.25f, 200, "sapphire");
         oreBlasting(pWriter, CHEESIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, CHEESIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, GLITCHITE_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 100, "sapphire");
+        oreBlasting(pWriter, GLITCHITE_SMELTABLES, RecipeCategory.MISC, ModItems.GLITCHITE_INGOT.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, GLITCHITE_SMELTABLES, RecipeCategory.MISC, ModItems.GLITCHITE_INGOT.get(), 0.25f, 200, "sapphire");
+        oreBlasting(pWriter, ENDITE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDITE.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, ENDITE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDITE.get(), 0.25f, 200, "sapphire");
+        oreBlasting(pWriter, THIMEITE_SMELTABLES, RecipeCategory.MISC, ModItems.THIMEITE.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, THIMEITE_SMELTABLES, RecipeCategory.MISC, ModItems.THIMEITE.get(), 0.25f, 200, "sapphire");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
@@ -113,6 +126,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SSS")
                 .define('S', ModItems.GLITCHITE_INGOT.get())
                 .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.THIMEITE.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.METAL_DETECTOR.get())
@@ -538,6 +559,147 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.CHEESIUM.get()), has(ModItems.CHEESIUM.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.GLITCHITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("   ")
+                .define('S', ModItems.GLITCHITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.GLITCHITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.GLITCHITE_INGOT.get())
+                .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.GLITCHITE_INGOT.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.GLITCHITE_INGOT.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.GLITCHITE_INGOT.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.GLITCHITE_INGOT.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.GLITCHITE_INGOT.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THIMEITE_SCYTHE.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.THIMEITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THIMEITE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.THIMEITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THIMEITE_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.THIMEITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THIMEITE_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.THIMEITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.GLITCHITE_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.THIMEITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.SAPPHIRE_STAFF.get())
+                .pattern("S")
+                .pattern("M")
+                .pattern("T")
+                .define('S', ModItems.SAPPHIRE.get())
+                .define('T', Items.STICK)
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
+
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.NETHER_BRICK_FENCE_GATE.get())
+                .pattern("MSM")
+                .pattern("MSM")
+                .define('S', Blocks.NETHER_BRICKS)
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(Blocks.NETHER_BRICKS), has(Blocks.NETHER_BRICKS))
+                .save(pWriter);
+
+
 
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
@@ -603,6 +765,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CHEESIUM_BUTTON.get())
                 .requires(ModBlocks.CHEESIUM_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.CHEESIUM_BLOCK.get()), has(ModBlocks.CHEESIUM_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.THIMEITE.get(), 9)
+                .requires(ModBlocks.THIMEITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.THIMEITE_BLOCK.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
                 .save(pWriter);
     }
 

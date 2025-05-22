@@ -5,7 +5,7 @@
   "experience": 0.25,
   "group": "sapphire",
   "ingredient": {
-    "item": "takeoutsmoreores:glitchite_ore"
+    "item": "takeoutsmoreores:deepslate_glitchite_ore"
   },
-  "result": "takeoutsmoreores:cheesium"
+  "result": "takeoutsmoreores:glitchite_ingot"
 }

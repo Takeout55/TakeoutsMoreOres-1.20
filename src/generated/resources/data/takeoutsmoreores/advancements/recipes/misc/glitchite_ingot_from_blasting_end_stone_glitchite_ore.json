@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_glitchite_ore": {
+    "has_end_stone_glitchite_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "takeoutsmoreores:glitchite_ore"
+              "takeoutsmoreores:end_stone_glitchite_ore"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "takeoutsmoreores:cheesium_from_blasting_glitchite_ore"
+        "recipe": "takeoutsmoreores:glitchite_ingot_from_blasting_end_stone_glitchite_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_glitchite_ore",
+      "has_end_stone_glitchite_ore",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "takeoutsmoreores:cheesium_from_blasting_glitchite_ore"
+      "takeoutsmoreores:glitchite_ingot_from_blasting_end_stone_glitchite_ore"
     ]
   },
   "sends_telemetry_event": false

@@ -135,5 +135,12 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.GLITCHITE_WALL.get());
 
 
+        this.tag(BlockTags.BEACON_BASE_BLOCKS)
+                .add(ModBlocks.SAPPHIRE_BLOCK.get(),
+                        ModBlocks.ZIRCON_BLOCK.get(),
+                        ModBlocks.EARIUM_BLOCK.get(),
+                        ModBlocks.THIMEITE_BLOCK.get(),
+                        ModBlocks.GLITCHITE_ORE.get(),
+                        ModBlocks.REFINED_DIAMOND_BLOCK.get());
     }
 }

@@ -5,7 +5,7 @@
   "experience": 0.25,
   "group": "sapphire",
   "ingredient": {
-    "item": "takeoutsmoreores:raw_zircon"
+    "item": "takeoutsmoreores:thimeite_ore"
   },
-  "result": "takeoutsmoreores:earium"
+  "result": "takeoutsmoreores:thimeite"
 }
