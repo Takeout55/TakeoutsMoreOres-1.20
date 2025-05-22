@@ -33,6 +33,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> NETHER_EARIUM_ORE_PLACED_KEY = registerKey("nether_earium_ore_placed");
     public static final ResourceKey<PlacedFeature> END_EARIUM_ORE_PLACED_KEY = registerKey("end_earium_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> END_ENDITE_ORE_PLACED_KEY = registerKey("end_endite_ore_placed");
+
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -81,6 +83,10 @@ public class ModPlacedFeatures {
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
         register(context, END_EARIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_EARIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+        register(context, END_ENDITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_ENDITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     }
