@@ -30,6 +30,14 @@ public class ModBiomeModifiers {
 
     public static final ResourceKey<BiomeModifier> ADD_END_ENDITE_ORE = registerKey("add_end_endite_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_GASNITE_ORE = registerKey("add_gasnite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_GASNITE_ORE = registerKey("add_nether_gasnite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_GASNITE_ORE = registerKey("add_end_gasnite_ore");
+
+    public static final ResourceKey<BiomeModifier> ADD_EARIUM_ORE = registerKey("add_earium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_EARIUM_ORE = registerKey("add_nether_earium_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_EARIUM_ORE = registerKey("add_end_earium_ore");
+
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
@@ -92,6 +100,36 @@ public class ModBiomeModifiers {
         context.register(ADD_END_ENDITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_ENDITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_GASNITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.GASNITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_NETHER_GASNITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_GASNITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_END_GASNITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_END),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_GASNITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_EARIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.EARIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_NETHER_EARIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_EARIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_END_EARIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_END),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_EARIUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }
