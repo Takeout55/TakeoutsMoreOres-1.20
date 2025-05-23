@@ -3,8 +3,8 @@
   "conditions": [
     {
       "condition": "forge:loot_table_id",
-      "loot_table_id": "minecraft:entities/iron_golem"
+      "loot_table_id": "minecraft:chests/end_city_treasure"
     }
   ],
-  "item": "takeoutsmoreores:metal_rod"
+  "item": "takeoutsmoreores:vinyl_template"
 }

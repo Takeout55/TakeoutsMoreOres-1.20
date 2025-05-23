@@ -760,11 +760,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THIMEITE_MUSIC_DISC.get())
-                .pattern("SSS")
+                .pattern("SGS")
                 .pattern("STS")
                 .pattern("SSS")
                 .define('S', ModItems.THIMEITE.get())
-                .define('T', Items.DISC_FRAGMENT_5)
+                .define('T', ModItems.VINYL_TEMPLATE.get())
+                .define('G', Items.GOLD_INGOT)
                 .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE_MUSIC_DISC.get()))
                 .save(pWriter);
 

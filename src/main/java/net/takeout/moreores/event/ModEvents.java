@@ -41,6 +41,16 @@ public class ModEvents {
                     4, 10, 0.08f
             ));
         }
+
+        if(event.getType() == ModVillagers.SOUND_MASTER.get()) {
+            Int2ObjectMap<List<VillagerTrades.ItemListing>> trades = event.getTrades();
+
+            trades.get(2).add((pTrader, pRandom) -> new MerchantOffer(
+                    new ItemStack(Items.EMERALD, 8),
+                    new ItemStack(ModItems.VINYL_TEMPLATE.get(), 1),
+                    10, 10, 0.03f
+            ));
+        }
     }
 
 }

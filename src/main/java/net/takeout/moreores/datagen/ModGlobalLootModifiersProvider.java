@@ -28,7 +28,13 @@ public class ModGlobalLootModifiersProvider extends GlobalLootModifierProvider {
         add("metal_rod_from_iron_golem", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("entities/iron_golem")).build() }, ModItems.METAL_ROD.get()));
 
-        add("metal_rod_from_iron_golem", new AddItemModifier(new LootItemCondition[] {
+        add("metal_detector_from_jungle_temple", new AddItemModifier(new LootItemCondition[] {
                 new LootTableIdCondition.Builder(new ResourceLocation("chests/jungle_temple")).build() }, ModItems.METAL_DETECTOR.get()));
+
+        add("vinyl_template_from_end_ship", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/end_city_treasure")).build() }, ModItems.VINYL_TEMPLATE.get()));
+
+        add("vinyl_template_from_ancient_city", new AddItemModifier(new LootItemCondition[] {
+                new LootTableIdCondition.Builder(new ResourceLocation("chests/ancient_city")).build() }, ModItems.VINYL_TEMPLATE.get()));
     }
 }
