@@ -250,7 +250,7 @@ public class ModBlocks {
                     BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> CHEESIUM_SLAB = registerBlock("cheesium_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
     public static final RegistryObject<Block> CHEESIUM_BUTTON = registerBlock("cheesium_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
@@ -304,6 +304,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> END_STONE_THIMEITE_ORE = registerBlock("end_stone_thimeite_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DIRT_SLAB = registerBlock("dirt_slab",
+            () -> new SlabBlock(BlockBehaviour.properties.copy(Blocks.DIRT)
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
