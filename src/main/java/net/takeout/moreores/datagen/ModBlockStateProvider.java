@@ -113,6 +113,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         fenceGateBlock(((FenceGateBlock) ModBlocks.NETHER_BRICK_FENCE_GATE.get()), blockTexture(Blocks.NETHER_BRICKS));
         slabBlock(((SlabBlock) ModBlocks.DIRT_SLAB.get()), blockTexture(Blocks.DIRT)), blockTexture(Blocks.DIRT));
+        stairsBlock(((StairBlock) ModBlocks.DIRT_STAIRS.get()), blockTexture(Blocks.DIRT));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
