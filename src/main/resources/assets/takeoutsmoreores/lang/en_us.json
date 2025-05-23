@@ -143,5 +143,6 @@
   "item.takeoutsmoreores.refined_diamond_pickaxe": "Refined Diamond Pickaxe",
   "item.takeoutsmoreores.refined_diamond_shovel": "Refined Diamond Shovel",
   "item.takeoutsmoreores.refined_diamond_hoe": "Refined Diamond Hoe",
-  "item.takeoutsmoreores.refined_diamond_axe": "Refined Diamond Axe"
+  "item.takeoutsmoreores.refined_diamond_axe": "Refined Diamond Axe",
+  "entity.minecraft.villager.takeoutsmoreores.soundmaster": "Sound Master"
 }

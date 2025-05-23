@@ -16,6 +16,7 @@ import net.takeout.moreores.block.ModBlocks;
 import net.takeout.moreores.item.ModCreativeModeTabs;
 import net.takeout.moreores.item.ModItems;
 import net.takeout.moreores.loot.ModLootModifiers;
+import net.takeout.moreores.villager.ModVillagers;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -33,7 +34,8 @@ public class MoreOres {
         ModLootModifiers.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
-
+        ModVillagers.VILLAGER_PROFESSIONS.register(modEventBus);
+        ModVillagers.POI_TYPES.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
     }
