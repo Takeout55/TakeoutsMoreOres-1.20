@@ -145,5 +145,6 @@
   "item.takeoutsmoreores.refined_diamond_hoe": "Refined Diamond Hoe",
   "item.takeoutsmoreores.refined_diamond_axe": "Refined Diamond Axe",
   "entity.minecraft.villager.takeoutsmoreores.soundmaster": "Sound Master",
-  "block.takeoutsmoreores.dirt_slab": "Dirt Slab"
+  "block.takeoutsmoreores.dirt_slab": "Dirt Slab",
+  "block.takeotusmoreores.dirt_stairs": "Dirt Stairs"
 }
