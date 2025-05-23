@@ -114,6 +114,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.GLITCHITE_DOOR.get(),
                 block -> createDoorTable(ModBlocks.GLITCHITE_DOOR.get()));
 
+        this.add(ModBlocks.DIRT_SLAB.get(),
+                 block -> createSlabItemTable(ModBlocks.DIRT_SLAB.get()));
+
 
         this.add(ModBlocks.SAPPHIRE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.SAPPHIRE_ORE.get(), ModItems.RAW_SAPPHIRE.get()));
