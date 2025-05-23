@@ -186,7 +186,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
      public static final RegistryObject<Block> EARIUM_STAIRS = registerBlock("earium_stairs",
-            () -> new StairBlock(() -> ModBlocks.ZIRCON_BLOCK.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.EARIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> EARIUM_SLAB = registerBlock("earium_slab",
@@ -216,7 +216,7 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
     
     public static final RegistryObject<Block> GLITCHITE_STAIRS = registerBlock("glitchite_stairs",
-            () -> new StairBlock(() -> ModBlocks.ZIRCON_BLOCK.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.GLITCHITE_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> GLITCHITE_SLAB = registerBlock("glitchite_slab",
@@ -246,7 +246,7 @@ public class ModBlocks {
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.SPRUCE));
 
     public static final RegistryObject<Block> CHEESIUM_STAIRS = registerBlock("cheesium_stairs",
-            () -> new StairBlock(() -> ModBlocks.ZIRCON_BLOCK.get().defaultBlockState(),
+            () -> new StairBlock(() -> ModBlocks.CHEESIUM_BLOCK.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
     public static final RegistryObject<Block> CHEESIUM_SLAB = registerBlock("cheesium_slab",
@@ -306,9 +306,13 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DIRT_SLAB = registerBlock("dirt_slab",
-            () -> new SlabBlock(BlockBehaviour.properties.copy(Blocks.DIRT)
+            () -> new SlabBlock(BlockBehaviour.properties.copy(Blocks.DIRT);
 
+    public static final RegistryObject<Block> DIRT_STAIRS = registerBlock("dirt_stairs",
+            () -> new StairBlock(() -> Blocks.DIRT.defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
+    
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
         registerBlockItem(name, toReturn);
