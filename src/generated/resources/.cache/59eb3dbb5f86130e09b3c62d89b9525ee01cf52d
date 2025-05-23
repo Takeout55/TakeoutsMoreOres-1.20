@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-22T18:53:03.4944679	Loot Tables
+// 1.20.1	2025-05-23T17:39:32.3012777	Loot Tables
 a28f7ffe3b01b897c314a7e63ca27ab5a9fba56e data/takeoutsmoreores/loot_tables/blocks/ancient_voidstone.json
 d636bcf64940d7625843d57b88bc44b2168d35b5 data/takeoutsmoreores/loot_tables/blocks/cheesium_block.json
 f9bbe3d475ed1ee8f7715de4a462a487dfd70434 data/takeoutsmoreores/loot_tables/blocks/cheesium_button.json
@@ -16,6 +16,8 @@ e984dcb753029a78644a28aafe6f9efcedef596c data/takeoutsmoreores/loot_tables/block
 d4f9b4a53b0cc2859c4bd9f11904110b113a31cd data/takeoutsmoreores/loot_tables/blocks/deepslate_sapphire_ore.json
 76009f786052abf1326ba084965595763e6b5ed3 data/takeoutsmoreores/loot_tables/blocks/deepslate_thimeite_ore.json
 75efd1327624363a391b3fc073798ffe5e656239 data/takeoutsmoreores/loot_tables/blocks/deepslate_zircon_ore.json
+6c360b6b9557d80068f5fcb835e24de6ad271cfb data/takeoutsmoreores/loot_tables/blocks/dirt_slab.json
+59053a72dded11fae6c0a065d8d83ca5e23cb927 data/takeoutsmoreores/loot_tables/blocks/dirt_stairs.json
 e9d38495ef38cf0cb17fd25abe8cbbd156279f38 data/takeoutsmoreores/loot_tables/blocks/earium_block.json
 cacbfab02dfdbcce7f6ef1789856f7b2d42cd6bd data/takeoutsmoreores/loot_tables/blocks/earium_button.json
 444866bab317f3daf1192e6efdabf713c7591840 data/takeoutsmoreores/loot_tables/blocks/earium_door.json

@@ -1,4 +1,5 @@
-// 1.20.1	2025-05-22T18:53:03.4959726	Item Models: takeoutsmoreores
+// 1.20.1	2025-05-23T23:03:36.377504	Item Models: takeoutsmoreores
+1eb5f83fa8fcfba09b190a4f7a60592f8e38087a assets/takeoutsmoreores/models/item/bar_brawl_music_disc.json
 c15a09e0b8cd98b7f2d1c9bd55e116fb041db771 assets/takeoutsmoreores/models/item/cheesium.json
 0527e3a574022639bf49725e54b2dd6ac0c53faa assets/takeoutsmoreores/models/item/cheesium_button.json
 d2175d65cc2cfe53a9e28cbf54bcb413ac972cdc assets/takeoutsmoreores/models/item/cheesium_door.json
@@ -9,6 +10,8 @@ c30005c0933869b086564c47c0a8298f802c46cf assets/takeoutsmoreores/models/item/che
 d24e6d305d382dfc0265da89af613816a8a0949b assets/takeoutsmoreores/models/item/cheesium_stairs.json
 aa30020a2bb3ab3da283233d9b05ebd4bc456373 assets/takeoutsmoreores/models/item/cheesium_trapdoor.json
 d13f0ab16213ff6edbc091df16a65e27e04d1374 assets/takeoutsmoreores/models/item/cheesium_wall.json
+122f9ca56d7a49c7b66d54a0f394bcd15afea941 assets/takeoutsmoreores/models/item/dirt_slab.json
+53c5a175865a5f1ee8d449bbf00df7613d01e145 assets/takeoutsmoreores/models/item/dirt_stairs.json
 92a8dbd11a41d7148f6fa3389ee2c67b6da16fad assets/takeoutsmoreores/models/item/earium.json
 d3a4123acba2de584740bf0214c0b254eb55dc9a assets/takeoutsmoreores/models/item/earium_button.json
 44355f88fdfcd07946768617a13b2ee6f4953136 assets/takeoutsmoreores/models/item/earium_door.json
@@ -211,6 +214,7 @@ e2a03e753a590a80cb3831cbe6aa14d28715d3f6 assets/takeoutsmoreores/models/item/sap
 7b7727373daca2d72eab3c3bdd60112bce4ff6a2 assets/takeoutsmoreores/models/item/thimeite.json
 9be92310b386e55eb345abfdad1e495b41cc0c6c assets/takeoutsmoreores/models/item/thimeite_axe.json
 77226d43c57dee51f32ee8119a56ca9773268588 assets/takeoutsmoreores/models/item/thimeite_hoe.json
+7b0fd958bddc88c35ac3978526630f91ccd9cea5 assets/takeoutsmoreores/models/item/thimeite_music_disc.json
 7dfc9adfcd4b75b6b81f2c59496d935f62473aa3 assets/takeoutsmoreores/models/item/thimeite_pickaxe.json
 8921ce5b3b4110322d48e3bcd239ebd84e81d4bf assets/takeoutsmoreores/models/item/thimeite_scythe.json
 c80f6df73f5c8d3c407352de649f29eaf276dcf2 assets/takeoutsmoreores/models/item/thimeite_shovel.json

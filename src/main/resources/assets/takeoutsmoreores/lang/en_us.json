@@ -146,5 +146,14 @@
   "item.takeoutsmoreores.refined_diamond_axe": "Refined Diamond Axe",
   "entity.minecraft.villager.takeoutsmoreores.soundmaster": "Sound Master",
   "block.takeoutsmoreores.dirt_slab": "Dirt Slab",
-  "block.takeotusmoreores.dirt_stairs": "Dirt Stairs"
+  "block.takeoutsmoreores.dirt_stairs": "Dirt Stairs",
+  "item.takeoutsmoreores.ocarite_helmet": "Ocarite Helmet",
+  "item.takeoutsmoreores.ocarite_chestplate": "Ocarite Chestplate",
+  "item.takeoutsmoreores.ocarite_leggings": "Ocarite Leggings",
+  "item.takeoutsmoreores.ocarite_boots": "Ocarite Boots",
+  "sounds.takeoutsmoreores.metal_detector_found_ore": "Metal Detector Found ore!",
+  "item.takeoutsmoreores.bar_brawl_music_disc": "Bar Brawl Music Disc",
+  "item.takeoutsmoreores.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
+  "item.takeoutsmoreores.thimeite_music_disc": "Thimite Music Disc",
+  "item.takeoutsmoreores.thimeite_music_disc.desc": "Golden Oddyssey - Toby Carter, Ifan Davies"
 }

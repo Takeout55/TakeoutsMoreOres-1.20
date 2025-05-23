@@ -16,6 +16,7 @@ import net.takeout.moreores.block.ModBlocks;
 import net.takeout.moreores.item.ModCreativeModeTabs;
 import net.takeout.moreores.item.ModItems;
 import net.takeout.moreores.loot.ModLootModifiers;
+import net.takeout.moreores.sounds.ModSounds;
 import net.takeout.moreores.villager.ModVillagers;
 import org.slf4j.Logger;
 
@@ -38,6 +39,7 @@ public class MoreOres {
         ModVillagers.POI_TYPES.register(modEventBus);
         MinecraftForge.EVENT_BUS.register(this);
         modEventBus.addListener(this::addCreative);
+        ModSounds.register((modEventBus));
     }
 
     private void commonSetup(final FMLCommonSetupEvent event) {

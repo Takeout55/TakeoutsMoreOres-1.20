@@ -553,6 +553,21 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.CHEESIUM.get()), has(ModItems.CHEESIUM.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DIRT_SLAB.get())
+                .pattern("SSS")
+                .define('S', Blocks.DIRT)
+                .unlockedBy(getHasName(Blocks.DIRT), has(Blocks.DIRT))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.DIRT_STAIRS.get())
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', Blocks.DIRT)
+                .unlockedBy(getHasName(Blocks.DIRT), has(Blocks.DIRT))
+                .save(pWriter);
+
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESIUM_PRESSURE_PLATE.get())
                 .pattern("SS")
                 .define('S', ModBlocks.EARIUM_BLOCK.get())
@@ -742,6 +757,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModItems.REFINED_DIAMOND.get())
                 .define('T', ModItems.METAL_ROD.get())
                 .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THIMEITE_MUSIC_DISC.get())
+                .pattern("SSS")
+                .pattern("STS")
+                .pattern("SSS")
+                .define('S', ModItems.THIMEITE.get())
+                .define('T', Items.DISC_FRAGMENT_5)
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE_MUSIC_DISC.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)

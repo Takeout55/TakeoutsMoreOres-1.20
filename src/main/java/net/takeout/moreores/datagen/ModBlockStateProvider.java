@@ -112,7 +112,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.CHEESIUM_TRAPDOOR.get()), modLoc("block/cheesium_trapdoor"), true, "cutout");
 
         fenceGateBlock(((FenceGateBlock) ModBlocks.NETHER_BRICK_FENCE_GATE.get()), blockTexture(Blocks.NETHER_BRICKS));
-        slabBlock(((SlabBlock) ModBlocks.DIRT_SLAB.get()), blockTexture(Blocks.DIRT)), blockTexture(Blocks.DIRT));
+        slabBlock(((SlabBlock) ModBlocks.DIRT_SLAB.get()), blockTexture(Blocks.DIRT), blockTexture(Blocks.DIRT));
         stairsBlock(((StairBlock) ModBlocks.DIRT_STAIRS.get()), blockTexture(Blocks.DIRT));
     }
 

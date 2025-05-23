@@ -306,7 +306,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DIRT_SLAB = registerBlock("dirt_slab",
-            () -> new SlabBlock(BlockBehaviour.properties.copy(Blocks.DIRT);
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
     public static final RegistryObject<Block> DIRT_STAIRS = registerBlock("dirt_stairs",
             () -> new StairBlock(() -> Blocks.DIRT.defaultBlockState(),

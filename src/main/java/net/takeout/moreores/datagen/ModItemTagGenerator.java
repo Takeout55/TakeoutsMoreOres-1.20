@@ -32,6 +32,14 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.GLITCHITE_HELMET.get(),
                         ModItems.GLITCHITE_CHESTPLATE.get(),
                         ModItems.GLITCHITE_LEGGINGS.get(),
-                        ModItems.GLITCHITE_BOOTS.get());
+                        ModItems.GLITCHITE_BOOTS.get(),
+                        ModItems.OCARITE_HELMET.get(),
+                        ModItems.OCARITE_CHESPLATE.get(),
+                        ModItems.OCARITE_LEGGINGS.get(),
+                        ModItems.OCARITE_BOOTS.get());
+
+        this.tag(ItemTags.MUSIC_DISCS)
+                .add(ModItems.BAR_BRAWL_MUSIC_DISC.get(),
+                        ModItems.THIMEITE_MUSIC_DISC.get());
     }
 }

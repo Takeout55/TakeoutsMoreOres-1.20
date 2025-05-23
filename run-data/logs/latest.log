@@ -1,35 +1,35 @@
-[23May2025 08:10:01.492] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Carwy\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, takeoutsmoreores, --all, --output, D:\Java experiments\TakeoutsMoreOres-1.20\src\generated\resources, --existing, D:\Java experiments\TakeoutsMoreOres-1.20\src\main\resources]
-[23May2025 08:10:01.497] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.15 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
-[23May2025 08:10:01.663] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
-[23May2025 08:10:01.745] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Carwy/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
-[23May2025 08:10:02.059] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Carwy\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.0\f0c0b352173d0a378cbdcec9cfc4ba65899a721\javafmllanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[23May2025 08:10:02.067] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Carwy\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.0\e862740d8c84d08dbfedea412bef88fe42e727c5\lowcodelanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[23May2025 08:10:02.070] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Carwy\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.0\5719b3a297a33f877ed5dde4cb4bd75c859096af\mclanguage-1.20.1-47.4.0.jar is missing mods.toml file
-[23May2025 08:10:02.074] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Carwy\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.0\235975dafa4309945b59c56b53f31dc5b65a6051\fmlcore-1.20.1-47.4.0.jar is missing mods.toml file
-[23May2025 08:10:02.155] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
-[23May2025 08:10:03.601] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Carwy\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, takeoutsmoreores, --all, --output, D:\Java experiments\TakeoutsMoreOres-1.20\src\generated\resources, --existing, D:\Java experiments\TakeoutsMoreOres-1.20\src\main\resources]
-[23May2025 08:10:03.975] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [takeoutsmoreores]
-[23May2025 08:10:09.248] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.0, for MC 1.20.1 with MCP 20230612.114412
-[23May2025 08:10:09.253] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.0 Initialized
-[23May2025 08:10:09.806] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Carwy/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/assets/.mcassetsroot' uses unexpected schema
-[23May2025 08:10:09.807] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Carwy/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1-recomp.jar%23191!/data/.mcassetsroot' uses unexpected schema
-[23May2025 08:10:10.004] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
-[23May2025 08:10:10.074] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 68 ms
-[23May2025 08:10:10.074] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
-[23May2025 08:10:10.165] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 90 ms
-[23May2025 08:10:10.165] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: takeoutsmoreores
-[23May2025 08:10:10.411] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: takeoutsmoreores finished after 245 ms
-[23May2025 08:10:10.412] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: takeoutsmoreores
-[23May2025 08:10:10.448] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: takeoutsmoreores finished after 36 ms
-[23May2025 08:10:10.448] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id takeoutsmoreores
-[23May2025 08:10:10.465] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id takeoutsmoreores finished after 16 ms
-[23May2025 08:10:10.465] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id takeoutsmoreores
-[23May2025 08:10:10.466] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id takeoutsmoreores finished after 1 ms
-[23May2025 08:10:10.466] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : takeoutsmoreores
-[23May2025 08:10:10.472] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : takeoutsmoreores finished after 5 ms
-[23May2025 08:10:10.472] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
-[23May2025 08:10:10.491] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 18 ms
-[23May2025 08:10:10.491] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:point_of_interest_type mod id takeoutsmoreores
-[23May2025 08:10:10.493] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:point_of_interest_type mod id takeoutsmoreores finished after 1 ms
-[23May2025 08:10:10.493] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 488 ms
-[23May2025 08:10:10.512] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 1024, old count: 1023, new count: 1025, removed stale: 0, written: 1
+[23May2025 23:18:04.508] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher running: args [--launchTarget, forgedatauserdev, --assetIndex, 5, --assetsDir, C:\Users\Carwy\.gradle\caches\forge_gradle\assets, --gameDir, ., --fml.forgeVersion, 47.4.0, --fml.mcVersion, 1.20.1, --fml.forgeGroup, net.minecraftforge, --fml.mcpVersion, 20230612.114412, --mod, takeoutsmoreores, --all, --output, F:\Java experiments\TakeoutsMoreOres-1.20\src\generated\resources, --existing, F:\Java experiments\TakeoutsMoreOres-1.20\src\main\resources]
+[23May2025 23:18:04.514] [main/INFO] [cpw.mods.modlauncher.Launcher/MODLAUNCHER]: ModLauncher 10.0.9+10.0.9+main.dcd20f30 starting: java version 17.0.15 by Eclipse Adoptium; OS Windows 11 arch amd64 version 10.0
+[23May2025 23:18:04.733] [main/INFO] [net.minecraftforge.fml.loading.ImmediateWindowHandler/]: ImmediateWindowProvider not loading because launch target is forgedatauserdev
+[23May2025 23:18:04.837] [main/INFO] [mixin/]: SpongePowered MIXIN Subsystem Version=0.8.5 Source=union:/C:/Users/Carwy/.gradle/caches/modules-2/files-2.1/org.spongepowered/mixin/0.8.5/9d1c0c3a304ae6697ecd477218fa61b850bf57fc/mixin-0.8.5.jar%23128!/ Service=ModLauncher Env=CLIENT
+[23May2025 23:18:05.347] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Carwy\.gradle\caches\modules-2\files-2.1\net.minecraftforge\javafmllanguage\1.20.1-47.4.0\f0c0b352173d0a378cbdcec9cfc4ba65899a721\javafmllanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[23May2025 23:18:05.351] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Carwy\.gradle\caches\modules-2\files-2.1\net.minecraftforge\lowcodelanguage\1.20.1-47.4.0\e862740d8c84d08dbfedea412bef88fe42e727c5\lowcodelanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[23May2025 23:18:05.357] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Carwy\.gradle\caches\modules-2\files-2.1\net.minecraftforge\mclanguage\1.20.1-47.4.0\5719b3a297a33f877ed5dde4cb4bd75c859096af\mclanguage-1.20.1-47.4.0.jar is missing mods.toml file
+[23May2025 23:18:05.361] [main/WARN] [net.minecraftforge.fml.loading.moddiscovery.ModFileParser/LOADING]: Mod file C:\Users\Carwy\.gradle\caches\modules-2\files-2.1\net.minecraftforge\fmlcore\1.20.1-47.4.0\235975dafa4309945b59c56b53f31dc5b65a6051\fmlcore-1.20.1-47.4.0.jar is missing mods.toml file
+[23May2025 23:18:05.470] [main/INFO] [net.minecraftforge.fml.loading.moddiscovery.JarInJarDependencyLocator/]: No dependencies to load found. Skipping!
+[23May2025 23:18:08.344] [main/INFO] [cpw.mods.modlauncher.LaunchServiceHandler/MODLAUNCHER]: Launching target 'forgedatauserdev' with arguments [--gameDir, ., --assetsDir, C:\Users\Carwy\.gradle\caches\forge_gradle\assets, --assetIndex, 5, --mod, takeoutsmoreores, --all, --output, F:\Java experiments\TakeoutsMoreOres-1.20\src\generated\resources, --existing, F:\Java experiments\TakeoutsMoreOres-1.20\src\main\resources]
+[23May2025 23:18:09.285] [main/INFO] [net.minecraftforge.data.loading.DatagenModLoader/]: Initializing Data Gatherer for mods [takeoutsmoreores]
+[23May2025 23:18:17.331] [modloading-worker-0/INFO] [net.minecraftforge.common.ForgeMod/FORGEMOD]: Forge mod loading, version 47.4.0, for MC 1.20.1 with MCP 20230612.114412
+[23May2025 23:18:17.340] [modloading-worker-0/INFO] [net.minecraftforge.common.MinecraftForge/FORGE]: MinecraftForge v47.4.0 Initialized
+[23May2025 23:18:18.210] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Carwy/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/assets/.mcassetsroot' uses unexpected schema
+[23May2025 23:18:18.210] [main/WARN] [net.minecraft.server.packs.VanillaPackResourcesBuilder/]: Assets URL 'union:/C:/Users/Carwy/.gradle/caches/forge_gradle/minecraft_user_repo/net/minecraftforge/forge/1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1/forge-1.20.1-47.4.0_mapped_parchment_2023.06.26-1.20.1.jar%23191!/data/.mcassetsroot' uses unexpected schema
+[23May2025 23:18:18.539] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Recipes
+[23May2025 23:18:18.720] [main/INFO] [net.minecraft.data.DataGenerator/]: Recipes finished after 180 ms
+[23May2025 23:18:18.720] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Loot Tables
+[23May2025 23:18:18.862] [main/INFO] [net.minecraft.data.DataGenerator/]: Loot Tables finished after 141 ms
+[23May2025 23:18:18.863] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Block States: takeoutsmoreores
+[23May2025 23:18:19.220] [main/INFO] [net.minecraft.data.DataGenerator/]: Block States: takeoutsmoreores finished after 357 ms
+[23May2025 23:18:19.221] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Item Models: takeoutsmoreores
+[23May2025 23:18:19.266] [main/INFO] [net.minecraft.data.DataGenerator/]: Item Models: takeoutsmoreores finished after 45 ms
+[23May2025 23:18:19.266] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:block mod id takeoutsmoreores
+[23May2025 23:18:19.287] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:block mod id takeoutsmoreores finished after 20 ms
+[23May2025 23:18:19.287] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:item mod id takeoutsmoreores
+[23May2025 23:18:19.290] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:item mod id takeoutsmoreores finished after 3 ms
+[23May2025 23:18:19.291] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Global Loot Modifiers : takeoutsmoreores
+[23May2025 23:18:19.298] [main/INFO] [net.minecraft.data.DataGenerator/]: Global Loot Modifiers : takeoutsmoreores finished after 7 ms
+[23May2025 23:18:19.298] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Registries
+[23May2025 23:18:19.326] [main/INFO] [net.minecraft.data.DataGenerator/]: Registries finished after 27 ms
+[23May2025 23:18:19.326] [main/INFO] [net.minecraft.data.DataGenerator/]: Starting provider: Tags for minecraft:point_of_interest_type mod id takeoutsmoreores
+[23May2025 23:18:19.328] [main/INFO] [net.minecraft.data.DataGenerator/]: Tags for minecraft:point_of_interest_type mod id takeoutsmoreores finished after 1 ms
+[23May2025 23:18:19.328] [main/INFO] [net.minecraft.data.DataGenerator/]: All providers took: 789 ms
+[23May2025 23:18:19.363] [main/INFO] [net.minecraft.data.HashCache/]: Caching: total files: 1040, old count: 1038, new count: 1041, removed stale: 0, written: 2

@@ -8,6 +8,7 @@ import net.minecraftforge.registries.RegistryObject;
 import net.takeout.moreores.MoreOres;
 import net.takeout.moreores.item.custom.FuelItem;
 import net.takeout.moreores.item.custom.MetalDetectorItem;
+import net.takeout.moreores.sounds.ModSounds;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -99,19 +100,19 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_SWORD = ITEMS.register("glitchite_sword",
-            () -> new SwordItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.GLITCHITE, 4, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_PICKAXE = ITEMS.register("glitchite_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.GLITCHITE, 4, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_AXE = ITEMS.register("glitchite_axe",
-            () -> new AxeItem(ModToolTiers.SAPPHIRE, 5, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.GLITCHITE, 5, 1, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_SHOVEL = ITEMS.register("glitchite_shovel",
-            () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.GLITCHITE, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_HOE = ITEMS.register("glitchite_hoe",
-            () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.GLITCHITE, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_HELMET = ITEMS.register("glitchite_helmet",
             () -> new ArmorItem(ModArmorMaterials.GLITCHITE, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -144,32 +145,50 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_SCYTHE = ITEMS.register("thimeite_scythe",
-            () -> new SwordItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.THIMEITE, 4, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_PICKAXE = ITEMS.register("thimeite_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.THIMEITE, 4, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_AXE = ITEMS.register("thimeite_axe",
-            () -> new AxeItem(ModToolTiers.SAPPHIRE, 5, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.THIMEITE, 5, 1, new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_SHOVEL = ITEMS.register("thimeite_shovel",
-            () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.THIMEITE, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_HOE = ITEMS.register("thimeite_hoe",
-            () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.THIMEITE, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_SWORD = ITEMS.register("refined_diamond_sword",
-            () -> new SwordItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.REFINED_DIAMOND, 4, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_PICKAXE = ITEMS.register("refined_diamond_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.REFINED_DIAMOND, 4, 2, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_AXE = ITEMS.register("refined_diamond_axe",
-            () -> new AxeItem(ModToolTiers.SAPPHIRE, 5, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.REFINED_DIAMOND, 5, 1, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_SHOVEL = ITEMS.register("refined_diamond_shovel",
-            () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.REFINED_DIAMOND, 0, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_HOE = ITEMS.register("refined_diamond_hoe",
-            () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.REFINED_DIAMOND, 0, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE_HELMET = ITEMS.register("ocarite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.OCARITE, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE_CHESPLATE = ITEMS.register("ocarite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.OCARITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE_LEGGINGS = ITEMS.register("ocarite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.OCARITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE_BOOTS = ITEMS.register("ocarite_boots",
+            () -> new ArmorItem(ModArmorMaterials.OCARITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_MUSIC_DISC = ITEMS.register("thimeite_music_disc",
+            () -> new RecordItem(6, ModSounds.GOLDEN_ODESSEY, new Item.Properties().stacksTo(1), 5820));
+
+    public static final RegistryObject<Item> BAR_BRAWL_MUSIC_DISC = ITEMS.register("bar_brawl_music_disc",
+            () -> new RecordItem(6, ModSounds.BAR_BRAWL, new Item.Properties().stacksTo(1), 2440));
 }

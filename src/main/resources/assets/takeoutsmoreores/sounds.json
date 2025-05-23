@@ -1,0 +1,26 @@
+{
+  "metal_detector_found_ore": {
+    "subtitles": "sounds.takeoutsmoreores.metal_detector_found_ore",
+    "sounds": [
+      "takeoutsmoreores:metal_detector_found_ore"
+    ]
+  },
+
+  "bar_brawl": {
+    "sounds": [
+      {
+        "name": "takeoutsmoreores:bar_brawl",
+        "stream": true
+      }
+    ]
+  },
+
+  "golden_odyssey": {
+    "sounds": [
+      {
+        "name": "takeoutsmoreores:golden_odyssey",
+        "stream": true
+      }
+    ]
+  }
+}

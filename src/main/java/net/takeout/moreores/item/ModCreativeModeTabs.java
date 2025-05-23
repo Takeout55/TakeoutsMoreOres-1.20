@@ -108,6 +108,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHEESIUM_WALL.get());
                         pOutput.accept(ModBlocks.CHEESIUM_PRESSURE_PLATE.get());
                         pOutput.accept(ModBlocks.NETHER_BRICK_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.DIRT_SLAB.get());
+                        pOutput.accept(ModBlocks.DIRT_STAIRS.get());
                     })
                     .build());
 
@@ -167,6 +169,12 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.GLITCHITE_CHESTPLATE.get());
                         pOutput.accept(ModItems.GLITCHITE_LEGGINGS.get());
                         pOutput.accept(ModItems.GLITCHITE_BOOTS.get());
+                        pOutput.accept(ModItems.OCARITE_HELMET.get());
+                        pOutput.accept(ModItems.OCARITE_CHESPLATE.get());
+                        pOutput.accept(ModItems.OCARITE_LEGGINGS.get());
+                        pOutput.accept(ModItems.OCARITE_BOOTS.get());
+                        pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+                        pOutput.accept(ModItems.THIMEITE_MUSIC_DISC.get());
 
                     })
                     .build());

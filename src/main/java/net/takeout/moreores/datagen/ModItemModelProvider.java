@@ -62,6 +62,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_ENDITE);
         simpleItem(ModItems.ENDITE);
         simpleItem(ModItems.THIMEITE);
+        simpleItem(ModItems.BAR_BRAWL_MUSIC_DISC);
+        simpleItem(ModItems.THIMEITE_MUSIC_DISC);
         
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
@@ -114,6 +116,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trapdoorItem(ModBlocks.EARIUM_TRAPDOOR);
 
         evenSimplerBlockItem(ModBlocks.NETHER_BRICK_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.DIRT_STAIRS);
+        evenSimplerBlockItem(ModBlocks.DIRT_SLAB);
 
         handheldItem(ModItems.SAPPHIRE_SWORD);
         handheldItem(ModItems.SAPPHIRE_PICKAXE);
@@ -151,6 +155,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlockItem(ModBlocks.REFINED_DIAMOND_DOOR);
 
         evenSimplerBlockItem(ModBlocks.NETHER_BRICK_FENCE_GATE);
+        evenSimplerBlockItem(ModBlocks.DIRT_SLAB);
+        evenSimplerBlockItem(ModBlocks.DIRT_STAIRS);
 
         trimmedArmorItem(ModItems.SAPPHIRE_HELMET);
         trimmedArmorItem(ModItems.SAPPHIRE_CHESTPLATE);
@@ -166,6 +172,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.GLITCHITE_CHESTPLATE);
         trimmedArmorItem(ModItems.GLITCHITE_BOOTS);
         trimmedArmorItem(ModItems.GLITCHITE_LEGGINGS);
+
+        //trimmedArmorItem(ModItems.OCARITE_HELMET);
+        //trimmedArmorItem(ModItems.OCARITE_CHESPLATE);
+        //trimmedArmorItem(ModItems.OCARITE_LEGGINGS);
+        //trimmedArmorItem(ModItems.OCARITE_BOOTS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
