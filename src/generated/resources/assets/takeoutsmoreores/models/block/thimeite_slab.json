@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "takeoutsmoreores:block/thimeite_block",
+    "side": "takeoutsmoreores:block/thimeite_block",
+    "top": "takeoutsmoreores:block/thimeite_block"
+  }
+}

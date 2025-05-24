@@ -177,7 +177,7 @@ public class ModItems {
     public static final RegistryObject<Item> OCARITE_HELMET = ITEMS.register("ocarite_helmet",
             () -> new ArmorItem(ModArmorMaterials.OCARITE, ArmorItem.Type.HELMET, new Item.Properties()));
 
-    public static final RegistryObject<Item> OCARITE_CHESPLATE = ITEMS.register("ocarite_chestplate",
+    public static final RegistryObject<Item> OCARITE_CHESTPLATE = ITEMS.register("ocarite_chestplate",
             () -> new ArmorItem(ModArmorMaterials.OCARITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final RegistryObject<Item> OCARITE_LEGGINGS = ITEMS.register("ocarite_leggings",
@@ -194,4 +194,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> VINYL_TEMPLATE = ITEMS.register("vinyl_template",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIRCON_HELMET = ITEMS.register("zircon_helmet",
+            () -> new ArmorItem(ModArmorMaterials.ZIRCON, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIRCON_CHESTPLATE = ITEMS.register("zircon_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.ZIRCON, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIRCON_LEGGINGS = ITEMS.register("zircon_leggings",
+            () -> new ArmorItem(ModArmorMaterials.ZIRCON, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIRCON_BOOTS = ITEMS.register("zircon_boots",
+            () -> new ArmorItem(ModArmorMaterials.ZIRCON, ArmorItem.Type.BOOTS, new Item.Properties()));
 }

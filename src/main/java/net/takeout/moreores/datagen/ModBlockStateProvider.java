@@ -114,6 +114,16 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceGateBlock(((FenceGateBlock) ModBlocks.NETHER_BRICK_FENCE_GATE.get()), blockTexture(Blocks.NETHER_BRICKS));
         slabBlock(((SlabBlock) ModBlocks.DIRT_SLAB.get()), blockTexture(Blocks.DIRT), blockTexture(Blocks.DIRT));
         stairsBlock(((StairBlock) ModBlocks.DIRT_STAIRS.get()), blockTexture(Blocks.DIRT));
+
+        stairsBlock(((StairBlock) ModBlocks.THIMEITE_STAIRS.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
+        slabBlock(((SlabBlock) ModBlocks.THIMEITE_SLAB.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.THIMEITE_BUTTON.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
+        pressurePlateBlock(((PressurePlateBlock) ModBlocks.THIMEITE_PRESSURE_PLATE.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
+        fenceBlock(((FenceBlock) ModBlocks.THIMEITE_FENCE.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
+        fenceGateBlock(((FenceGateBlock) ModBlocks.THIMEITE_FENCE_GATE.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
+        wallBlock(((WallBlock) ModBlocks.THIMEITE_WALL.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
+        // doorBlockWithRenderType(((DoorBlock) ModBlocks.THIMEITE_DOOR.get()), modLoc("block/thimeite_door_bottom"), modLoc("block/thimeite_door_top"), "cutout");
+        // trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.THIMEITE_TRAPDOOR.get()), modLoc("block/thimeite_trapdoor"), true, "cutout");
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

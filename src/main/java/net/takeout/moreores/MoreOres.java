@@ -1,6 +1,7 @@
 package net.takeout.moreores;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
@@ -13,6 +14,8 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.takeout.moreores.block.ModBlocks;
+import net.takeout.moreores.entity.ModEntities;
+import net.takeout.moreores.entity.client.RhinoRenderer;
 import net.takeout.moreores.item.ModCreativeModeTabs;
 import net.takeout.moreores.item.ModItems;
 import net.takeout.moreores.loot.ModLootModifiers;
@@ -31,6 +34,7 @@ public class MoreOres {
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         ModLootModifiers.register(modEventBus);
 
@@ -69,6 +73,7 @@ public class MoreOres {
     public static class ClientModEvents {
         @SubscribeEvent
         public static void onClientSetup(FMLClientSetupEvent event) {
+            EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
 
         }
     }

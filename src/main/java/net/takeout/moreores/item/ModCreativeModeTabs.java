@@ -107,6 +107,15 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHEESIUM_FENCE.get());
                         pOutput.accept(ModBlocks.CHEESIUM_WALL.get());
                         pOutput.accept(ModBlocks.CHEESIUM_PRESSURE_PLATE.get());
+                        pOutput.accept(ModBlocks.THIMEITE_STAIRS.get());
+                        pOutput.accept(ModBlocks.THIMEITE_SLAB.get());
+                        // pOutput.accept(ModBlocks.THIMEITE_TRAPDOOR.get());
+                        // pOutput.accept(ModBlocks.THIMEITE_DOOR.get());
+                        pOutput.accept(ModBlocks.THIMEITE_BUTTON.get());
+                        pOutput.accept(ModBlocks.THIMEITE_FENCE_GATE.get());
+                        pOutput.accept(ModBlocks.THIMEITE_FENCE.get());
+                        pOutput.accept(ModBlocks.THIMEITE_WALL.get());
+                        pOutput.accept(ModBlocks.THIMEITE_PRESSURE_PLATE.get());
                         pOutput.accept(ModBlocks.NETHER_BRICK_FENCE_GATE.get());
                         pOutput.accept(ModBlocks.DIRT_SLAB.get());
                         pOutput.accept(ModBlocks.DIRT_STAIRS.get());
@@ -137,6 +146,9 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_ENDITE.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
+                        pOutput.accept(ModItems.VINYL_TEMPLATE.get());
+                        pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
+                        pOutput.accept(ModItems.THIMEITE_MUSIC_DISC.get());
                         pOutput.accept(ModItems.SAPPHIRE_SWORD.get());
                         pOutput.accept(ModItems.SAPPHIRE_PICKAXE.get());
                         pOutput.accept(ModItems.SAPPHIRE_AXE.get());
@@ -170,11 +182,13 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.GLITCHITE_LEGGINGS.get());
                         pOutput.accept(ModItems.GLITCHITE_BOOTS.get());
                         pOutput.accept(ModItems.OCARITE_HELMET.get());
-                        pOutput.accept(ModItems.OCARITE_CHESPLATE.get());
+                        pOutput.accept(ModItems.OCARITE_CHESTPLATE.get());
                         pOutput.accept(ModItems.OCARITE_LEGGINGS.get());
                         pOutput.accept(ModItems.OCARITE_BOOTS.get());
-                        pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
-                        pOutput.accept(ModItems.THIMEITE_MUSIC_DISC.get());
+                        pOutput.accept(ModItems.ZIRCON_HELMET.get());
+                        pOutput.accept(ModItems.ZIRCON_CHESTPLATE.get());
+                        pOutput.accept(ModItems.ZIRCON_LEGGINGS.get());
+                        pOutput.accept(ModItems.ZIRCON_BOOTS.get());
 
                     })
                     .build());

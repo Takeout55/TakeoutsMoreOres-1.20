@@ -549,7 +549,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEESIUM_SLAB.get())
                 .pattern("SSS")
-                .define('S', ModBlocks.EARIUM_BLOCK.get())
+                .define('S', ModBlocks.CHEESIUM_BLOCK.get())
                 .unlockedBy(getHasName(ModItems.CHEESIUM.get()), has(ModItems.CHEESIUM.get()))
                 .save(pWriter);
 
@@ -769,6 +769,126 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE_MUSIC_DISC.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_PRESSURE_PLATE.get())
+                .pattern("SS")
+                .define('S', ModBlocks.THIMEITE_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_STAIRS.get())
+                .pattern("S  ")
+                .pattern("SS ")
+                .pattern("SSS")
+                .define('S', ModBlocks.THIMEITE_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
+                .save(pWriter);
+
+        //ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_TRAPDOOR.get())
+        //        .pattern("SSS")
+        //        .pattern("SSS")
+        //        .define('S', ModItems.THIMEITE.get())
+        //        .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+        //        .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_WALL.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModBlocks.THIMEITE_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
+                .save(pWriter);
+
+        //ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_DOOR.get())
+        //        .pattern("SS")
+        //        .pattern("SS")
+        //        .pattern("SS")
+        //        .define('S', ModBlocks.THIMEITE_BLOCK.get())
+        //      .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+        //        .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_FENCE_GATE.get())
+                .pattern("MSM")
+                .pattern("MSM")
+                .define('S', ModBlocks.THIMEITE_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.THIMEITE_BLOCK.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_FENCE.get())
+                .pattern("SMS")
+                .pattern("SMS")
+                .define('S', ModBlocks.THIMEITE_BLOCK.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModBlocks.THIMEITE_BLOCK.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_SLAB.get())
+                .pattern("SSS")
+                .define('S', ModBlocks.THIMEITE_BLOCK.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OCARITE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.OCARITE.get())
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OCARITE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("   ")
+                .define('S', ModItems.OCARITE.get())
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OCARITE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.OCARITE.get())
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OCARITE_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.OCARITE.get())
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIRCON_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.ZIRCON.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIRCON_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("   ")
+                .define('S', ModItems.ZIRCON.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIRCON_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.ZIRCON.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIRCON_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.ZIRCON.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
@@ -835,6 +955,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.THIMEITE.get(), 9)
+                .requires(ModBlocks.THIMEITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.THIMEITE_BLOCK.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.THIMEITE_BUTTON.get())
                 .requires(ModBlocks.THIMEITE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.THIMEITE_BLOCK.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
                 .save(pWriter);

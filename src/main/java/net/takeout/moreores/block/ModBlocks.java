@@ -247,30 +247,30 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> CHEESIUM_STAIRS = registerBlock("cheesium_stairs",
             () -> new StairBlock(() -> ModBlocks.CHEESIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+                    BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
     public static final RegistryObject<Block> CHEESIUM_SLAB = registerBlock("cheesium_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
     public static final RegistryObject<Block> CHEESIUM_BUTTON = registerBlock("cheesium_button",
-            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).instabreak(),
                     BlockSetType.IRON, 10, true));
 
     public static final RegistryObject<Block> CHEESIUM_PRESSURE_PLATE = registerBlock("cheesium_pressure_plate",
-            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak(),
-                    BlockSetType.IRON));
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak(),
+                    BlockSetType.OAK));
 
     public static final RegistryObject<Block> CHEESIUM_FENCE = registerBlock("cheesium_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
     public static final RegistryObject<Block> CHEESIUM_FENCE_GATE = registerBlock("cheesium_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DIRT), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
 
     public static final RegistryObject<Block> CHEESIUM_WALL = registerBlock("cheesium_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
     public static final RegistryObject<Block> CHEESIUM_DOOR = registerBlock("cheesium_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).noOcclusion(), BlockSetType.OAK));
 
     public static final RegistryObject<Block> CHEESIUM_TRAPDOOR = registerBlock("cheesium_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
@@ -311,6 +311,36 @@ public class ModBlocks {
     public static final RegistryObject<Block> DIRT_STAIRS = registerBlock("dirt_stairs",
             () -> new StairBlock(() -> Blocks.DIRT.defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.DIRT)));
+
+    public static final RegistryObject<Block> THIMEITE_STAIRS = registerBlock("thimeite_stairs",
+            () -> new StairBlock(() -> ModBlocks.CHEESIUM_BLOCK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> THIMEITE_SLAB = registerBlock("thimeite_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+
+    public static final RegistryObject<Block> THIMEITE_BUTTON = registerBlock("thimeite_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
+                    BlockSetType.IRON, 10, true));
+
+    public static final RegistryObject<Block> THIMEITE_PRESSURE_PLATE = registerBlock("thimeite_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING, BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak(),
+                    BlockSetType.IRON));
+
+    public static final RegistryObject<Block> THIMEITE_FENCE = registerBlock("thimeite_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    public static final RegistryObject<Block> THIMEITE_FENCE_GATE = registerBlock("thimeite_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+
+    public static final RegistryObject<Block> THIMEITE_WALL = registerBlock("thimeite_wall",
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+
+    // public static final RegistryObject<Block> THIMEITE_DOOR = registerBlock("cheesium_door",
+    //        () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
+
+    // public static final RegistryObject<Block> THIMEITE_TRAPDOOR = registerBlock("cheesium_trapdoor",
+    //        () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
 
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

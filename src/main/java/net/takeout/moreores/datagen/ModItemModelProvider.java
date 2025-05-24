@@ -64,6 +64,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.THIMEITE);
         simpleItem(ModItems.BAR_BRAWL_MUSIC_DISC);
         simpleItem(ModItems.THIMEITE_MUSIC_DISC);
+        simpleItem(ModItems.VINYL_TEMPLATE);
         
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
@@ -114,6 +115,16 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.EARIUM_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.EARIUM_FENCE_GATE);
         trapdoorItem(ModBlocks.EARIUM_TRAPDOOR);
+
+        // simpleBlockItem(ModBlocks.THIMEITE_DOOR);
+        fenceItem(ModBlocks.THIMEITE_FENCE, ModBlocks.THIMEITE_BLOCK);
+        buttonItem(ModBlocks.THIMEITE_BUTTON, ModBlocks.THIMEITE_BLOCK);
+        wallItem(ModBlocks.THIMEITE_WALL, ModBlocks.THIMEITE_BLOCK);
+        evenSimplerBlockItem(ModBlocks.THIMEITE_STAIRS);
+        evenSimplerBlockItem(ModBlocks.THIMEITE_SLAB);
+        evenSimplerBlockItem(ModBlocks.THIMEITE_PRESSURE_PLATE);
+        evenSimplerBlockItem(ModBlocks.THIMEITE_FENCE_GATE);
+        // trapdoorItem(ModBlocks.THIMEITE_TRAPDOOR);
 
         evenSimplerBlockItem(ModBlocks.NETHER_BRICK_FENCE_GATE);
         evenSimplerBlockItem(ModBlocks.DIRT_STAIRS);
@@ -173,10 +184,15 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.GLITCHITE_BOOTS);
         trimmedArmorItem(ModItems.GLITCHITE_LEGGINGS);
 
-        //trimmedArmorItem(ModItems.OCARITE_HELMET);
-        //trimmedArmorItem(ModItems.OCARITE_CHESPLATE);
-        //trimmedArmorItem(ModItems.OCARITE_LEGGINGS);
-        //trimmedArmorItem(ModItems.OCARITE_BOOTS);
+        trimmedArmorItem(ModItems.OCARITE_HELMET);
+        trimmedArmorItem(ModItems.OCARITE_CHESTPLATE);
+        trimmedArmorItem(ModItems.OCARITE_LEGGINGS);
+        trimmedArmorItem(ModItems.OCARITE_BOOTS);
+
+        trimmedArmorItem(ModItems.ZIRCON_HELMET);
+        trimmedArmorItem(ModItems.ZIRCON_CHESTPLATE);
+        trimmedArmorItem(ModItems.ZIRCON_BOOTS);
+        trimmedArmorItem(ModItems.ZIRCON_LEGGINGS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

@@ -84,6 +84,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.OCARITE_BLOCK.get());
         this.dropSelf(ModBlocks.THIMEITE_BLOCK.get());
         this.dropSelf(ModBlocks.DIRT_STAIRS.get());
+        this.dropSelf(ModBlocks.THIMEITE_FENCE.get());
+        this.dropSelf(ModBlocks.THIMEITE_FENCE_GATE.get());
+        this.dropSelf(ModBlocks.THIMEITE_WALL.get());
+        // this.dropSelf(ModBlocks.THIMEITE_TRAPDOOR.get());
+        this.dropSelf(ModBlocks.THIMEITE_WALL.get());
+        this.dropSelf(ModBlocks.THIMEITE_PRESSURE_PLATE.get());
+        this.dropSelf(ModBlocks.THIMEITE_BUTTON.get());
+        this.dropSelf(ModBlocks.THIMEITE_STAIRS.get());
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
@@ -117,6 +125,11 @@ public class ModBlockLootTables extends BlockLootSubProvider {
 
         this.add(ModBlocks.DIRT_SLAB.get(),
                  block -> createSlabItemTable(ModBlocks.DIRT_SLAB.get()));
+
+        this.add(ModBlocks.THIMEITE_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.THIMEITE_SLAB.get()));
+        //this.add(ModBlocks.THIMEITE_DOOR.get(),
+        //        block -> createDoorTable(ModBlocks.THIMEITE_DOOR.get()));
 
 
         this.add(ModBlocks.SAPPHIRE_ORE.get(),
