@@ -167,5 +167,7 @@
   "block.takeoutsmoreores.thimeite_fence_gate": "Thimeite Fence Gate",
   "block.takeoutsmoreores.thimeite_fence": "Thimeite Fence",
   "block.takeoutsmoreores.thimeite_wall": "Thimeite Wall",
-  "block.takeoutsmoreores.thimeite_pressure_plate": "Thimeite Pressure Plate"
+  "block.takeoutsmoreores.thimeite_pressure_plate": "Thimeite Pressure Plate",
+  "item.takeoutsmoreores.rhino_spawn_egg": "Rhino Spawn Egg",
+  "entity.takeoutsmoreores.rhino": "Rhino"
 }

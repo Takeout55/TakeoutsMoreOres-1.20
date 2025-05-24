@@ -189,7 +189,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.ZIRCON_CHESTPLATE.get());
                         pOutput.accept(ModItems.ZIRCON_LEGGINGS.get());
                         pOutput.accept(ModItems.ZIRCON_BOOTS.get());
-
+                        pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
                     })
                     .build());
 

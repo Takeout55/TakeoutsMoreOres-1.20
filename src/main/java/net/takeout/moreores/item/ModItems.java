@@ -1,14 +1,18 @@
 package net.takeout.moreores.item;
 
 import net.minecraft.world.item.*;
+import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.takeout.moreores.MoreOres;
+import net.takeout.moreores.entity.ModEntities;
 import net.takeout.moreores.item.custom.FuelItem;
 import net.takeout.moreores.item.custom.MetalDetectorItem;
 import net.takeout.moreores.sounds.ModSounds;
+
+import java.rmi.registry.Registry;
 
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
@@ -206,4 +210,8 @@ public class ModItems {
 
     public static final RegistryObject<Item> ZIRCON_BOOTS = ITEMS.register("zircon_boots",
             () -> new ArmorItem(ModArmorMaterials.ZIRCON, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> RHINO_SPAWN_EGG = ITEMS.register("rhino_spawn_egg",
+            () -> new ForgeSpawnEggItem(ModEntities.RHINO, 0x7e9680, 0xc5d1c5,
+                    new Item.Properties()));
 }

@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-24T08:29:38.4197233	Item Models: takeoutsmoreores
+// 1.20.1	2025-05-24T11:03:05.8056912	Item Models: takeoutsmoreores
 1eb5f83fa8fcfba09b190a4f7a60592f8e38087a assets/takeoutsmoreores/models/item/bar_brawl_music_disc.json
 c15a09e0b8cd98b7f2d1c9bd55e116fb041db771 assets/takeoutsmoreores/models/item/cheesium.json
 0527e3a574022639bf49725e54b2dd6ac0c53faa assets/takeoutsmoreores/models/item/cheesium_button.json
@@ -196,6 +196,7 @@ b565e9569e390342d2cfaf307e55d17cb959d7ba assets/takeoutsmoreores/models/item/ref
 eddb548caea4732c194cf348706ae7071c9998c7 assets/takeoutsmoreores/models/item/refined_diamond_sword.json
 e0b1553547f19b0dfd368b277c89fe87898a5eda assets/takeoutsmoreores/models/item/refined_diamond_trapdoor.json
 53327cf3a35390d656160317bf497adc8b7ae5fb assets/takeoutsmoreores/models/item/refined_diamond_wall.json
+63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/takeoutsmoreores/models/item/rhino_spawn_egg.json
 01dabb8a0d2e44ae683506955131d309749f4c3b assets/takeoutsmoreores/models/item/sapphire.json
 2bfd35eef4b7551058e5f03b30c0be44f76880d6 assets/takeoutsmoreores/models/item/sapphire_axe.json
 0a37d4a40c9489d8e90d80ab815759d0619dda2b assets/takeoutsmoreores/models/item/sapphire_boots.json

@@ -193,6 +193,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.ZIRCON_CHESTPLATE);
         trimmedArmorItem(ModItems.ZIRCON_BOOTS);
         trimmedArmorItem(ModItems.ZIRCON_LEGGINGS);
+
+        withExistingParent(ModItems.RHINO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
