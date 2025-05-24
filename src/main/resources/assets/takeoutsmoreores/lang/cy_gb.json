@@ -169,5 +169,6 @@
   "block.takeoutsmoreores.thimeite_wall": "Wal Amseron",
   "block.takeoutsmoreores.thimeite_pressure_plate": "Gwasglechen Amserlon",
   "item.takeoutsmoreores.rhino_spawn_egg": "Rhino Spawn Egg",
-  "entity.takeoutsmoreores.rhino": "Rhino"
+  "entity.takeoutsmoreores.rhino": "Rhino",
+  "item.takeoutsmoreores.pinkite_ingot": "Bar Pincite"
 }

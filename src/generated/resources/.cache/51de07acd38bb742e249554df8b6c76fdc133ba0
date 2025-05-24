@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-24T15:59:47.0542869	Item Models: takeoutsmoreores
+// 1.20.1	2025-05-24T16:03:50.0674273	Item Models: takeoutsmoreores
 1eb5f83fa8fcfba09b190a4f7a60592f8e38087a assets/takeoutsmoreores/models/item/bar_brawl_music_disc.json
 c15a09e0b8cd98b7f2d1c9bd55e116fb041db771 assets/takeoutsmoreores/models/item/cheesium.json
 0527e3a574022639bf49725e54b2dd6ac0c53faa assets/takeoutsmoreores/models/item/cheesium_button.json
@@ -82,7 +82,7 @@ ddefe226abb64eb5de5c3729c7d4581343640f79 assets/takeoutsmoreores/models/item/gli
 f5fec700a828efdc86689f1febed2f20d476a632 assets/takeoutsmoreores/models/item/glitchite_sword.json
 95f3e2b0f2c401f91f1a92ca78e5bd7f600f9a6c assets/takeoutsmoreores/models/item/glitchite_trapdoor.json
 856f3dead3c0dbcf6942f43c13ebebb4f4aa1097 assets/takeoutsmoreores/models/item/glitchite_wall.json
-e64924e922ae83dd25768ddd565922cc2bc67644 assets/takeoutsmoreores/models/item/metal_detector.json
+9c61a99663bcadfb9d4037b1c231d8977d33eafa assets/takeoutsmoreores/models/item/metal_detector.json
 1d71d0395ba48882e8b4e45bc27ae45db49da07a assets/takeoutsmoreores/models/item/metal_rod.json
 477b3c70709afc4280d42d72947bf963e9fbaff3 assets/takeoutsmoreores/models/item/nether_brick_fence_gate.json
 ddadf216a34b221b35fee083a9bdccb249622fd3 assets/takeoutsmoreores/models/item/ocarite.json

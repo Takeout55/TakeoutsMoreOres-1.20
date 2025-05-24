@@ -155,7 +155,7 @@
   "item.takeoutsmoreores.bar_brawl_music_disc": "Bar Brawl Music Disc",
   "item.takeoutsmoreores.bar_brawl_music_disc.desc": "Bryan Tech - Bar Brawl (CC0)",
   "item.takeoutsmoreores.thimeite_music_disc": "Thimite Music Disc",
-  "item.takeoutsmoreores.thimeite_music_disc.desc": "Golden Oddyssey - Toby Carter, Ifan Davies",
+  "item.takeoutsmoreores.thimeite_music_disc.desc": "Golden Odyssey - Toby Carter, Ifan Davies",
   "item.takeoutsmoreores.zircon_helmet": "Zircon Helmet",
   "item.takeoutsmoreores.zircon_chestplate": "Zircon Chestplate",
   "item.takeoutsmoreores.zircon_leggings": "Zircon Leggings",
@@ -169,5 +169,6 @@
   "block.takeoutsmoreores.thimeite_wall": "Thimeite Wall",
   "block.takeoutsmoreores.thimeite_pressure_plate": "Thimeite Pressure Plate",
   "item.takeoutsmoreores.rhino_spawn_egg": "Rhino Spawn Egg",
-  "entity.takeoutsmoreores.rhino": "Rhino"
+  "entity.takeoutsmoreores.rhino": "Rhino",
+  "item.takeoutsmoreores.pinkite_ingot": "Pinkite Ingot"
 }
