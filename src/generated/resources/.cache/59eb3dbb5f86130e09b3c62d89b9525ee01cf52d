@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-24T08:29:38.4167287	Loot Tables
+// 1.20.1	2025-05-24T12:53:18.1771238	Loot Tables
 a28f7ffe3b01b897c314a7e63ca27ab5a9fba56e data/takeoutsmoreores/loot_tables/blocks/ancient_voidstone.json
 d636bcf64940d7625843d57b88bc44b2168d35b5 data/takeoutsmoreores/loot_tables/blocks/cheesium_block.json
 f9bbe3d475ed1ee8f7715de4a462a487dfd70434 data/takeoutsmoreores/loot_tables/blocks/cheesium_button.json
@@ -81,7 +81,7 @@ a0f0ac49025d70f4b569629a3d285abfb58a32ca data/takeoutsmoreores/loot_tables/block
 f8d66b003c4666b9c50638ffa08b327eb506bcb1 data/takeoutsmoreores/loot_tables/blocks/thimeite_button.json
 feebf8d05b357cba37b1517189776775b7fa0a2d data/takeoutsmoreores/loot_tables/blocks/thimeite_fence.json
 9d4bb4083b54c9622c31e085f4346f53978450a1 data/takeoutsmoreores/loot_tables/blocks/thimeite_fence_gate.json
-1cb89bc30f02017771a548cb8122bba0ad05bf8d data/takeoutsmoreores/loot_tables/blocks/thimeite_ore.json
+69de6ab17aef18bfb7c025804a779d29495707c2 data/takeoutsmoreores/loot_tables/blocks/thimeite_ore.json
 e018ccd8abb6516accfc40c0ad412ebe89cca494 data/takeoutsmoreores/loot_tables/blocks/thimeite_pressure_plate.json
 17a864123f5827050fc21a3ae4fd4bf3bc26fbad data/takeoutsmoreores/loot_tables/blocks/thimeite_slab.json
 41a792fc295ccb13e1f8830e368d3042ba0b0ce2 data/takeoutsmoreores/loot_tables/blocks/thimeite_stairs.json

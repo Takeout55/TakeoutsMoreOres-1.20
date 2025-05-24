@@ -138,6 +138,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.OCARITE.get());
                         pOutput.accept(ModItems.ENDITE.get());
                         pOutput.accept(ModItems.THIMEITE.get());
+                        pOutput.accept(ModItems.PINKITE_INGOT.get());
                         pOutput.accept(ModItems.RAW_ZIRCON.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_EARIUM.get());

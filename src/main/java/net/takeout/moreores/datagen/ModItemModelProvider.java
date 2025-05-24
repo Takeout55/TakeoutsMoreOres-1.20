@@ -65,6 +65,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.BAR_BRAWL_MUSIC_DISC);
         simpleItem(ModItems.THIMEITE_MUSIC_DISC);
         simpleItem(ModItems.VINYL_TEMPLATE);
+        simpleItem(ModItems.PINKITE_INGOT);
         
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);

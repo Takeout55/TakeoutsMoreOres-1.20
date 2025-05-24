@@ -3,6 +3,7 @@ package net.takeout.moreores.datagen;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
+import net.minecraft.world.item.crafting.ShapedRecipe;
 import net.minecraft.world.level.block.Blocks;
 import net.takeout.moreores.MoreOres;
 import net.takeout.moreores.block.ModBlocks;
@@ -46,6 +47,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private static final List<ItemLike> THIMEITE_SMELTABLES = List.of(ModBlocks.THIMEITE_ORE.get(),
             ModBlocks.DEEPSLATE_THIMEITE_ORE.get(), ModBlocks.END_STONE_THIMEITE_ORE.get(), ModBlocks.NETHER_THIMEITE_ORE.get());
 
+    private static final List<ItemLike> PINKITE_SMELTABLES = List.of(ModItems.RAW_PINKITE.get());
+
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -70,6 +73,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pWriter, ENDITE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDITE.get(), 0.25f, 200, "sapphire");
         oreBlasting(pWriter, THIMEITE_SMELTABLES, RecipeCategory.MISC, ModItems.THIMEITE.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, THIMEITE_SMELTABLES, RecipeCategory.MISC, ModItems.THIMEITE.get(), 0.25f, 200, "sapphire");
+        oreBlasting(pWriter, PINKITE_SMELTABLES, RecipeCategory.MISC, ModItems.PINKITE_INGOT.get(), 0.25f, 100, "sapphire");
+        oreSmelting(pWriter, PINKITE_SMELTABLES, RecipeCategory.MISC, ModItems.PINKITE_INGOT.get(), 0.25f, 200, "sapphire");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
@@ -887,6 +892,17 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("S S")
                 .define('S', ModItems.ZIRCON.get())
                 .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.VINYL_TEMPLATE.get())
+                .pattern("SSS")
+                .pattern("MAM")
+                .pattern("DAD")
+                .define('S', ModItems.REFINED_DIAMOND.get())
+                .define('M', ModItems.METAL_ROD.get())
+                .define('D', Items.DIAMOND)
+                .define('A', Items.DISC_FRAGMENT_5)
+                .unlockedBy(getHasName(Items.DISC_FRAGMENT_5), has(Items.DISC_FRAGMENT_5))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)

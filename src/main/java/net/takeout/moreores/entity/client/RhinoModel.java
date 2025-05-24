@@ -5,15 +5,25 @@ package net.takeout.moreores.entity.client;// Made with Blockbench 4.8.3
 
 import com.mojang.blaze3d.vertex.PoseStack;
 import com.mojang.blaze3d.vertex.VertexConsumer;
-import net.minecraft.client.model.EntityModel;
 import net.minecraft.client.model.HierarchicalModel;
 import net.minecraft.client.model.geom.ModelPart;
 import net.minecraft.client.model.geom.PartPose;
 import net.minecraft.client.model.geom.builders.*;
+import net.minecraft.core.BlockPos;
+import net.minecraft.core.Holder;
+import net.minecraft.tags.BiomeTags;
 import net.minecraft.util.Mth;
+import net.minecraft.util.RandomSource;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.entity.EntityType;
+import net.minecraft.world.entity.MobSpawnType;
+import net.minecraft.world.entity.animal.PolarBear;
+import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.biome.Biome;
 import net.takeout.moreores.entity.animations.ModAnimationDefinitions;
 import net.takeout.moreores.entity.custom.RhinoEntity;
+
+import static net.minecraft.world.entity.animal.Animal.checkAnimalSpawnRules;
 
 public class RhinoModel<T extends Entity> extends HierarchicalModel<T> {
 	private final ModelPart rhino;
@@ -91,6 +101,7 @@ public class RhinoModel<T extends Entity> extends HierarchicalModel<T> {
 
 		this.animateWalk(ModAnimationDefinitions.RHINO_WALK, limbSwing, limbSwingAmount, 2f, 2.5f);
 		this.animate(((RhinoEntity) entity).idleAnimationState, ModAnimationDefinitions.RHINO_IDLE, ageInTicks, 1f);
+		this.animate(((RhinoEntity) entity).attackAnimationState, ModAnimationDefinitions.RHINO_ATTACK, ageInTicks, 1f);
 	}
 
 	private void applyHeadRotation(float pNetHeadYaw, float pHeadPitch, float pAgeInTicks) {
@@ -105,6 +116,7 @@ public class RhinoModel<T extends Entity> extends HierarchicalModel<T> {
 	public void renderToBuffer(PoseStack poseStack, VertexConsumer vertexConsumer, int packedLight, int packedOverlay, float red, float green, float blue, float alpha) {
 		rhino.render(poseStack, vertexConsumer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
+
 
 	@Override
 	public ModelPart root() {

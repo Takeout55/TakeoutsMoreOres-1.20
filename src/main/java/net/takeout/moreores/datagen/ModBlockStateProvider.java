@@ -103,7 +103,7 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
         stairsBlock(((StairBlock) ModBlocks.CHEESIUM_STAIRS.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()));
         slabBlock(((SlabBlock) ModBlocks.CHEESIUM_SLAB.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()));
-        buttonBlock(((ButtonBlock) ModBlocks.CHEESIUM_BUTTON.get()), blockTexture(ModBlocks.GLITCHITE_BLOCK.get()));
+        buttonBlock(((ButtonBlock) ModBlocks.CHEESIUM_BUTTON.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()));
         pressurePlateBlock(((PressurePlateBlock) ModBlocks.CHEESIUM_PRESSURE_PLATE.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()));
         fenceBlock(((FenceBlock) ModBlocks.CHEESIUM_FENCE.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.CHEESIUM_FENCE_GATE.get()), blockTexture(ModBlocks.CHEESIUM_BLOCK.get()));

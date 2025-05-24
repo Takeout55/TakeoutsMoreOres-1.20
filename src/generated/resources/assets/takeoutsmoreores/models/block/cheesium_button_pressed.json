@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:block/button_pressed",
   "textures": {
-    "texture": "takeoutsmoreores:block/glitchite_block"
+    "texture": "takeoutsmoreores:block/cheesium_block"
   }
 }

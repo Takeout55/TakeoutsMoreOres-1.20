@@ -175,7 +175,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.NETHER_GLITCHITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.NETHER_GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
         this.add(ModBlocks.THIMEITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.THIMEITE_BLOCK.get(), ModItems.THIMEITE.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
         this.add(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
         this.add(ModBlocks.NETHER_THIMEITE_ORE.get(),

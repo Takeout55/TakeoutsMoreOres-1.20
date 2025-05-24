@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-24T11:03:05.8056912	Item Models: takeoutsmoreores
+// 1.20.1	2025-05-24T15:59:47.0542869	Item Models: takeoutsmoreores
 1eb5f83fa8fcfba09b190a4f7a60592f8e38087a assets/takeoutsmoreores/models/item/bar_brawl_music_disc.json
 c15a09e0b8cd98b7f2d1c9bd55e116fb041db771 assets/takeoutsmoreores/models/item/cheesium.json
 0527e3a574022639bf49725e54b2dd6ac0c53faa assets/takeoutsmoreores/models/item/cheesium_button.json
@@ -130,6 +130,7 @@ ea5375990df8be521ca444c3fbcf9a772d12b493 assets/takeoutsmoreores/models/item/oca
 2b7272de3d762e03c577909a4ab7be1fd1e60424 assets/takeoutsmoreores/models/item/ocarite_leggings_netherite_trim.json
 ceb445a320a62950a6897694e7def8165c3716bd assets/takeoutsmoreores/models/item/ocarite_leggings_quartz_trim.json
 15feef2b975d86bf0fa07d9dc46982db24f1ed6d assets/takeoutsmoreores/models/item/ocarite_leggings_redstone_trim.json
+a2c9644996d2c4c97dd44b22c2f311eb335a3a73 assets/takeoutsmoreores/models/item/pinkite_ingot.json
 dad76756e1253827e2af4021b4bc35359dea01ef assets/takeoutsmoreores/models/item/raw_cheesium.json
 08aacf238cfbf1919fd8dfdcf87cc21df6b960c1 assets/takeoutsmoreores/models/item/raw_earium.json
 e7ef836fb69174f0579c00687bce0e71de1178e4 assets/takeoutsmoreores/models/item/raw_endite.json
