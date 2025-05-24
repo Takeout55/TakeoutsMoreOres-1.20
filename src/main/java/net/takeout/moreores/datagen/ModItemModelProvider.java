@@ -66,6 +66,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.THIMEITE_MUSIC_DISC);
         simpleItem(ModItems.VINYL_TEMPLATE);
         simpleItem(ModItems.PINKITE_INGOT);
+        simpleItem(ModItems.RUBY);
+        simpleItem(ModItems.RAW_RUBY);
         
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);

@@ -92,6 +92,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.THIMEITE_PRESSURE_PLATE.get());
         this.dropSelf(ModBlocks.THIMEITE_BUTTON.get());
         this.dropSelf(ModBlocks.THIMEITE_STAIRS.get());
+        this.dropSelf(ModBlocks.RUBY_BLOCK.get());
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
@@ -149,9 +150,9 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.ENDSTONE_ZIRCON_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.ENDSTONE_ZIRCON_ORE.get(), ModItems.RAW_ZIRCON.get()));
         this.add(ModBlocks.GASNITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.GASNITE_ORE.get(), ModItems.RAW_ZIRCON.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.GASNITE_ORE.get(), ModItems.GASNITE.get()));
         this.add(ModBlocks.NETHER_GASNITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.NETHER_GASNITE_ORE.get(), ModItems.RAW_ZIRCON.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_GASNITE_ORE.get(), ModItems.GASNITE.get()));
         this.add(ModBlocks.EARIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.EARIUM_ORE.get(), ModItems.RAW_EARIUM.get()));
         this.add(ModBlocks.NETHER_EARIUM_ORE.get(),
@@ -182,6 +183,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.NETHER_THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
         this.add(ModBlocks.END_STONE_THIMEITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
+        this.add(ModBlocks.RUBY_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
+        this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
+        this.add(ModBlocks.NETHER_RUBY_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
+        this.add(ModBlocks.END_STONE_RUBY_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
 
     }
 
