@@ -144,7 +144,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.GLITCHITE_HOE);
         handheldItem(ModItems.GLITCHITE_SHOVEL);
 
-        handheldItem(ModItems.THIMEITE_SCYTHE);
         handheldItem(ModItems.THIMEITE_PICKAXE);
         handheldItem(ModItems.THIMEITE_AXE);
         handheldItem(ModItems.THIMEITE_HOE);

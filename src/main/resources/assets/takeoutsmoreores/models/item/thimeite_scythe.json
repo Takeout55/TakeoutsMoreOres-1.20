@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:item/handheld",
+  "loader": "forge:separate_transforms",
+  "base": {
+    "parent": "takeoutsmoreores:item/thimeite_scythe_3d"
+  },
+  "perspectives": {
+    "gui": {
+      "parent": "takeoutsmoreores:item/thimeite_scythe_2d"
+    },
+    "ground": {
+      "parent": "takeoutsmoreores:item/thimeite_scythe_2d"
+    },
+    "fixed": {
+      "parent": "takeoutsmoreores:item/thimeite_scythe_2d"
+    }
+  }
+}
