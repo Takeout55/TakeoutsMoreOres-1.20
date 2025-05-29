@@ -50,7 +50,6 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.REFINED_DIAMOND);
         simpleItem(ModItems.REFINED_DIAMOND_SHARD);
         simpleItem(ModItems.GASNITE);
-        simpleItem(ModItems.METAL_DETECTOR);
         simpleItem(ModItems.RAW_PINKITE);
         simpleItem(ModItems.EARIUM);
         simpleItem(ModItems.RAW_EARIUM);
