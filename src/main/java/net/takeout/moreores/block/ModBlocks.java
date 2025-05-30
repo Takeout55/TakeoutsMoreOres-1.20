@@ -357,6 +357,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_RUBY_ORE = registerBlock("end_stone_ruby_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> OCARITE_ORE = registerBlock("ocarite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_OCARITE_ORE = registerBlock("deepslate_ocarite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> NETHER_OCARITE_ORE = registerBlock("nether_ocarite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_STONE_OCARITE_ORE = registerBlock("end_stone_ocarite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
+
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

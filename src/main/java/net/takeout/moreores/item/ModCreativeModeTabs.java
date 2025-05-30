@@ -37,6 +37,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.ANCIENT_VOIDSTONE.get());
                         pOutput.accept(ModBlocks.THIMEITE_ORE.get());
                         pOutput.accept(ModBlocks.RUBY_ORE.get());
+                        pOutput.accept(ModBlocks.OCARITE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_GASNITE_ORE.get());
@@ -44,6 +45,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DEEPSLATE_GLITCHITE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_THIMEITE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_RUBY_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_OCARITE_ORE.get());
                         pOutput.accept(ModBlocks.NETHERRACK_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.NETHERRACK_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_GASNITE_ORE.get());
@@ -51,6 +53,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.NETHER_GLITCHITE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_THIMEITE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_RUBY_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_OCARITE_ORE.get());
                         pOutput.accept(ModBlocks.ENDSTONE_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.ENDSTONE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_EARIUM_ORE.get());
@@ -58,6 +61,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.END_STONE_GLITCHITE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_THIMEITE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_RUBY_ORE.get());
+                        pOutput.accept(ModBlocks.END_STONE_OCARITE_ORE.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_SLAB.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());

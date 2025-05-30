@@ -36,7 +36,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_EARIUM_ORE.get(),
                         ModBlocks.END_STONE_EARIUM_ORE.get(),
                         ModBlocks.END_STONE_GASNITE_ORE.get(),
-                        ModBlocks.DEEPSLATE_GASNITE_ORE.get()
+                        ModBlocks.DEEPSLATE_GASNITE_ORE.get(),
+                        ModBlocks.OCARITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_OCARITE_ORE.get(),
+                        ModBlocks.END_STONE_OCARITE_ORE.get(),
+                        ModBlocks.NETHER_OCARITE_ORE.get()
                     ).addTag(Tags.Blocks.ORES);
 
 
@@ -75,7 +79,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_RUBY_ORE.get(),
                         ModBlocks.END_STONE_RUBY_ORE.get(),
                         ModBlocks.NETHER_RUBY_ORE.get(),
-                        ModBlocks.RUBY_BLOCK.get());
+                        ModBlocks.RUBY_BLOCK.get(),
+                        ModBlocks.OCARITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_OCARITE_ORE.get(),
+                        ModBlocks.END_STONE_OCARITE_ORE.get(),
+                        ModBlocks.NETHER_OCARITE_ORE.get());
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -107,7 +115,11 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_RUBY_ORE.get(),
                         ModBlocks.END_STONE_RUBY_ORE.get(),
                         ModBlocks.NETHER_RUBY_ORE.get(),
-                        ModBlocks.RUBY_BLOCK.get());
+                        ModBlocks.RUBY_BLOCK.get(),
+                        ModBlocks.OCARITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_OCARITE_ORE.get(),
+                        ModBlocks.END_STONE_OCARITE_ORE.get(),
+                        ModBlocks.NETHER_OCARITE_ORE.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.REFINED_DIAMOND_BLOCK.get());

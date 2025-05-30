@@ -1,4 +1,4 @@
-// 1.20.1	2025-05-29T09:34:38.6467887	Item Models: takeoutsmoreores
+// 1.20.1	2025-05-30T19:40:00.0888426	Item Models: takeoutsmoreores
 1eb5f83fa8fcfba09b190a4f7a60592f8e38087a assets/takeoutsmoreores/models/item/bar_brawl_music_disc.json
 c15a09e0b8cd98b7f2d1c9bd55e116fb041db771 assets/takeoutsmoreores/models/item/cheesium.json
 0527e3a574022639bf49725e54b2dd6ac0c53faa assets/takeoutsmoreores/models/item/cheesium_button.json
@@ -267,7 +267,6 @@ b16b0c2e082576fb361a4917b69926ff67405825 assets/takeoutsmoreores/models/item/thi
 7b0fd958bddc88c35ac3978526630f91ccd9cea5 assets/takeoutsmoreores/models/item/thimeite_music_disc.json
 7dfc9adfcd4b75b6b81f2c59496d935f62473aa3 assets/takeoutsmoreores/models/item/thimeite_pickaxe.json
 760d5f8be1f059dcfe0f3dee320ac947ffd994ea assets/takeoutsmoreores/models/item/thimeite_pressure_plate.json
-8921ce5b3b4110322d48e3bcd239ebd84e81d4bf assets/takeoutsmoreores/models/item/thimeite_scythe.json
 c80f6df73f5c8d3c407352de649f29eaf276dcf2 assets/takeoutsmoreores/models/item/thimeite_shovel.json
 77983f935c91298a288d9050067f860a0abce70e assets/takeoutsmoreores/models/item/thimeite_slab.json
 6611c38cc312cea82dbcfe0237532c1febb96746 assets/takeoutsmoreores/models/item/thimeite_stairs.json

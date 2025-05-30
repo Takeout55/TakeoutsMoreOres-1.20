@@ -39,6 +39,9 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> NETHER_GASNITE_ORE_PLACED_KEY = registerKey("nether_gasnite_ore_placed");
     public static final ResourceKey<PlacedFeature> END_GASNITE_ORE_PLACED_KEY = registerKey("end_gasnite_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> OCARITE_ORE_PLACED_KEY = registerKey("ocarite_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_OCARITE_ORE_PLACED_KEY = registerKey("nether_ocarite_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_OCARITE_ORE_PLACED_KEY = registerKey("end_ocarite_ore_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -101,6 +104,16 @@ public class ModPlacedFeatures {
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
         register(context, END_GASNITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_GASNITE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+        register(context, OCARITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_OCARITE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, NETHER_OCARITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_OCARITE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, END_OCARITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_OCARITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     }

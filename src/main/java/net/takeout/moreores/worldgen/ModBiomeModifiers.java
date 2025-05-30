@@ -38,6 +38,10 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_NETHER_EARIUM_ORE = registerKey("add_nether_earium_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_EARIUM_ORE = registerKey("add_end_earium_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_OCARITE_ORE = registerKey("add_ocarite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_OCARITE_ORE = registerKey("add_nether_ocarite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_OCARITE_ORE = registerKey("add_end_ocarite_ore");
+
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
@@ -130,6 +134,21 @@ public class ModBiomeModifiers {
         context.register(ADD_END_EARIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_EARIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_OCARITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.OCARITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_NETHER_OCARITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_OCARITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_END_OCARITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_END),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_OCARITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
     }

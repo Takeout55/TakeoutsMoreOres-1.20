@@ -53,6 +53,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.END_STONE_RUBY_ORE);
         blockWithItem(ModBlocks.NETHER_RUBY_ORE);
         blockWithItem(ModBlocks.RUBY_BLOCK);
+        blockWithItem(ModBlocks.OCARITE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_OCARITE_ORE);
+        blockWithItem(ModBlocks.END_STONE_OCARITE_ORE);
+        blockWithItem(ModBlocks.NETHER_OCARITE_ORE);
 
 
         stairsBlock(((StairBlock) ModBlocks.SAPPHIRE_STAIRS.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
