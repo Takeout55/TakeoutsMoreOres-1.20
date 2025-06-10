@@ -49,6 +49,10 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_OCARITE_ORE_KEY = registerKey("nether_ocarite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_OCARITE_ORE_KEY = registerKey("end_stone_ocarite_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY = registerKey("ocarite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_RUBY_ORE_KEY = registerKey("nether_ocarite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_RUBY_ORE_KEY = registerKey("end_stone_ocarite_ore");
+
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -124,6 +128,7 @@ public class ModConfiguredFeatures {
                 ModBlocks.NETHER_OCARITE_ORE.get().defaultBlockState(),  9));
         register(context, ENDSTONE_OCARITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 ModBlocks.END_STONE_OCARITE_ORE.get().defaultBlockState(),  9));
+
     }
 
 

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "G": {
+      "item": "takeoutsmoreores:gasnite"
+    },
+    "S": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "G",
+    "S",
+    " "
+  ],
+  "result": {
+    "item": "minecraft:torch"
+  },
+  "show_notification": true
+}

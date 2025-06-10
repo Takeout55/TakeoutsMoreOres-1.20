@@ -181,5 +181,9 @@
   "block.takeoutsmoreores.ocarite_ore": "Ocarite Ore",
   "block.takeoutsmoreores.deepslate_ocarite_ore": "Deepslate Ocarite Ore",
   "block.takeoutsmoreores.nether_ocarite_ore": "Nether Ocarite Ore",
-  "block.takeoutsmoreores.end_stone_ocarite_ore": "End Stone Ocarite Ore"
+  "block.takeoutsmoreores.end_stone_ocarite_ore": "End Stone Ocarite Ore",
+  "item.takeoutsmoreores.ruby_helmet": "Ruby Helmet",
+  "item.takeoutsmoreores.ruby_chestplate": "Ruby Chestplate",
+  "item.takeoutsmoreoes.ruby_leggings": "Ruby Leggings",
+  "item.takeoutsmoreoers.ruby_boots": "Ruby Boots"
 }

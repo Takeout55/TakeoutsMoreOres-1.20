@@ -43,6 +43,10 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> NETHER_OCARITE_ORE_PLACED_KEY = registerKey("nether_ocarite_ore_placed");
     public static final ResourceKey<PlacedFeature> END_OCARITE_ORE_PLACED_KEY = registerKey("end_ocarite_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> RUBY_ORE_PLACED_KEY = registerKey("ruby_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_RUBY_ORE_PLACED_KEY = registerKey("nether_ruby_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_RUBY_ORE_PLACED_KEY = registerKey("end_ruby_ore_placed");
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -116,6 +120,7 @@ public class ModPlacedFeatures {
         register(context, END_OCARITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_OCARITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
     }
 
 
