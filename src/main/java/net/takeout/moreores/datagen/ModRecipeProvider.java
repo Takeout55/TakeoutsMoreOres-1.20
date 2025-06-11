@@ -44,7 +44,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
     private static final List<ItemLike> ENDITE_SMELTABLES = List.of(ModItems.RAW_ENDITE.get());
 
-    private static final List<ItemLike> THIMEITE_SMELTABLES = List.of(ModBlocks.THIMEITE_ORE.get(),
+    private static final List<ItemLike> THIMEITE_SMELTABLES = List.of(ModItems.RAW_THIMEITE.get(), ModBlocks.THIMEITE_ORE.get(),
             ModBlocks.DEEPSLATE_THIMEITE_ORE.get(), ModBlocks.END_STONE_THIMEITE_ORE.get(), ModBlocks.NETHER_THIMEITE_ORE.get());
 
     private static final List<ItemLike> PINKITE_SMELTABLES = List.of(ModItems.RAW_PINKITE.get());
@@ -89,6 +89,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pWriter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 200, "ruby");
         oreBlasting(pWriter, PLUNGITE_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 100, "plungite");
         oreSmelting(pWriter, PLUNGITE_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 200, "plungite");
+        oreBlasting(pWriter, CHEEKIUM_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 100, "plungite");
+        oreSmelting(pWriter, CHEEKIUM_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 200, "plungite");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
