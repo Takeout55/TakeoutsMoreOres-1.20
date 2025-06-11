@@ -129,6 +129,16 @@ public class ModConfiguredFeatures {
         register(context, ENDSTONE_OCARITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 ModBlocks.END_STONE_OCARITE_ORE.get().defaultBlockState(),  9));
 
+        List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.RUBY_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_RUBY_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(overworldRubyOres, 9));
+        register(context, NETHER_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
+                ModBlocks.NETHER_RUBY_ORE.get().defaultBlockState(),  9));
+        register(context, ENDSTONE_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.END_STONE_RUBY_ORE.get().defaultBlockState(),  9));
+
     }
 
 

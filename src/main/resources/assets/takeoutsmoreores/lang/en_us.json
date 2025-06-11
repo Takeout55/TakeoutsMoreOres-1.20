@@ -184,6 +184,14 @@
   "block.takeoutsmoreores.end_stone_ocarite_ore": "End Stone Ocarite Ore",
   "item.takeoutsmoreores.ruby_helmet": "Ruby Helmet",
   "item.takeoutsmoreores.ruby_chestplate": "Ruby Chestplate",
-  "item.takeoutsmoreoes.ruby_leggings": "Ruby Leggings",
-  "item.takeoutsmoreoers.ruby_boots": "Ruby Boots"
+  "item.takeoutsmoreores.ruby_leggings": "Ruby Leggings",
+  "item.takeoutsmoreores.ruby_boots": "Ruby Boots",
+  "item.takeoutsmoreores.thimeite_helmet": "Thimeite Helmet",
+  "item.takeoutsmoreores.thimeite_chestplate": "Thimeite Chesplate",
+  "item.takeoutsmoreores.thimeite_leggings": "Thimeite Leggings",
+  "item.takeoutsmoreores.thimeite_boots": "Thimeite Boots",
+  "block.takeoutsmoreores.cheesium_ore": "Cheesium Ore",
+  "block.takeoutsmoreores.deepslate_cheesium_ore": "Deepslate Cheesium Ore",
+  "block.takeoutsmoreores.end_stone_cheesium_ore": "End Stone Cheesium Ore",
+  "block.takeoutsmoreores.nether_cheesium_ore": "Nether Cheesium Ore"
 }

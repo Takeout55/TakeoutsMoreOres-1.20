@@ -199,6 +199,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.NETHER_OCARITE_ORE.get(), ModItems.OCARITE.get()));
         this.add(ModBlocks.END_STONE_OCARITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_OCARITE_ORE.get(), ModItems.OCARITE.get()));
+        this.add(ModBlocks.CHEESIUM_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.CHEESIUM_ORE.get(), ModItems.RAW_CHEESIUM.get()));
+        this.add(ModBlocks.DEEPSLATE_CHEESIUM_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_CHEESIUM_ORE.get(), ModItems.RAW_CHEESIUM.get()));
+        this.add(ModBlocks.NETHER_CHEESIUM_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_CHEESIUM_ORE.get(), ModItems.RAW_CHEESIUM.get()));
+        this.add(ModBlocks.END_STONE_CHEESIUM_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_CHEESIUM_ORE.get(), ModItems.RAW_CHEESIUM.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

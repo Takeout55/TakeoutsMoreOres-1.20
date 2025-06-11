@@ -44,7 +44,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.RUBY_HELMET.get(),
                         ModItems.RUBY_CHESTPLATE.get(),
                         ModItems.RUBY_LEGGINGS.get(),
-                        ModItems.RUBY_BOOTS.get());
+                        ModItems.RUBY_BOOTS.get(),
+                        ModItems.THIMEITE_HELMET.get(),
+                        ModItems.THIMEITE_CHESTPLATE.get(),
+                        ModItems.THIMEITE_LEGGINGS.get(),
+                        ModItems.THIMEITE_BOOTS.get());
 
         this.tag(ItemTags.MUSIC_DISCS)
                 .add(ModItems.BAR_BRAWL_MUSIC_DISC.get(),

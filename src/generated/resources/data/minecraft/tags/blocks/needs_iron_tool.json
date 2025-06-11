@@ -32,6 +32,13 @@
     "takeoutsmoreores:ocarite_ore",
     "takeoutsmoreores:deepslate_ocarite_ore",
     "takeoutsmoreores:end_stone_ocarite_ore",
-    "takeoutsmoreores:nether_ocarite_ore"
+    "takeoutsmoreores:nether_ocarite_ore",
+    "takeoutsmoreores:nether_thimeite_ore",
+    "takeoutsmoreores:end_stone_thimeite_ore",
+    "takeoutsmoreores:deepslate_thimeite_ore",
+    "takeoutsmoreores:cheesium_ore",
+    "takeoutsmoreores:deepslate_cheesium_ore",
+    "takeoutsmoreores:end_stone_cheesium_ore",
+    "takeoutsmoreores:nether_cheesium_ore"
   ]
 }

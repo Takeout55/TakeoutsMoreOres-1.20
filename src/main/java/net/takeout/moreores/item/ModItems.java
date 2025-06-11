@@ -235,4 +235,16 @@ public class ModItems {
 
     public static final RegistryObject<Item> RUBY_BOOTS = ITEMS.register("ruby_boots",
             () -> new ArmorItem(ModArmorMaterials.RUBY, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_HELMET = ITEMS.register("thimeite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.THIMEITE, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_CHESTPLATE = ITEMS.register("thimeite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.THIMEITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_LEGGINGS = ITEMS.register("thimeite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.THIMEITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> THIMEITE_BOOTS = ITEMS.register("thimeite_boots",
+            () -> new ArmorItem(ModArmorMaterials.THIMEITE, ArmorItem.Type.BOOTS, new Item.Properties()));
 }

@@ -369,6 +369,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_OCARITE_ORE = registerBlock("end_stone_ocarite_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> CHEESIUM_ORE = registerBlock("cheesium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEESIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_CHEESIUM_ORE = registerBlock("deepslate_cheesium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEESIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> NETHER_CHEESIUM_ORE = registerBlock("nether_cheesium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEESIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_STONE_CHEESIUM_ORE = registerBlock("end_stone_cheesium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEESIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

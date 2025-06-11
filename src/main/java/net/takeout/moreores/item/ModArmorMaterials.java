@@ -21,6 +21,8 @@ public enum ModArmorMaterials implements ArmorMaterial {
     ZIRCON("zircon", 19, new int[]{3, 5, 4, 3}, 17, SoundEvents.ARMOR_EQUIP_IRON,
                     0.8f, 0.1f, () -> Ingredient.of(ModItems.ZIRCON.get())),
     RUBY("ruby", 18, new int[]{3, 5, 4, 3}, 15, SoundEvents.ARMOR_EQUIP_IRON,
+            0.9f, 0.5f, () -> Ingredient.of(ModItems.RUBY.get())),
+    THIMEITE("thimeite", 18, new int[]{3, 5, 4, 3}, 15, SoundEvents.ARMOR_EQUIP_IRON,
             0.9f, 0.5f, () -> Ingredient.of(ModItems.RUBY.get()));;
 
     private final String name;

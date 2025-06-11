@@ -200,6 +200,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.RUBY_BOOTS);
         trimmedArmorItem(ModItems.RUBY_LEGGINGS);
 
+        trimmedArmorItem(ModItems.THIMEITE_HELMET);
+        trimmedArmorItem(ModItems.THIMEITE_CHESTPLATE);
+        trimmedArmorItem(ModItems.THIMEITE_BOOTS);
+        trimmedArmorItem(ModItems.THIMEITE_LEGGINGS);
+
         withExistingParent(ModItems.RHINO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 

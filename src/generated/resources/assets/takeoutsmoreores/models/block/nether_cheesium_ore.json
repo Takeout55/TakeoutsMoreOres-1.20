@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "takeoutsmoreores:block/nether_cheesium_ore"
+  }
+}

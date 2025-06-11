@@ -83,7 +83,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.OCARITE_ORE.get(),
                         ModBlocks.DEEPSLATE_OCARITE_ORE.get(),
                         ModBlocks.END_STONE_OCARITE_ORE.get(),
-                        ModBlocks.NETHER_OCARITE_ORE.get());
+                        ModBlocks.NETHER_OCARITE_ORE.get(),
+                        ModBlocks.CHEESIUM_ORE.get(),
+                        ModBlocks.DEEPSLATE_CHEESIUM_ORE.get(),
+                        ModBlocks.END_STONE_CHEESIUM_ORE.get(),
+                        ModBlocks.NETHER_THIMEITE_ORE.get(),
+                        ModBlocks.END_STONE_THIMEITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_THIMEITE_ORE.get(),
+                        ModBlocks.NETHER_CHEESIUM_ORE.get());
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -119,7 +126,14 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.OCARITE_ORE.get(),
                         ModBlocks.DEEPSLATE_OCARITE_ORE.get(),
                         ModBlocks.END_STONE_OCARITE_ORE.get(),
-                        ModBlocks.NETHER_OCARITE_ORE.get());
+                        ModBlocks.NETHER_OCARITE_ORE.get(),
+                        ModBlocks.NETHER_THIMEITE_ORE.get(),
+                        ModBlocks.END_STONE_THIMEITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_THIMEITE_ORE.get(),
+                        ModBlocks.CHEESIUM_ORE.get(),
+                        ModBlocks.DEEPSLATE_CHEESIUM_ORE.get(),
+                        ModBlocks.END_STONE_CHEESIUM_ORE.get(),
+                        ModBlocks.NETHER_CHEESIUM_ORE.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.REFINED_DIAMOND_BLOCK.get());
@@ -165,7 +179,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.EARIUM_BLOCK.get(),
                         ModBlocks.THIMEITE_BLOCK.get(),
                         ModBlocks.GLITCHITE_ORE.get(),
-                        ModBlocks.REFINED_DIAMOND_BLOCK.get());
+                        ModBlocks.REFINED_DIAMOND_BLOCK.get(),
+                        ModBlocks.RUBY_BLOCK.get(),
+                        ModBlocks.OCARITE_BLOCK.get(),
+                        ModBlocks.GLITCHITE_BLOCK.get());
 
     }
 }
