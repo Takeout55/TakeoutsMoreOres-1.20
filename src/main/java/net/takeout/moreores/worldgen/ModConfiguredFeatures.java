@@ -49,9 +49,21 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_OCARITE_ORE_KEY = registerKey("nether_ocarite_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_OCARITE_ORE_KEY = registerKey("end_stone_ocarite_ore");
 
-    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY = registerKey("ocarite_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_RUBY_ORE_KEY = registerKey("nether_ocarite_ore");
-    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_RUBY_ORE_KEY = registerKey("end_stone_ocarite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_RUBY_ORE_KEY = registerKey("ruby_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_RUBY_ORE_KEY = registerKey("nether_ruby_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_RUBY_ORE_KEY = registerKey("end_stone_ruby_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHEESIUM_ORE_KEY = registerKey("cheesium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_CHEESIUM_ORE_KEY = registerKey("nether_cheesium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_CHEESIUM_ORE_KEY = registerKey("end_stone_cheesium_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_PLUNGITE_ORE_KEY = registerKey("plungite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_PLUNGITE_ORE_KEY = registerKey("nether_plungite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_PLUNGITE_ORE_KEY = registerKey("end_stone_plungite_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_CHEEKIUM_ORE_KEY = registerKey("cheekium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_CHEEKIUM_ORE_KEY = registerKey("nether_cheekium_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_CHEEKIUM_ORE_KEY = registerKey("end_stone_cheekium_ore");
 
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
@@ -138,6 +150,36 @@ public class ModConfiguredFeatures {
                 ModBlocks.NETHER_RUBY_ORE.get().defaultBlockState(),  9));
         register(context, ENDSTONE_RUBY_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 ModBlocks.END_STONE_RUBY_ORE.get().defaultBlockState(),  9));
+
+        List<OreConfiguration.TargetBlockState> overworldCheesiumOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.CHEESIUM_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_CHEESIUM_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_CHEESIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCheesiumOres, 9));
+        register(context, NETHER_CHEESIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
+                ModBlocks.NETHER_CHEESIUM_ORE.get().defaultBlockState(),  9));
+        register(context, ENDSTONE_CHEESIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.END_STONE_CHEESIUM_ORE.get().defaultBlockState(),  9));
+
+        List<OreConfiguration.TargetBlockState> overworldPlungiteOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.PLUNGITE_ORE.get().defaultBlockState()),
+                OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_PLUNGITE_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_PLUNGITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldPlungiteOres, 9));
+        register(context, NETHER_PLUNGITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
+                ModBlocks.NETHER_PLUNGITE_ORE.get().defaultBlockState(),  9));
+        register(context, ENDSTONE_PLUNGITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.END_STONE_PLUNGITE_ORE.get().defaultBlockState(),  9));
+
+        List<OreConfiguration.TargetBlockState> overworldCheekiumOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.PLUNGITE_ORE.get().defaultBlockState()),
+            OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_CHEEKIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCheekiumOres, 9));
+        register(context, NETHER_CHEEKIUM_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
+                ModBlocks.NETHER_CHEEKIUM_ORE.get().defaultBlockState(),  9));
+        register(context, ENDSTONE_CHEEKIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.END_STONE_CHEEKIUM_ORE.get().defaultBlockState(),  9));
 
     }
 

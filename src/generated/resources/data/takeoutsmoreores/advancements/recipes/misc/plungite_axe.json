@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diamond": {
+    "has_plungite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:diamond"
+              "takeoutsmoreores:plungite"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "takeoutsmoreores:refined_diamond_from_smelting_diamond"
+        "recipe": "takeoutsmoreores:plungite_axe"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_diamond",
+      "has_plungite",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "takeoutsmoreores:refined_diamond_from_smelting_diamond"
+      "takeoutsmoreores:plungite_axe"
     ]
   },
   "sends_telemetry_event": false

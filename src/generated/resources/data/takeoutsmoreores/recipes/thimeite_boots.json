@@ -2,13 +2,16 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
     "S": {
       "item": "takeoutsmoreores:thimeite"
     }
   },
   "pattern": [
     "S S",
-    "S S"
+    "A A"
   ],
   "result": {
     "item": "takeoutsmoreores:thimeite_boots"

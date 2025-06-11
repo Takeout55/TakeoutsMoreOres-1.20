@@ -47,6 +47,18 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> NETHER_RUBY_ORE_PLACED_KEY = registerKey("nether_ruby_ore_placed");
     public static final ResourceKey<PlacedFeature> END_RUBY_ORE_PLACED_KEY = registerKey("end_ruby_ore_placed");
 
+    public static final ResourceKey<PlacedFeature> CHEESIUM_ORE_PLACED_KEY = registerKey("cheesium_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_CHEESIUM_ORE_PLACED_KEY = registerKey("nether_cheesium_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_CHEESIUM_ORE_PLACED_KEY = registerKey("end_cheesium_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> PLUNGITE_ORE_PLACED_KEY = registerKey("plungite_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_PLUNGITE_ORE_PLACED_KEY = registerKey("nether_plungite_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_PLUNGITE_ORE_PLACED_KEY = registerKey("end_plungite_ore_placed");
+
+    public static final ResourceKey<PlacedFeature> CHEEKIUM_ORE_PLACED_KEY = registerKey("cheekium_ore_placed");
+    public static final ResourceKey<PlacedFeature> NETHER_CHEEKIUM_ORE_PLACED_KEY = registerKey("nether_cheekium_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_CHEEKIUM_ORE_PLACED_KEY = registerKey("end_cheekium_ore_placed");
+
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
 
@@ -131,6 +143,35 @@ public class ModPlacedFeatures {
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
 
+        register(context, CHEESIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CHEESIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, NETHER_CHEESIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_CHEESIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, END_CHEESIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_CHEESIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+        register(context, PLUNGITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_PLUNGITE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, NETHER_PLUNGITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_PLUNGITE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, END_PLUNGITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_PLUNGITE_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+
+        register(context, CHEEKIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_CHEEKIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, NETHER_CHEEKIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_CHEEKIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
+        register(context, END_CHEEKIUM_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_CHEEKIUM_ORE_KEY),
+                ModOrePlacement.commonOrePlacement(12,
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-64), VerticalAnchor.absolute(80))));
     }
 
 

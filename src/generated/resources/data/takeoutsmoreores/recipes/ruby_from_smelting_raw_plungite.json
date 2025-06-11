@@ -3,9 +3,9 @@
   "category": "misc",
   "cookingtime": 200,
   "experience": 0.25,
-  "group": "sapphire",
+  "group": "plungite",
   "ingredient": {
-    "item": "minecraft:diamond"
+    "item": "takeoutsmoreores:raw_plungite"
   },
-  "result": "takeoutsmoreores:refined_diamond"
+  "result": "takeoutsmoreores:ruby"
 }

@@ -67,6 +67,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PINKITE_INGOT);
         simpleItem(ModItems.RUBY);
         simpleItem(ModItems.RAW_RUBY);
+        simpleItem(ModItems.PLUNGITE);
+        simpleItem(ModItems.RAW_PLUNGITE);
+        simpleItem(ModItems.RAW_THIMEITE);
+        simpleItem(ModItems.CHEEKIUM);
         
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);
@@ -154,6 +158,18 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.REFINED_DIAMOND_AXE);
         handheldItem(ModItems.REFINED_DIAMOND_HOE);
         handheldItem(ModItems.REFINED_DIAMOND_SHOVEL);
+
+        handheldItem(ModItems.PLUNGITE_SWORD);
+        handheldItem(ModItems.PLUNGITE_PICKAXE);
+        handheldItem(ModItems.PLUNGITE_AXE);
+        handheldItem(ModItems.PLUNGITE_HOE);
+        handheldItem(ModItems.PLUNGITE_SHOVEL);
+
+        handheldItem(ModItems.CHEEKIUM_SWORD);
+        handheldItem(ModItems.CHEEKIUM_PICKAXE);
+        handheldItem(ModItems.CHEEKIUM_AXE);
+        handheldItem(ModItems.CHEEKIUM_HOE);
+        handheldItem(ModItems.CHEEKIUM_SHOVEL);
 
         fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
         buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);

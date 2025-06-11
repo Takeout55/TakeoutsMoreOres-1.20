@@ -31,4 +31,14 @@ public class ModToolTiers {
             new ForgeTier(3, 1380, 7.8f, 4.4f, 16,
                     ModTags.Blocks.NEEDS_THIMEITE_TOOL, () -> Ingredient.of(ModItems.THIMEITE.get())),
             new ResourceLocation(MoreOres.MOD_ID, "thimeite"), List.of(Tiers.DIAMOND), List.of());
+
+    public static final Tier PLUNGITE = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 1380, 7.8f, 4.4f, 16,
+                    ModTags.Blocks.NEEDS_PLUNGITE_TOOL, () -> Ingredient.of(ModItems.PLUNGITE.get())),
+            new ResourceLocation(MoreOres.MOD_ID, "plungite"), List.of(Tiers.DIAMOND), List.of());
+
+    public static final Tier CHEEKIUM = TierSortingRegistry.registerTier(
+            new ForgeTier(3, 1380, 7.8f, 4.4f, 16,
+                    ModTags.Blocks.NEEDS_CHEEKIUM_TOOL, () -> Ingredient.of(ModItems.CHEEKIUM.get())),
+            new ResourceLocation(MoreOres.MOD_ID, "cheekium"), List.of(Tiers.DIAMOND), List.of());
 }

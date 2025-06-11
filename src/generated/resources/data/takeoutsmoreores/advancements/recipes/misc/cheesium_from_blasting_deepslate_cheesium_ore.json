@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_diamond": {
+    "has_deepslate_cheesium_ore": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:diamond"
+              "takeoutsmoreores:deepslate_cheesium_ore"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "takeoutsmoreores:refined_diamond_from_blasting_diamond"
+        "recipe": "takeoutsmoreores:cheesium_from_blasting_deepslate_cheesium_ore"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_diamond",
+      "has_deepslate_cheesium_ore",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "takeoutsmoreores:refined_diamond_from_blasting_diamond"
+      "takeoutsmoreores:cheesium_from_blasting_deepslate_cheesium_ore"
     ]
   },
   "sends_telemetry_event": false

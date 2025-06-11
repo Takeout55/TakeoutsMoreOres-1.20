@@ -93,6 +93,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.THIMEITE_BUTTON.get());
         this.dropSelf(ModBlocks.THIMEITE_STAIRS.get());
         this.dropSelf(ModBlocks.RUBY_BLOCK.get());
+        this.dropSelf(ModBlocks.PLUNGITE_BLOCK.get());
+        this.dropSelf(ModBlocks.CHEEKIUM_BLOCK.get());
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
@@ -176,13 +178,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.NETHER_GLITCHITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.NETHER_GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
         this.add(ModBlocks.THIMEITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
         this.add(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
         this.add(ModBlocks.NETHER_THIMEITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.NETHER_THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
         this.add(ModBlocks.END_STONE_THIMEITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_THIMEITE_ORE.get(), ModItems.THIMEITE.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
         this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),
@@ -207,6 +209,22 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.NETHER_CHEESIUM_ORE.get(), ModItems.RAW_CHEESIUM.get()));
         this.add(ModBlocks.END_STONE_CHEESIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_CHEESIUM_ORE.get(), ModItems.RAW_CHEESIUM.get()));
+        this.add(ModBlocks.PLUNGITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.PLUNGITE_ORE.get(), ModItems.RAW_PLUNGITE.get()));
+        this.add(ModBlocks.DEEPSLATE_PLUNGITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_PLUNGITE_ORE.get(), ModItems.RAW_PLUNGITE.get()));
+        this.add(ModBlocks.NETHER_PLUNGITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_PLUNGITE_ORE.get(), ModItems.RAW_PLUNGITE.get()));
+        this.add(ModBlocks.END_STONE_PLUNGITE_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_PLUNGITE_ORE.get(), ModItems.RAW_PLUNGITE.get()));
+        this.add(ModBlocks.CHEEKIUM_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.CHEEKIUM_ORE.get(), ModItems.CHEEKIUM.get()));
+        this.add(ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(), ModItems.CHEEKIUM.get()));
+        this.add(ModBlocks.NETHER_CHEEKIUM_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_CHEEKIUM_ORE.get(), ModItems.CHEEKIUM.get()));
+        this.add(ModBlocks.END_STONE_CHEEKIUM_ORE.get(),
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_CHEEKIUM_ORE.get(), ModItems.CHEEKIUM.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

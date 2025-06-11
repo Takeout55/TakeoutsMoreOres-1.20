@@ -28,7 +28,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.ZIRCON_ORE.get(), ModBlocks.DEEPSLATE_ZIRCON_ORE.get(), ModBlocks.NETHERRACK_ZIRCON_ORE.get(),
             ModBlocks.ENDSTONE_ZIRCON_ORE.get());
 
-    private static final List<ItemLike> REFINED_DIAMOND_SMELTABLES = List.of(Items.DIAMOND);
 
     private static final List<ItemLike> GASNITE_SMELTABLES = List.of(ModBlocks.GASNITE_ORE.get(),
             ModBlocks.END_STONE_GASNITE_ORE.get(), ModBlocks.DEEPSLATE_GASNITE_ORE.get(), ModBlocks.NETHER_GASNITE_ORE.get());
@@ -37,7 +36,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.EARIUM_ORE.get(), ModBlocks.DEEPSLATE_EARIUM_ORE.get(), ModBlocks.NETHER_EARIUM_ORE.get(),
             ModBlocks.END_STONE_EARIUM_ORE.get());
 
-    private static final List<ItemLike> CHEESIUM_SMELTABLES = List.of(ModItems.RAW_CHEESIUM.get());
+    private static final List<ItemLike> CHEESIUM_SMELTABLES = List.of(ModItems.RAW_CHEESIUM.get(), ModBlocks.CHEESIUM_ORE.get(),
+            ModBlocks.DEEPSLATE_CHEESIUM_ORE.get(), ModBlocks.END_STONE_CHEESIUM_ORE.get(), ModBlocks.NETHER_CHEESIUM_ORE.get());
 
     private static final List<ItemLike> GLITCHITE_SMELTABLES = List.of(ModBlocks.GLITCHITE_ORE.get(),
             ModBlocks.DEEPSLATE_GLITCHITE_ORE.get(), ModBlocks.END_STONE_GLITCHITE_ORE.get(), ModBlocks.NETHER_GLITCHITE_ORE.get());
@@ -53,6 +53,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.RUBY_ORE.get(), ModBlocks.DEEPSLATE_RUBY_ORE.get(), ModBlocks.NETHER_RUBY_ORE.get(),
             ModBlocks.END_STONE_RUBY_ORE.get());
 
+    private static final List<ItemLike> PLUNGITE_SMELTABLES = List.of(ModItems.RAW_PLUNGITE.get(),
+            ModBlocks.PLUNGITE_ORE.get(), ModBlocks.DEEPSLATE_PLUNGITE_ORE.get(), ModBlocks.NETHER_PLUNGITE_ORE.get(),
+            ModBlocks.END_STONE_PLUNGITE_ORE.get());
+
+    private static final List<ItemLike> CHEEKIUM_SMELTABLES = List.of(
+            ModBlocks.CHEEKIUM_ORE.get(), ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(), ModBlocks.NETHER_CHEEKIUM_ORE.get(),
+            ModBlocks.END_STONE_CHEEKIUM_ORE.get());
+
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
     }
@@ -61,26 +69,26 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(Consumer<FinishedRecipe> pWriter) {
         oreBlasting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 100, "sapphire");
         oreSmelting(pWriter, SAPPHIRE_SMELTABLES, RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, ZIRCON_SMELTABLES, RecipeCategory.MISC, ModItems.ZIRCON.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, ZIRCON_SMELTABLES, RecipeCategory.MISC, ModItems.ZIRCON.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, REFINED_DIAMOND_SMELTABLES, RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, REFINED_DIAMOND_SMELTABLES, RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.GASNITE.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.GASNITE.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, CHEESIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, CHEESIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, GLITCHITE_SMELTABLES, RecipeCategory.MISC, ModItems.GLITCHITE_INGOT.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, GLITCHITE_SMELTABLES, RecipeCategory.MISC, ModItems.GLITCHITE_INGOT.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, ENDITE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDITE.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, ENDITE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDITE.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, THIMEITE_SMELTABLES, RecipeCategory.MISC, ModItems.THIMEITE.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, THIMEITE_SMELTABLES, RecipeCategory.MISC, ModItems.THIMEITE.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, PINKITE_SMELTABLES, RecipeCategory.MISC, ModItems.PINKITE_INGOT.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, PINKITE_SMELTABLES, RecipeCategory.MISC, ModItems.PINKITE_INGOT.get(), 0.25f, 200, "sapphire");
-        oreBlasting(pWriter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 100, "sapphire");
-        oreSmelting(pWriter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 200, "sapphire");
+        oreBlasting(pWriter, ZIRCON_SMELTABLES, RecipeCategory.MISC, ModItems.ZIRCON.get(), 0.25f, 100, "zircon");
+        oreSmelting(pWriter, ZIRCON_SMELTABLES, RecipeCategory.MISC, ModItems.ZIRCON.get(), 0.25f, 200, "zircon");
+        oreBlasting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 100, "earium");
+        oreSmelting(pWriter, EARIUM_SMELTABLES, RecipeCategory.MISC, ModItems.EARIUM.get(), 0.25f, 200, "earium");
+        oreBlasting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.GASNITE.get(), 0.25f, 100, "gasnite");
+        oreSmelting(pWriter, GASNITE_SMELTABLES, RecipeCategory.MISC, ModItems.GASNITE.get(), 0.25f, 200, "gasnite");
+        oreBlasting(pWriter, CHEESIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 100, "cheesium");
+        oreSmelting(pWriter, CHEESIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEESIUM.get(), 0.25f, 200, "cheesium");
+        oreBlasting(pWriter, GLITCHITE_SMELTABLES, RecipeCategory.MISC, ModItems.GLITCHITE_INGOT.get(), 0.25f, 100, "glitchite");
+        oreSmelting(pWriter, GLITCHITE_SMELTABLES, RecipeCategory.MISC, ModItems.GLITCHITE_INGOT.get(), 0.25f, 200, "glitchite");
+        oreBlasting(pWriter, ENDITE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDITE.get(), 0.25f, 100, "endite");
+        oreSmelting(pWriter, ENDITE_SMELTABLES, RecipeCategory.MISC, ModItems.ENDITE.get(), 0.25f, 200, "endite");
+        oreBlasting(pWriter, THIMEITE_SMELTABLES, RecipeCategory.MISC, ModItems.THIMEITE.get(), 0.25f, 100, "thimeite");
+        oreSmelting(pWriter, THIMEITE_SMELTABLES, RecipeCategory.MISC, ModItems.THIMEITE.get(), 0.25f, 200, "thimeite");
+        oreBlasting(pWriter, PINKITE_SMELTABLES, RecipeCategory.MISC, ModItems.PINKITE_INGOT.get(), 0.25f, 100, "pinkite");
+        oreSmelting(pWriter, PINKITE_SMELTABLES, RecipeCategory.MISC, ModItems.PINKITE_INGOT.get(), 0.25f, 200, "pinkite");
+        oreBlasting(pWriter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 100, "ruby");
+        oreSmelting(pWriter, RUBY_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 200, "ruby");
+        oreBlasting(pWriter, PLUNGITE_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 100, "plungite");
+        oreSmelting(pWriter, PLUNGITE_SMELTABLES, RecipeCategory.MISC, ModItems.RUBY.get(), 0.25f, 200, "plungite");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
@@ -106,6 +114,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEEKIUM_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.CHEEKIUM.get())
+                .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.ZIRCON_BLOCK.get())
                 .pattern("SSS")
@@ -121,6 +137,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SSS")
                 .define('S', ModItems.EARIUM.get())
                 .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.EARIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get())
+                .pattern("SS ")
+                .pattern("SS ")
+                .pattern("   ")
+                .define('S', Items.DIAMOND)
+                .unlockedBy(getHasName(Items.DIAMOND), has(Items.DIAMOND))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.RAW_SAPPHIRE_BLOCK.get())
@@ -145,6 +169,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("SSS")
                 .define('S', ModItems.GLITCHITE_INGOT.get())
                 .unlockedBy(getHasName(ModItems.GLITCHITE_INGOT.get()), has(ModItems.GLITCHITE_INGOT.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.PLUNGITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.PLUNGITE.get())
+                .unlockedBy(getHasName(ModItems.PLUNGITE.get()), has(ModItems.PLUNGITE.get()))
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_BLOCK.get())
@@ -977,8 +1009,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THIMEITE_BOOTS.get())
                 .pattern("S S")
-                .pattern("S S")
+                .pattern("A A")
                 .define('S', ModItems.THIMEITE.get())
+                .define('A', Items.AMETHYST_SHARD)
                 .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
                 .save(pWriter);
 
@@ -990,9 +1023,104 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLUNGITE_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.PLUNGITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PLUNGITE.get()), has(ModItems.PLUNGITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLUNGITE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.PLUNGITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PLUNGITE.get()), has(ModItems.PLUNGITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLUNGITE_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.PLUNGITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PLUNGITE.get()), has(ModItems.PLUNGITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLUNGITE_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.PLUNGITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PLUNGITE.get()), has(ModItems.PLUNGITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLUNGITE_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.PLUNGITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.PLUNGITE.get()), has(ModItems.PLUNGITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEEKIUM_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.CHEEKIUM.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEEKIUM_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.CHEEKIUM.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEEKIUM_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.CHEEKIUM.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEEKIUM_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.CHEEKIUM.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEEKIUM_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.CHEEKIUM.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.PLUNGITE.get(), 9)
+                .requires(ModBlocks.PLUNGITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.PLUNGITE_BLOCK.get()), has(ModBlocks.PLUNGITE_BLOCK.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.RAW_SAPPHIRE.get(), 9)

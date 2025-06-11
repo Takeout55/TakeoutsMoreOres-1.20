@@ -44,6 +44,13 @@
     "takeoutsmoreores:nether_thimeite_ore",
     "takeoutsmoreores:end_stone_thimeite_ore",
     "takeoutsmoreores:deepslate_thimeite_ore",
+    "takeoutsmoreores:deepslate_plungite_ore",
+    "takeoutsmoreores:nether_plungite_ore",
+    "takeoutsmoreores:end_stone_plungite_ore",
+    "takeoutsmoreores:cheekium_ore",
+    "takeoutsmoreores:end_stone_cheekium_ore",
+    "takeoutsmoreores:deepslate_cheekium_ore",
+    "takeoutsmoreores:deepslate_cheekium_ore",
     "takeoutsmoreores:nether_cheesium_ore"
   ]
 }

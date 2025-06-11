@@ -381,6 +381,36 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_CHEESIUM_ORE = registerBlock("end_stone_cheesium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEESIUM_BLOCK.get()).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> PLUNGITE_ORE = registerBlock("plungite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> PLUNGITE_BLOCK = registerBlock("plungite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_PLUNGITE_ORE = registerBlock("deepslate_plungite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.PLUNGITE_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> NETHER_PLUNGITE_ORE = registerBlock("nether_plungite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.PLUNGITE_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_STONE_PLUNGITE_ORE = registerBlock("end_stone_plungite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.PLUNGITE_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHEEKIUM_BLOCK = registerBlock("cheekium_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> CHEEKIUM_ORE = registerBlock("cheekium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_CHEEKIUM_ORE = registerBlock("deepslate_cheekium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> NETHER_CHEEKIUM_ORE = registerBlock("nether_cheekium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_STONE_CHEEKIUM_ORE = registerBlock("end_stone_cheekium_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
