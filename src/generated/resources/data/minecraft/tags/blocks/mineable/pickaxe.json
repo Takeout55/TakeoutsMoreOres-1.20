@@ -51,6 +51,10 @@
     "takeoutsmoreores:end_stone_cheekium_ore",
     "takeoutsmoreores:deepslate_cheekium_ore",
     "takeoutsmoreores:deepslate_cheekium_ore",
-    "takeoutsmoreores:nether_cheesium_ore"
+    "takeoutsmoreores:earium_block",
+    "takeoutsmoreores:nether_cheesium_ore",
+    "takeoutsmoreores:cheekium_block",
+    "takeoutsmoreores:plungite_ore",
+    "takeoutsmoreores:cheesium_block"
   ]
 }

@@ -135,11 +135,11 @@ public class ModConfiguredFeatures {
                         ModBlocks.OCARITE_ORE.get().defaultBlockState()),
                 OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_OCARITE_ORE.get().defaultBlockState()));
 
-        register(context, OVERWORLD_OCARITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldOcariteOres, 9));
+        register(context, OVERWORLD_OCARITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldOcariteOres, 6));
         register(context, NETHER_OCARITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
-                ModBlocks.NETHER_OCARITE_ORE.get().defaultBlockState(),  9));
+                ModBlocks.NETHER_OCARITE_ORE.get().defaultBlockState(),  5));
         register(context, ENDSTONE_OCARITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
-                ModBlocks.END_STONE_OCARITE_ORE.get().defaultBlockState(),  9));
+                ModBlocks.END_STONE_OCARITE_ORE.get().defaultBlockState(),  5));
 
         List<OreConfiguration.TargetBlockState> overworldRubyOres = List.of(OreConfiguration.target(stoneReplaceable,
                         ModBlocks.RUBY_ORE.get().defaultBlockState()),
@@ -172,7 +172,7 @@ public class ModConfiguredFeatures {
                 ModBlocks.END_STONE_PLUNGITE_ORE.get().defaultBlockState(),  9));
 
         List<OreConfiguration.TargetBlockState> overworldCheekiumOres = List.of(OreConfiguration.target(stoneReplaceable,
-                        ModBlocks.PLUNGITE_ORE.get().defaultBlockState()),
+                        ModBlocks.CHEEKIUM_ORE.get().defaultBlockState()),
             OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get().defaultBlockState()));
 
         register(context, OVERWORLD_CHEEKIUM_ORE_KEY, Feature.ORE, new OreConfiguration(overworldCheekiumOres, 9));

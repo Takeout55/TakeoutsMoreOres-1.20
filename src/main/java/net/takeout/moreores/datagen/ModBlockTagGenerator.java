@@ -64,7 +64,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.END_STONE_CHEEKIUM_ORE.get(),
                         ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(),
                         ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(),
-                        ModBlocks.NETHER_CHEESIUM_ORE.get()
+                        ModBlocks.NETHER_CHEESIUM_ORE.get(),
+                        ModBlocks.PLUNGITE_ORE.get()
                     ).addTag(Tags.Blocks.ORES);
 
 
@@ -122,7 +123,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(),
                         ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(),
                         ModBlocks.EARIUM_BLOCK.get(),
-                        ModBlocks.NETHER_CHEESIUM_ORE.get());
+                        ModBlocks.NETHER_CHEESIUM_ORE.get(),
+                        ModBlocks.CHEEKIUM_BLOCK.get(),
+                        ModBlocks.PLUNGITE_ORE.get(),
+                        ModBlocks.CHEESIUM_BLOCK.get());
 
 
         this.tag(BlockTags.NEEDS_IRON_TOOL)
@@ -170,7 +174,9 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.DEEPSLATE_PLUNGITE_ORE.get(),
                         ModBlocks.NETHER_PLUNGITE_ORE.get(),
                         ModBlocks.END_STONE_PLUNGITE_ORE.get(),
-                        ModBlocks.NETHER_CHEESIUM_ORE.get());
+                        ModBlocks.NETHER_CHEESIUM_ORE.get(),
+                        ModBlocks.CHEEKIUM_BLOCK.get(),
+                        ModBlocks.CHEESIUM_BLOCK.get());
 
         this.tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.REFINED_DIAMOND_BLOCK.get());
