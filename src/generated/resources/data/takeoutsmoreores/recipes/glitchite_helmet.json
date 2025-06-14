@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "takeoutsmoreores:glitchite_ingot"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S",
+    "   "
+  ],
+  "result": {
+    "item": "takeoutsmoreores:glitchite_helmet"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "takeoutsmoreores:block/zircon_block"
+  }
+}

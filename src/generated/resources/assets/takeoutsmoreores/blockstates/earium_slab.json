@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "takeoutsmoreores:block/earium_slab"
+    },
+    "type=double": {
+      "model": "takeoutsmoreores:block/earium_block"
+    },
+    "type=top": {
+      "model": "takeoutsmoreores:block/earium_slab_top"
+    }
+  }
+}

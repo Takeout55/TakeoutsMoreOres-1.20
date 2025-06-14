@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "takeoutsmoreores:sapphire_block"
+    }
+  ],
+  "result": {
+    "item": "takeoutsmoreores:sapphire_button"
+  }
+}

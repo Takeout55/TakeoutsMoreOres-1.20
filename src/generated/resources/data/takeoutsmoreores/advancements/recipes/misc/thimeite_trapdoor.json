@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "takeoutsmoreores:thimeite_trapdoor"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_thimeite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "takeoutsmoreores:thimeite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_thimeite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "takeoutsmoreores:thimeite_trapdoor"
+    ]
+  },
+  "sends_telemetry_event": false
+}

@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/template_fence_gate_open",
+  "textures": {
+    "texture": "takeoutsmoreores:block/refined_diamond_block"
+  }
+}

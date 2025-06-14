@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "takeoutsmoreores:ruby"
+    }
+  },
+  "pattern": [
+    "SSS",
+    "S S",
+    "   "
+  ],
+  "result": {
+    "item": "takeoutsmoreores:ruby_helmet"
+  },
+  "show_notification": true
+}

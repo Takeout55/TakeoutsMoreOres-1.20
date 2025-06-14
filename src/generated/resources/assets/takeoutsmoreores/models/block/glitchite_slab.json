@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/slab",
+  "textures": {
+    "bottom": "takeoutsmoreores:block/glitchite_block",
+    "side": "takeoutsmoreores:block/glitchite_block",
+    "top": "takeoutsmoreores:block/glitchite_block"
+  }
+}

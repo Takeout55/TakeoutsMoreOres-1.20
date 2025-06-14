@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_plungite": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "takeoutsmoreores:plungite"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "takeoutsmoreores:plungite_pickaxe"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_plungite",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "takeoutsmoreores:plungite_pickaxe"
+    ]
+  },
+  "sends_telemetry_event": false
+}

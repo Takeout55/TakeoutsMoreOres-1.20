@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "takeoutsmoreores:thimeite"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SS",
+    "ST",
+    " T"
+  ],
+  "result": {
+    "item": "takeoutsmoreores:thimeite_axe"
+  },
+  "show_notification": true
+}

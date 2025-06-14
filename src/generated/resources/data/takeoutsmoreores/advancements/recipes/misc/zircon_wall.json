@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "takeoutsmoreores:zircon_wall"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_zircon": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "takeoutsmoreores:zircon"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_zircon",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "takeoutsmoreores:zircon_wall"
+    ]
+  },
+  "sends_telemetry_event": false
+}

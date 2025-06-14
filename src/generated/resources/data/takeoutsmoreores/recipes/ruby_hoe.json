@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "takeoutsmoreores:ruby"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SS",
+    "T ",
+    "T "
+  ],
+  "result": {
+    "item": "takeoutsmoreores:ruby_hoe"
+  },
+  "show_notification": true
+}

@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "takeoutsmoreores:block/zircon_slab"
+    },
+    "type=double": {
+      "model": "takeoutsmoreores:block/zircon_block"
+    },
+    "type=top": {
+      "model": "takeoutsmoreores:block/zircon_slab_top"
+    }
+  }
+}

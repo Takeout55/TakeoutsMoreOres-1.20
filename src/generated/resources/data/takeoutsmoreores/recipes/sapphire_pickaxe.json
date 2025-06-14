@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "S": {
+      "item": "takeoutsmoreores:sapphire"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SSS",
+    " T ",
+    " T "
+  ],
+  "result": {
+    "item": "takeoutsmoreores:sapphire_pickaxe"
+  },
+  "show_notification": true
+}

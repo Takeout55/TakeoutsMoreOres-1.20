@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "minecraft:amethyst_shard"
+    },
+    "S": {
+      "item": "takeoutsmoreores:thimeite"
+    },
+    "T": {
+      "item": "minecraft:stick"
+    }
+  },
+  "pattern": [
+    "SA",
+    " S",
+    " T"
+  ],
+  "result": {
+    "item": "takeoutsmoreores:thimeite_scythe"
+  },
+  "show_notification": true
+}

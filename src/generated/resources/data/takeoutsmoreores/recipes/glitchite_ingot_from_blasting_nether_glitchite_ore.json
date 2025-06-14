@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "glitchite",
+  "ingredient": {
+    "item": "takeoutsmoreores:nether_glitchite_ore"
+  },
+  "result": "takeoutsmoreores:glitchite_ingot"
+}

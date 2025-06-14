@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "takeoutsmoreores:metal_rod"
+    },
+    "S": {
+      "item": "takeoutsmoreores:thimeite"
+    }
+  },
+  "pattern": [
+    "MSM",
+    "MSM"
+  ],
+  "result": {
+    "item": "takeoutsmoreores:thimeite_fence_gate"
+  },
+  "show_notification": true
+}

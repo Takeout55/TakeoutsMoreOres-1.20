@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "M": {
+      "item": "takeoutsmoreores:metal_rod"
+    },
+    "S": {
+      "item": "takeoutsmoreores:refined_diamond"
+    }
+  },
+  "pattern": [
+    "SMS",
+    "SMS"
+  ],
+  "result": {
+    "item": "takeoutsmoreores:refined_diamond_fence"
+  },
+  "show_notification": true
+}
