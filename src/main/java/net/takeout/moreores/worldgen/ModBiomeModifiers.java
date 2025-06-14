@@ -67,15 +67,15 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.SAPPHIRE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_NETHER_SAPPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_NETHER),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_SAPPHIRE_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_NETHER_SAPPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_NETHER),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_SAPPHIRE_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_END_SAPPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_END),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_SAPPHIRE_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_END_SAPPHIRE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_END),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_SAPPHIRE_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_ZIRCON_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
@@ -87,10 +87,10 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_ZIRCON_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_END_ZIRCON_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_END),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_ZIRCON_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_END_ZIRCON_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_END),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_ZIRCON_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_NETHER_THIMEITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_NETHER),
@@ -132,20 +132,20 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_GASNITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_END_GASNITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_END),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_GASNITE_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_END_GASNITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_END),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_GASNITE_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_EARIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.EARIUM_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_NETHER_EARIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_NETHER),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_EARIUM_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_NETHER_EARIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_NETHER),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_EARIUM_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_END_EARIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
@@ -167,30 +167,30 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_OCARITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_RUBY_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RUBY_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_RUBY_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.RUBY_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_NETHER_RUBY_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_NETHER),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_RUBY_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_NETHER_RUBY_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_NETHER),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_RUBY_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_END_RUBY_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_END),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_RUBY_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_END_RUBY_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_END),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_RUBY_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_CHEESIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CHEESIUM_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_CHEESIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.CHEESIUM_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_NETHER_CHEESIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_NETHER),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_CHEESIUM_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_NETHER_CHEESIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_NETHER),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_CHEESIUM_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_END_CHEESIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
@@ -207,10 +207,10 @@ public class ModBiomeModifiers {
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_PLUNGITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
 
-        context.register(ADD_END_PLUNGITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
-                biomes.getOrThrow(BiomeTags.IS_END),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_PLUNGITE_ORE_PLACED_KEY)),
-                GenerationStep.Decoration.UNDERGROUND_ORES));
+        //context.register(ADD_END_PLUNGITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+        //        biomes.getOrThrow(BiomeTags.IS_END),
+        //        HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_PLUNGITE_ORE_PLACED_KEY)),
+        //        GenerationStep.Decoration.UNDERGROUND_ORES));
 
         context.register(ADD_CHEEKIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_OVERWORLD),

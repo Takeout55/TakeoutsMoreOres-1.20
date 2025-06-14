@@ -10,20 +10,29 @@ import net.takeout.moreores.MoreOres;
 import java.util.function.Supplier;
 
 public enum ModArmorMaterials implements ArmorMaterial {
-    SAPPHIRE("sapphire", 18, new int[]{3, 5, 4, 3}, 17,
-            SoundEvents.ARMOR_EQUIP_GOLD, 0.8f, 0.1f, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
-    REFINED_DIAMOND("refined_diamond",23 ,new int[]{4, 7, 5, 4} ,21 ,SoundEvents.ARMOR_EQUIP_DIAMOND,
-            1.3f,0.3f ,() -> Ingredient.of(ModItems.REFINED_DIAMOND.get())),
-    GLITCHITE("glitchite", 20, new int[]{4, 6, 5, 4}, 17, SoundEvents.ARMOR_EQUIP_GOLD,
-            0.7f, 0f, () -> Ingredient.of(ModItems.GLITCHITE_INGOT.get())),
-    OCARITE("ocarite", 21, new int[]{10, 10, 10, 10}, 30, SoundEvents.ARMOR_EQUIP_IRON,
-            10f, 5f, () -> Ingredient.of(ModItems.OCARITE.get())),
-    ZIRCON("zircon", 19, new int[]{3, 5, 4, 3}, 17, SoundEvents.ARMOR_EQUIP_IRON,
-                    0.8f, 0.1f, () -> Ingredient.of(ModItems.ZIRCON.get())),
-    RUBY("ruby", 18, new int[]{3, 5, 4, 3}, 15, SoundEvents.ARMOR_EQUIP_IRON,
-            0.9f, 0.5f, () -> Ingredient.of(ModItems.RUBY.get())),
-    THIMEITE("thimeite", 18, new int[]{5, 6, 5, 5}, 20, SoundEvents.ARMOR_EQUIP_IRON,
-            1.2f, 0.5f, () -> Ingredient.of(ModItems.RUBY.get()));;
+    SAPPHIRE("sapphire", 14, new int[]{1, 5, 4, 2}, 8,
+            SoundEvents.ARMOR_EQUIP_GOLD, 0.0f, 0.0f, () -> Ingredient.of(ModItems.SAPPHIRE.get())),
+
+    ZIRCON("zircon", 13, new int[]{1, 5, 4, 2}, 9, SoundEvents.ARMOR_EQUIP_IRON,
+            0.0f, 0.0f, () -> Ingredient.of(ModItems.ZIRCON.get())),
+
+    RUBY("ruby", 13, new int[]{1, 5, 4, 2}, 7, SoundEvents.ARMOR_EQUIP_IRON,
+            0.1f, 0.0f, () -> Ingredient.of(ModItems.RUBY.get())),
+
+    GLITCHITE("glitchite", 20, new int[]{3, 5, 4, 2}, 10, SoundEvents.ARMOR_EQUIP_GOLD,
+            0.2f, 0.0f, () -> Ingredient.of(ModItems.GLITCHITE_INGOT.get())),
+
+    OCARITE("ocarite", 19, new int[]{4, 6, 4, 2}, 10, SoundEvents.ARMOR_EQUIP_IRON,
+            0.2f, 0.0f, () -> Ingredient.of(ModItems.OCARITE.get())),
+
+    THIMEITE("thimeite", 36, new int[]{4, 8, 6, 5}, 11, SoundEvents.ARMOR_EQUIP_IRON,
+            2.0f, 0.0f, () -> Ingredient.of(ModItems.RUBY.get())),
+
+    REFINED_DIAMOND("refined_diamond", 38, new int[]{5, 9, 7, 6}, 13, SoundEvents.ARMOR_EQUIP_DIAMOND,
+            2.0f, 0.05f, () -> Ingredient.of(ModItems.REFINED_DIAMOND.get())),
+
+    CHEEKIUM("cheekium", 22, new int[]{3, 4, 3, 2}, 10,SoundEvents.ARMOR_EQUIP_GOLD,
+            0.2f, 0.0f, () -> Ingredient.of(ModItems.CHEEKIUM.get()));
 
     private final String name;
     private final int durabilityMultiplier;

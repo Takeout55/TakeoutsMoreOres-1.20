@@ -131,8 +131,8 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHEESIUM_PRESSURE_PLATE.get());
                         pOutput.accept(ModBlocks.THIMEITE_STAIRS.get());
                         pOutput.accept(ModBlocks.THIMEITE_SLAB.get());
-                        // pOutput.accept(ModBlocks.THIMEITE_TRAPDOOR.get());
-                        // pOutput.accept(ModBlocks.THIMEITE_DOOR.get());
+                        pOutput.accept(ModBlocks.THIMEITE_TRAPDOOR.get());
+                        pOutput.accept(ModBlocks.THIMEITE_DOOR.get());
                         pOutput.accept(ModBlocks.THIMEITE_BUTTON.get());
                         pOutput.accept(ModBlocks.THIMEITE_FENCE_GATE.get());
                         pOutput.accept(ModBlocks.THIMEITE_FENCE.get());
@@ -203,6 +203,26 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.PLUNGITE_AXE.get());
                         pOutput.accept(ModItems.PLUNGITE_SHOVEL.get());
                         pOutput.accept(ModItems.PLUNGITE_HOE.get());
+                        pOutput.accept(ModItems.CHEEKIUM_SWORD.get());
+                        pOutput.accept(ModItems.CHEEKIUM_PICKAXE.get());
+                        pOutput.accept(ModItems.CHEEKIUM_AXE.get());
+                        pOutput.accept(ModItems.CHEEKIUM_SHOVEL.get());
+                        pOutput.accept(ModItems.CHEEKIUM_HOE.get());
+                        pOutput.accept(ModItems.RUBY_SWORD.get());
+                        pOutput.accept(ModItems.RUBY_PICKAXE.get());
+                        pOutput.accept(ModItems.RUBY_AXE.get());
+                        pOutput.accept(ModItems.RUBY_SHOVEL.get());
+                        pOutput.accept(ModItems.RUBY_HOE.get());
+                        pOutput.accept(ModItems.ZIRCON_SWORD.get());
+                        pOutput.accept(ModItems.ZIRCON_PICKAXE.get());
+                        pOutput.accept(ModItems.ZIRCON_AXE.get());
+                        pOutput.accept(ModItems.ZIRCON_SHOVEL.get());
+                        pOutput.accept(ModItems.ZIRCON_HOE.get());
+                        pOutput.accept(ModItems.OCARITE_SWORD.get());
+                        pOutput.accept(ModItems.OCARITE_PICKAXE.get());
+                        pOutput.accept(ModItems.OCARITE_AXE.get());
+                        pOutput.accept(ModItems.OCARITE_SHOVEL.get());
+                        pOutput.accept(ModItems.OCARITE_HOE.get());
                         pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
                         pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
                         pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());
@@ -231,7 +251,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.THIMEITE_CHESTPLATE.get());
                         pOutput.accept(ModItems.THIMEITE_LEGGINGS.get());
                         pOutput.accept(ModItems.THIMEITE_BOOTS.get());
-                        pOutput.accept(ModItems.RHINO_SPAWN_EGG.get());
+                        pOutput.accept(ModItems.CHEEKIUM_HELMET.get());
+                        pOutput.accept(ModItems.CHEEKIUM_CHESTPLATE.get());
+                        pOutput.accept(ModItems.CHEEKIUM_LEGGINGS.get());
+                        pOutput.accept(ModItems.CHEEKIUM_BOOTS.get());
+
                     })
                     .build());
 

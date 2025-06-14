@@ -145,8 +145,8 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock(((FenceBlock) ModBlocks.THIMEITE_FENCE.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
         fenceGateBlock(((FenceGateBlock) ModBlocks.THIMEITE_FENCE_GATE.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
         wallBlock(((WallBlock) ModBlocks.THIMEITE_WALL.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
-        // doorBlockWithRenderType(((DoorBlock) ModBlocks.THIMEITE_DOOR.get()), modLoc("block/thimeite_door_bottom"), modLoc("block/thimeite_door_top"), "cutout");
-        // trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.THIMEITE_TRAPDOOR.get()), modLoc("block/thimeite_trapdoor"), true, "cutout");
+        doorBlockWithRenderType(((DoorBlock) ModBlocks.THIMEITE_DOOR.get()), modLoc("block/thimeite_door_bottom"), modLoc("block/thimeite_door_top"), "cutout");
+        trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.THIMEITE_TRAPDOOR.get()), modLoc("block/thimeite_trapdoor"), true, "cutout");
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

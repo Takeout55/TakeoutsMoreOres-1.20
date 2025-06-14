@@ -217,5 +217,27 @@
   "item.takeoutsmoreores.cheekium_pickaxe": "Cheekium Pickaxe",
   "item.takeoutsmoreores.cheekium_axe": "Cheekium Axe",
   "item.takeoutsmoreores.cheekium_shovel": "Cheekium Shovel",
-  "item.takeoutsmoreores.cheekium_hoe": "Cheekium Hoe"
+  "item.takeoutsmoreores.cheekium_hoe": "Cheekium Hoe",
+  "item.takeoutsmoreores.cheekium_helmet": "Cheekium Helmet",
+  "item.takeoutsmoreores.cheekium_chestplate": "Cheekium Chestplate",
+  "item.takeoutsmoreores.cheekium_leggings": "Cheekium Leggings",
+  "item.takeoutsmoreores.cheekium_boots": "Cheekium Boots",
+  "block.takeoutsmoreores.thimeite_door": "Thimeite Door",
+  "block.takeoutsmoreores.thimeite_trapdoor": "Thimeite Trapdoor",
+  "item.takeoutsmoreores.ruby_sword": "Ruby Sword",
+  "item.takeoutsmoreores.ruby_pickaxe": "Ruby Pickaxe",
+  "item.takeoutsmoreores.ruby_axe": "Ruby Axe",
+  "item.takeoutsmoreores.ruby_shovel": "Ruby Shovel",
+  "item.takeoutsmoreores.ruby_hoe": "Ruby Hoe",
+  "item.takeoutsmoreores.zircon_sword": "Zircon Sword",
+  "item.takeoutsmoreores.zircon_pickaxe": "Zircon Pickaxe",
+  "item.takeoutsmoreores.zircon_axe": "Zircon Axe",
+  "item.takeoutsmoreores.zircon_shovel": "Zircon Shovel",
+  "item.takeoutsmoreores.zircon_hoe": "Zircon Hoe",
+  "item.takeoutsmoreores.ocarite_sword": "Ocarite Sword",
+  "item.takeoutsmoreores.ocarite_pickaxe": "Ocarite Pickaxe",
+  "item.takeoutsmoreores.ocarite_axe": "Ocarite Axe",
+  "item.takeoutsmoreores.ocarite_shovel": "Ocarite Shovel",
+  "item.takeoutsmoreores.ocarite_hoe": "Ocarite Hoe"
 }
+

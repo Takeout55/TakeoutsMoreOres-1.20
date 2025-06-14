@@ -50,19 +50,19 @@ public class ModItems {
             () -> new Item(new Item.Properties().stacksTo(1)));
 
     public static final RegistryObject<Item> SAPPHIRE_SWORD = ITEMS.register("sapphire_sword",
-            () -> new SwordItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.SAPPHIRE, 3, -2.4f, new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_PICKAXE = ITEMS.register("sapphire_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.SAPPHIRE, 1, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_AXE = ITEMS.register("sapphire_axe",
-            () -> new AxeItem(ModToolTiers.SAPPHIRE, 5, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.SAPPHIRE, 5, -3.0f, new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_SHOVEL = ITEMS.register("sapphire_shovel",
-            () -> new ShovelItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.SAPPHIRE, 1.5f, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> SAPPHIRE_HOE = ITEMS.register("sapphire_hoe",
-            () -> new HoeItem(ModToolTiers.SAPPHIRE, 0, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.SAPPHIRE, -2, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> EARIUM = ITEMS.register("earium",
             () -> new Item(new Item.Properties()));
@@ -104,19 +104,19 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_SWORD = ITEMS.register("glitchite_sword",
-            () -> new SwordItem(ModToolTiers.GLITCHITE, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.GLITCHITE, 3, -2.4f, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_PICKAXE = ITEMS.register("glitchite_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.GLITCHITE, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.GLITCHITE, 1, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_AXE = ITEMS.register("glitchite_axe",
-            () -> new AxeItem(ModToolTiers.GLITCHITE, 5, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.GLITCHITE, 5, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_SHOVEL = ITEMS.register("glitchite_shovel",
-            () -> new ShovelItem(ModToolTiers.GLITCHITE, 0, 0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.GLITCHITE, 1.5f, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_HOE = ITEMS.register("glitchite_hoe",
-            () -> new HoeItem(ModToolTiers.GLITCHITE, 0, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.GLITCHITE, -1, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> GLITCHITE_HELMET = ITEMS.register("glitchite_helmet",
             () -> new ArmorItem(ModArmorMaterials.GLITCHITE, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -149,34 +149,34 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_SCYTHE = ITEMS.register("thimeite_scythe",
-            () -> new SwordItem(ModToolTiers.THIMEITE, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.THIMEITE, 3, -2.4f, new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_PICKAXE = ITEMS.register("thimeite_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.THIMEITE, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.THIMEITE, 1, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_AXE = ITEMS.register("thimeite_axe",
-            () -> new AxeItem(ModToolTiers.THIMEITE, 5, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.THIMEITE, 5, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_SHOVEL = ITEMS.register("thimeite_shovel",
-            () -> new ShovelItem(ModToolTiers.THIMEITE, 0, 0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.THIMEITE, 1.5f, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> THIMEITE_HOE = ITEMS.register("thimeite_hoe",
-            () -> new HoeItem(ModToolTiers.THIMEITE, 0, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.THIMEITE, -2, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_SWORD = ITEMS.register("refined_diamond_sword",
-            () -> new SwordItem(ModToolTiers.REFINED_DIAMOND, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.REFINED_DIAMOND, 3, -2.4f, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_PICKAXE = ITEMS.register("refined_diamond_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.REFINED_DIAMOND, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.REFINED_DIAMOND, 1, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_AXE = ITEMS.register("refined_diamond_axe",
-            () -> new AxeItem(ModToolTiers.REFINED_DIAMOND, 5, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.REFINED_DIAMOND, 5, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_SHOVEL = ITEMS.register("refined_diamond_shovel",
-            () -> new ShovelItem(ModToolTiers.REFINED_DIAMOND, 0, 0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.REFINED_DIAMOND, 1.5f, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> REFINED_DIAMOND_HOE = ITEMS.register("refined_diamond_hoe",
-            () -> new HoeItem(ModToolTiers.REFINED_DIAMOND, 0, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.REFINED_DIAMOND, -3, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> OCARITE_HELMET = ITEMS.register("ocarite_helmet",
             () -> new ArmorItem(ModArmorMaterials.OCARITE, ArmorItem.Type.HELMET, new Item.Properties()));
@@ -255,19 +255,19 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> PLUNGITE_SWORD = ITEMS.register("plungite_sword",
-            () -> new SwordItem(ModToolTiers.PLUNGITE, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.PLUNGITE, 3, -2.4f, new Item.Properties()));
 
     public static final RegistryObject<Item> PLUNGITE_PICKAXE = ITEMS.register("plungite_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.PLUNGITE, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.PLUNGITE, 1, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<Item> PLUNGITE_AXE = ITEMS.register("plungite_axe",
-            () -> new AxeItem(ModToolTiers.PLUNGITE, 5, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.PLUNGITE, 5, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> PLUNGITE_SHOVEL = ITEMS.register("plungite_shovel",
-            () -> new ShovelItem(ModToolTiers.PLUNGITE, 0, 0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.PLUNGITE, 1.5f, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> PLUNGITE_HOE = ITEMS.register("plungite_hoe",
-            () -> new HoeItem(ModToolTiers.PLUNGITE, 0, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.PLUNGITE, -2, 0, new Item.Properties()));
 
     public static final RegistryObject<Item> RAW_THIMEITE = ITEMS.register("raw_thimeite",
             () -> new Item(new Item.Properties()));
@@ -276,17 +276,74 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> CHEEKIUM_SWORD = ITEMS.register("cheekium_sword",
-            () -> new SwordItem(ModToolTiers.CHEEKIUM, 4, 2, new Item.Properties()));
+            () -> new SwordItem(ModToolTiers.CHEEKIUM, 3, -2.4f, new Item.Properties()));
 
     public static final RegistryObject<Item> CHEEKIUM_PICKAXE = ITEMS.register("cheekium_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.CHEEKIUM, 4, 2, new Item.Properties()));
+            () -> new PickaxeItem(ModToolTiers.CHEEKIUM, 1, -2.8f, new Item.Properties()));
 
     public static final RegistryObject<Item> CHEEKIUM_AXE = ITEMS.register("cheekium_axe",
-            () -> new AxeItem(ModToolTiers.CHEEKIUM, 5, 1, new Item.Properties()));
+            () -> new AxeItem(ModToolTiers.CHEEKIUM, 5, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> CHEEKIUM_SHOVEL = ITEMS.register("cheekium_shovel",
-            () -> new ShovelItem(ModToolTiers.CHEEKIUM, 0, 0, new Item.Properties()));
+            () -> new ShovelItem(ModToolTiers.CHEEKIUM, 1.5f, -3, new Item.Properties()));
 
     public static final RegistryObject<Item> CHEEKIUM_HOE = ITEMS.register("cheekium_hoe",
-            () -> new HoeItem(ModToolTiers.CHEEKIUM, 0, 0, new Item.Properties()));
+            () -> new HoeItem(ModToolTiers.CHEEKIUM, -2, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEEKIUM_HELMET = ITEMS.register("cheekium_helmet",
+            () -> new ArmorItem(ModArmorMaterials.CHEEKIUM, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEEKIUM_CHESTPLATE = ITEMS.register("cheekium_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.CHEEKIUM, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEEKIUM_LEGGINGS = ITEMS.register("cheekium_leggings",
+            () -> new ArmorItem(ModArmorMaterials.CHEEKIUM, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> CHEEKIUM_BOOTS = ITEMS.register("cheekium_boots",
+            () -> new ArmorItem(ModArmorMaterials.CHEEKIUM, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_SWORD = ITEMS.register("ruby_sword",
+            () -> new SwordItem(ModToolTiers.RUBY, 3, -2.4f, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_PICKAXE = ITEMS.register("ruby_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.RUBY, 1, -2.8f, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_AXE = ITEMS.register("ruby_axe",
+            () -> new AxeItem(ModToolTiers.RUBY, 5, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_SHOVEL = ITEMS.register("ruby_shovel",
+            () -> new ShovelItem(ModToolTiers.RUBY, 1.5f, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> RUBY_HOE = ITEMS.register("ruby_hoe",
+            () -> new HoeItem(ModToolTiers.RUBY, -2, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIRCON_SWORD = ITEMS.register("zircon_sword",
+            () -> new SwordItem(ModToolTiers.ZIRCON, 3, -2.4f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIRCON_PICKAXE = ITEMS.register("zircon_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ZIRCON, 1, -2.8f, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIRCON_AXE = ITEMS.register("zircon_axe",
+            () -> new AxeItem(ModToolTiers.ZIRCON, 5, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIRCON_SHOVEL = ITEMS.register("zircon_shovel",
+            () -> new ShovelItem(ModToolTiers.ZIRCON, 1.5f, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> ZIRCON_HOE = ITEMS.register("zircon_hoe",
+            () -> new HoeItem(ModToolTiers.ZIRCON, -2, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE_SWORD = ITEMS.register("ocarite_sword",
+            () -> new SwordItem(ModToolTiers.OCARITE, 3, -2.4f, new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE_PICKAXE = ITEMS.register("ocarite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.OCARITE, 1, -2.8f, new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE_AXE = ITEMS.register("ocarite_axe",
+            () -> new AxeItem(ModToolTiers.OCARITE, 5, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE_SHOVEL = ITEMS.register("ocarite_shovel",
+            () -> new ShovelItem(ModToolTiers.OCARITE, 1.5f, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> OCARITE_HOE = ITEMS.register("ocarite_hoe",
+            () -> new HoeItem(ModToolTiers.OCARITE, -2, 0, new Item.Properties()));
 }

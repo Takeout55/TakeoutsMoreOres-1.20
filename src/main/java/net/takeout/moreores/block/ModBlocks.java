@@ -294,7 +294,7 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> THIMEITE_BLOCK = registerBlock("thimeite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_PORTAL_FRAME).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> THIMEITE_ORE = registerBlock("thimeite_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
@@ -312,7 +312,7 @@ public class ModBlocks {
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
     public static final RegistryObject<Block> DIRT_STAIRS = registerBlock("dirt_stairs",
-            () -> new StairBlock(() -> Blocks.DIRT.defaultBlockState(),
+            () -> new StairBlock(Blocks.DIRT.defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.DIRT)));
 
     public static final RegistryObject<Block> THIMEITE_STAIRS = registerBlock("thimeite_stairs",
@@ -339,11 +339,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> THIMEITE_WALL = registerBlock("thimeite_wall",
             () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
 
-    // public static final RegistryObject<Block> THIMEITE_DOOR = registerBlock("cheesium_door",
-    //        () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> THIMEITE_DOOR = registerBlock("thimeite_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
 
-    // public static final RegistryObject<Block> THIMEITE_TRAPDOOR = registerBlock("cheesium_trapdoor",
-    //        () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
+    public static final RegistryObject<Block> THIMEITE_TRAPDOOR = registerBlock("thimeite_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));

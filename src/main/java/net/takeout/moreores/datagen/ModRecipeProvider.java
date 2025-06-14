@@ -712,11 +712,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.THIMEITE_SCYTHE.get())
-                .pattern("S")
-                .pattern("S")
-                .pattern("T")
+                .pattern("SA")
+                .pattern(" S")
+                .pattern(" T")
                 .define('S', ModItems.THIMEITE.get())
                 .define('T', Items.STICK)
+                .define('A', Items.AMETHYST_SHARD)
                 .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
                 .save(pWriter);
 
@@ -844,12 +845,12 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
                 .save(pWriter);
 
-        //ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_TRAPDOOR.get())
-        //        .pattern("SSS")
-        //        .pattern("SSS")
-        //        .define('S', ModItems.THIMEITE.get())
-        //        .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
-        //        .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_TRAPDOOR.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.THIMEITE.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_WALL.get())
                 .pattern("SSS")
@@ -858,13 +859,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
                 .save(pWriter);
 
-        //ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_DOOR.get())
-        //        .pattern("SS")
-        //        .pattern("SS")
-        //        .pattern("SS")
-        //        .define('S', ModBlocks.THIMEITE_BLOCK.get())
-        //      .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
-        //        .save(pWriter);
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_DOOR.get())
+                .pattern("SS")
+                .pattern("SS")
+                .pattern("SS")
+                .define('S', ModItems.THIMEITE.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.THIMEITE_FENCE_GATE.get())
                 .pattern("MSM")
@@ -1121,6 +1122,141 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModItems.CHEEKIUM.get())
                 .define('T', Items.STICK)
                 .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.RUBY.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.RUBY.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.RUBY.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.RUBY.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.RUBY_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.RUBY.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIRCON_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.ZIRCON.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIRCON_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.ZIRCON.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIRCON_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.ZIRCON.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIRCON_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.ZIRCON.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.ZIRCON_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.ZIRCON.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OCARITE_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.OCARITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OCARITE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.OCARITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OCARITE_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.OCARITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OCARITE_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.OCARITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.OCARITE_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.OCARITE.get())
+                .define('T', Items.STICK)
+                .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)

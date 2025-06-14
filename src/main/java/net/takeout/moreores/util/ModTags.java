@@ -17,6 +17,9 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_THIMEITE_TOOL = tag("needs_thimeite_tool");
         public static final TagKey<Block> NEEDS_PLUNGITE_TOOL = tag("needs_plungite_tool");
         public static final TagKey<Block> NEEDS_CHEEKIUM_TOOL = tag("needs_cheekium_tool");
+        public static final TagKey<Block> NEEDS_ZIRCON_TOOL = tag("needs_zircon_tool");
+        public static final TagKey<Block> NEEDS_RUBY_TOOL = tag("needs_ruby_tool");
+        public static final TagKey<Block> NEEDS_OCARITE_TOOL = tag("needs_ocarite_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(MoreOres.MOD_ID, name));

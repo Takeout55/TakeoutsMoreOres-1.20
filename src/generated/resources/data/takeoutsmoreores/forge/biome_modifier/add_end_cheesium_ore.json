@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "#minecraft:is_end",
-  "features": "takeoutsmoreores:end_cheesium_ore_placed",
-  "step": "underground_ores"
-}

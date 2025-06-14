@@ -122,7 +122,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.EARIUM_FENCE_GATE);
         trapdoorItem(ModBlocks.EARIUM_TRAPDOOR);
 
-        // simpleBlockItem(ModBlocks.THIMEITE_DOOR);
+        simpleBlockItem(ModBlocks.THIMEITE_DOOR);
         fenceItem(ModBlocks.THIMEITE_FENCE, ModBlocks.THIMEITE_BLOCK);
         buttonItem(ModBlocks.THIMEITE_BUTTON, ModBlocks.THIMEITE_BLOCK);
         wallItem(ModBlocks.THIMEITE_WALL, ModBlocks.THIMEITE_BLOCK);
@@ -130,7 +130,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         evenSimplerBlockItem(ModBlocks.THIMEITE_SLAB);
         evenSimplerBlockItem(ModBlocks.THIMEITE_PRESSURE_PLATE);
         evenSimplerBlockItem(ModBlocks.THIMEITE_FENCE_GATE);
-        // trapdoorItem(ModBlocks.THIMEITE_TRAPDOOR);
+        trapdoorItem(ModBlocks.THIMEITE_TRAPDOOR);
 
         evenSimplerBlockItem(ModBlocks.NETHER_BRICK_FENCE_GATE);
         evenSimplerBlockItem(ModBlocks.DIRT_STAIRS);
@@ -170,6 +170,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.CHEEKIUM_AXE);
         handheldItem(ModItems.CHEEKIUM_HOE);
         handheldItem(ModItems.CHEEKIUM_SHOVEL);
+
+        handheldItem(ModItems.RUBY_SWORD);
+        handheldItem(ModItems.RUBY_PICKAXE);
+        handheldItem(ModItems.RUBY_AXE);
+        handheldItem(ModItems.RUBY_HOE);
+        handheldItem(ModItems.RUBY_SHOVEL);
 
         fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
         buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);
@@ -220,6 +226,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.THIMEITE_CHESTPLATE);
         trimmedArmorItem(ModItems.THIMEITE_BOOTS);
         trimmedArmorItem(ModItems.THIMEITE_LEGGINGS);
+
+        trimmedArmorItem(ModItems.CHEEKIUM_HELMET);
+        trimmedArmorItem(ModItems.CHEEKIUM_CHESTPLATE);
+        trimmedArmorItem(ModItems.CHEEKIUM_BOOTS);
+        trimmedArmorItem(ModItems.CHEEKIUM_LEGGINGS);
 
         withExistingParent(ModItems.RHINO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
