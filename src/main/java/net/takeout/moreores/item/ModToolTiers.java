@@ -25,7 +25,7 @@ public class ModToolTiers {
     public static final Tier RUBY = TierSortingRegistry.registerTier(
             new ForgeTier(3, 210, 5.9f, 2.3f, 14,
                     ModTags.Blocks.NEEDS_RUBY_TOOL, () -> Ingredient.of(ModItems.RUBY.get())),
-            new ResourceLocation(MoreOres.MOD_ID, "ruby"), List.of(Tiers.DIAMOND), List.of());
+            new ResourceLocation(MoreOres.MOD_ID, "ruby"), List.of(Tiers.IRON), List.of());
 
     public static final Tier GLITCHITE = TierSortingRegistry.registerTier(
             new ForgeTier(3, 872, 7.5f, 2.6f, 11,
