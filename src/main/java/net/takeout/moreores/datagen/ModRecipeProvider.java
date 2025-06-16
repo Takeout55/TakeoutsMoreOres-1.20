@@ -1305,38 +1305,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BUTTON.get())
-                .requires(ModBlocks.SAPPHIRE_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
+                .requires(ModItems.SAPPHIRE.get())
+                .unlockedBy(getHasName(ModItems.SAPPHIRE.get()), has(ModItems.SAPPHIRE.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.ZIRCON_BUTTON.get())
-                .requires(ModBlocks.ZIRCON_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.ZIRCON_BLOCK.get()), has(ModBlocks.ZIRCON_BLOCK.get()))
+                .requires(ModItems.ZIRCON.get())
+                .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
                 .save(pWriter);
 
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_BUTTON.get())
-                .requires(ModBlocks.REFINED_DIAMOND_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.REFINED_DIAMOND_BLOCK.get()), has(ModBlocks.REFINED_DIAMOND_BLOCK.get()))
-                .save(pWriter);
+        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_BUTTON.get())
+        //        .requires(ModItems.REFINED_DIAMOND.get())
+        //        .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
+        //        .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.EARIUM_BUTTON.get())
-                .requires(ModBlocks.EARIUM_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.EARIUM_BLOCK.get()), has(ModBlocks.EARIUM_BLOCK.get()))
+                .requires(ModItems.EARIUM.get())
+                .unlockedBy(getHasName(ModItems.EARIUM.get()), has(ModItems.EARIUM.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.CHEESIUM_BUTTON.get())
-                .requires(ModBlocks.CHEESIUM_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.CHEESIUM_BLOCK.get()), has(ModBlocks.CHEESIUM_BLOCK.get()))
+                .requires(ModItems.CHEESIUM.get())
+                .unlockedBy(getHasName(ModItems.CHEESIUM.get()), has(ModItems.CHEESIUM.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.THIMEITE.get(), 9)
-                .requires(ModBlocks.THIMEITE_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.THIMEITE_BLOCK.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
+                .requires(ModItems.THIMEITE.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.THIMEITE_BUTTON.get())
-                .requires(ModBlocks.THIMEITE_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.THIMEITE_BLOCK.get()), has(ModBlocks.THIMEITE_BLOCK.get()))
+                .requires(ModItems.THIMEITE.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
                 .save(pWriter);
     }
 
