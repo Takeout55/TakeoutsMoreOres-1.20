@@ -346,4 +346,11 @@ public class ModItems {
 
     public static final RegistryObject<Item> OCARITE_HOE = ITEMS.register("ocarite_hoe",
             () -> new HoeItem(ModToolTiers.OCARITE, -2, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> TAKEITE = ITEMS.register("takeite",
+            () -> new Item(new Item.properties()));
+
+    public static final RegistryObject<Item> RAW_TAKEITE = ITEMS.register("raw_takeite",
+            () -> new Item(new Item.properties()));
+
 }
