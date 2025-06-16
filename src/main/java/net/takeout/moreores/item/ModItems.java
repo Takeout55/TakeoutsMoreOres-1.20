@@ -44,7 +44,7 @@ public class ModItems {
             () -> new MetalDetectorItem(new Item.Properties().durability(500)));
 
     public static final RegistryObject<Item> GASNITE = ITEMS.register("gasnite",
-            () -> new FuelItem(new Item.Properties(), 2000));
+            () -> new FuelItem(new Item.Properties(), 500));
 
     public static final RegistryObject<Item> SAPPHIRE_STAFF = ITEMS.register("sapphire_staff",
             () -> new Item(new Item.Properties().stacksTo(1)));
