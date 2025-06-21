@@ -59,8 +59,8 @@ public class ModToolTiers {
                     ModTags.Blocks.NEEDS_REFINED_DIAMOND_TOOL, () -> Ingredient.of(ModItems.REFINED_DIAMOND.get())),
             new ResourceLocation(MoreOres.MOD_ID, "refined_diamond"), List.of(Tiers.NETHERITE), List.of());
 
-    public static final Tier TAKEITE = TierSortingRegistry.registerTier(
+    public static final Tier FIRE_TAKEITE = TierSortingRegistry.registerTier(
             new ForgeTier(5, 2929, 9, 4, 25,
-                    ModTags.Blocks.NEEDS_TAKEITE_TOOL, () -> Ingredient.of(ModItems.TAKEITE.get())),
-            new ResourceLocation(MoreOres.MOD_ID, "takeite"), List.of(Tiers.NETHERITE), List.of());
+                    ModTags.Blocks.NEEDS_FIRE_TAKEITE_TOOL, () -> Ingredient.of(ModItems.FLAMING_TAKEITE_GEM.get())),
+            new ResourceLocation(MoreOres.MOD_ID, "fire_takeite"), List.of(Tiers.NETHERITE), List.of());
 }

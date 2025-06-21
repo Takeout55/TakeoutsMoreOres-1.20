@@ -12,8 +12,6 @@ import net.takeout.moreores.item.custom.FuelItem;
 import net.takeout.moreores.item.custom.MetalDetectorItem;
 import net.takeout.moreores.sounds.ModSounds;
 
-import java.rmi.registry.Registry;
-
 public class ModItems {
     public static final DeferredRegister<Item> ITEMS =
             DeferredRegister.create(ForgeRegistries.ITEMS, MoreOres.MOD_ID);
@@ -347,10 +345,28 @@ public class ModItems {
     public static final RegistryObject<Item> OCARITE_HOE = ITEMS.register("ocarite_hoe",
             () -> new HoeItem(ModToolTiers.OCARITE, -2, 0, new Item.Properties()));
 
-    public static final RegistryObject<Item> TAKEITE = ITEMS.register("takeite",
-            () -> new Item(new Item.properties()));
+    public static final RegistryObject<Item> FLAMING_TAKEITE_GEM = ITEMS.register("flaming_takeite_gem",
+            () -> new Item(new Item.Properties()));
 
-    public static final RegistryObject<Item> RAW_TAKEITE = ITEMS.register("raw_takeite",
-            () -> new Item(new Item.properties()));
+    public static final RegistryObject<Item> FLAMING_TAKEITE = ITEMS.register("flaming_takeite",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FLAMING_TAKEITE_SWORD = ITEMS.register("flaming_takeite_sword",
+            () -> new SwordItem(ModToolTiers.FIRE_TAKEITE, 4, -2.2f, new Item.Properties()));
+
+    public static final RegistryObject<Item> FLAMING_TAKEITE_PICKAXE = ITEMS.register("flaming_takeite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.FIRE_TAKEITE, 1, -2.7f, new Item.Properties()));
+
+    public static final RegistryObject<Item> FLAMING_TAKEITE_AXE = ITEMS.register("flaming_takeite_axe",
+            () -> new AxeItem(ModToolTiers.FIRE_TAKEITE, 6, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> FLAMING_TAKEITE_SHOVEL = ITEMS.register("flaming_takeite_shovel",
+            () -> new ShovelItem(ModToolTiers.FIRE_TAKEITE, 1.5f, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> FLAMING_TAKEITE_HOE = ITEMS.register("flaming_takeite_hoe",
+            () -> new HoeItem(ModToolTiers.FIRE_TAKEITE, -2, 0, new Item.Properties()));
+
+    public static final RegistryObject<Item> RAW_CHEEKIUM = ITEMS.register("raw_cheekium",
+            () -> new Item(new Item.Properties()));
 
 }

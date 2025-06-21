@@ -218,13 +218,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.END_STONE_PLUNGITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_PLUNGITE_ORE.get(), ModItems.RAW_PLUNGITE.get()));
         this.add(ModBlocks.CHEEKIUM_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.CHEEKIUM_ORE.get(), ModItems.CHEEKIUM.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.CHEEKIUM_ORE.get(), ModItems.RAW_CHEEKIUM.get()));
         this.add(ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(), ModItems.CHEEKIUM.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(), ModItems.RAW_CHEEKIUM.get()));
         this.add(ModBlocks.NETHER_CHEEKIUM_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.NETHER_CHEEKIUM_ORE.get(), ModItems.CHEEKIUM.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.NETHER_CHEEKIUM_ORE.get(), ModItems.RAW_CHEEKIUM.get()));
         this.add(ModBlocks.END_STONE_CHEEKIUM_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_CHEEKIUM_ORE.get(), ModItems.CHEEKIUM.get()));
+                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_CHEEKIUM_ORE.get(), ModItems.RAW_CHEEKIUM.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {

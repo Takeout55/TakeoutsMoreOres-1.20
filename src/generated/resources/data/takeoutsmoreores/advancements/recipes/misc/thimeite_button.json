@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_thimeite_block": {
+    "has_thimeite": {
       "conditions": {
         "items": [
           {
             "items": [
-              "takeoutsmoreores:thimeite_block"
+              "takeoutsmoreores:thimeite"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_thimeite_block",
+      "has_thimeite",
       "has_the_recipe"
     ]
   ],

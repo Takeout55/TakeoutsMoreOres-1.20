@@ -57,7 +57,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.PLUNGITE_ORE.get(), ModBlocks.DEEPSLATE_PLUNGITE_ORE.get(), ModBlocks.NETHER_PLUNGITE_ORE.get(),
             ModBlocks.END_STONE_PLUNGITE_ORE.get());
 
-    private static final List<ItemLike> CHEEKIUM_SMELTABLES = List.of(
+    private static final List<ItemLike> CHEEKIUM_SMELTABLES = List.of(ModItems.RAW_CHEEKIUM.get(),
             ModBlocks.CHEEKIUM_ORE.get(), ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(), ModBlocks.NETHER_CHEEKIUM_ORE.get(),
             ModBlocks.END_STONE_CHEEKIUM_ORE.get());
 
@@ -1257,6 +1257,60 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('S', ModItems.OCARITE.get())
                 .define('T', Items.STICK)
                 .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.FLAMING_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.FLAMING_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.FLAMING_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.FLAMING_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.FLAMING_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_GEM.get())
+                .pattern("FFF")
+                .pattern("FEF")
+                .pattern("FFF")
+                .define('F', ModItems.FLAMING_TAKEITE.get())
+                .define('E', Items.EMERALD)
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE.get()), has(ModItems.FLAMING_TAKEITE.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)

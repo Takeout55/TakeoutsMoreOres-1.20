@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:smelting",
+  "category": "misc",
+  "cookingtime": 200,
+  "experience": 0.25,
+  "group": "cheekium",
+  "ingredient": {
+    "item": "takeoutsmoreores:raw_cheekium"
+  },
+  "result": "takeoutsmoreores:cheekium"
+}

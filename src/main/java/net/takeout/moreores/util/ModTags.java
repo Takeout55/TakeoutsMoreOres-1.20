@@ -20,6 +20,7 @@ public class ModTags {
         public static final TagKey<Block> NEEDS_ZIRCON_TOOL = tag("needs_zircon_tool");
         public static final TagKey<Block> NEEDS_RUBY_TOOL = tag("needs_ruby_tool");
         public static final TagKey<Block> NEEDS_OCARITE_TOOL = tag("needs_ocarite_tool");
+        public static final TagKey<Block> NEEDS_FIRE_TAKEITE_TOOL = tag("needs_fire_takeite_tool");
 
         private static TagKey<Block> tag(String name) {
             return BlockTags.create(new ResourceLocation(MoreOres.MOD_ID, name));

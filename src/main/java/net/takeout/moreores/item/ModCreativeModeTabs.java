@@ -149,6 +149,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.more_ores_items"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_ROD.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_GEM.get());
                         pOutput.accept(ModItems.REFINED_DIAMOND.get());
                         pOutput.accept(ModItems.REFINED_DIAMOND_SHARD.get());
                         pOutput.accept(ModItems.ZIRCON.get());
@@ -173,11 +174,18 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_RUBY.get());
                         pOutput.accept(ModItems.RAW_PLUNGITE.get());
                         pOutput.accept(ModItems.RAW_THIMEITE.get());
+                        pOutput.accept(ModItems.RAW_CHEEKIUM.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
                         pOutput.accept(ModItems.VINYL_TEMPLATE.get());
                         pOutput.accept(ModItems.BAR_BRAWL_MUSIC_DISC.get());
                         pOutput.accept(ModItems.THIMEITE_MUSIC_DISC.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_SWORD.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_PICKAXE.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_AXE.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_SHOVEL.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_HOE.get());
                         pOutput.accept(ModItems.SAPPHIRE_SWORD.get());
                         pOutput.accept(ModItems.SAPPHIRE_PICKAXE.get());
                         pOutput.accept(ModItems.SAPPHIRE_AXE.get());

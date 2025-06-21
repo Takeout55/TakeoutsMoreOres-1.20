@@ -35,7 +35,7 @@ public enum ModArmorMaterials implements ArmorMaterial {
             0.2f, 0.0f, () -> Ingredient.of(ModItems.CHEEKIUM.get())),
 
     TAKEITE("takeite", 42, new int[]{6, 10, 9, 7}, 12,SoundEvents.ARMOR_EQUIP_NETHERITE,
-            3.0f, 0.5f, () -> Ingredient.of(ModItems.TAKEITE.get()));
+            3.0f, 0.5f, () -> Ingredient.of(ModItems.FLAMING_TAKEITE_GEM.get()));
 
     private final String name;
     private final int durabilityMultiplier;

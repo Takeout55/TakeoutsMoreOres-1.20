@@ -7,12 +7,12 @@
       },
       "trigger": "minecraft:recipe_unlocked"
     },
-    "has_zircon_block": {
+    "has_zircon": {
       "conditions": {
         "items": [
           {
             "items": [
-              "takeoutsmoreores:zircon_block"
+              "takeoutsmoreores:zircon"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_zircon_block",
+      "has_zircon",
       "has_the_recipe"
     ]
   ],

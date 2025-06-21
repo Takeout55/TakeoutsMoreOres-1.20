@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_earium_block": {
+    "has_earium": {
       "conditions": {
         "items": [
           {
             "items": [
-              "takeoutsmoreores:earium_block"
+              "takeoutsmoreores:earium"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_earium_block",
+      "has_earium",
       "has_the_recipe"
     ]
   ],

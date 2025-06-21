@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_cheesium_block": {
+    "has_cheesium": {
       "conditions": {
         "items": [
           {
             "items": [
-              "takeoutsmoreores:cheesium_block"
+              "takeoutsmoreores:cheesium"
             ]
           }
         ]
@@ -22,7 +22,7 @@
   },
   "requirements": [
     [
-      "has_cheesium_block",
+      "has_cheesium",
       "has_the_recipe"
     ]
   ],
