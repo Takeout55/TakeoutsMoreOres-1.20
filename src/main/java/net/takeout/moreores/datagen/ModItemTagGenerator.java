@@ -52,7 +52,11 @@ public class ModItemTagGenerator extends ItemTagsProvider {
                         ModItems.CHEEKIUM_HELMET.get(),
                         ModItems.CHEEKIUM_CHESTPLATE.get(),
                         ModItems.CHEEKIUM_LEGGINGS.get(),
-                        ModItems.CHEEKIUM_BOOTS.get());
+                        ModItems.CHEEKIUM_BOOTS.get(),
+                        ModItems.FLAMING_TAKEITE_HELMET.get(),
+                        ModItems.FLAMING_TAKEITE_CHESTPLATE.get(),
+                        ModItems.FLAMING_TAKEITE_LEGGINGS.get(),
+                        ModItems.FLAMING_TAKEITE_BOOTS.get());
 
         this.tag(ItemTags.MUSIC_DISCS)
                 .add(ModItems.BAR_BRAWL_MUSIC_DISC.get(),

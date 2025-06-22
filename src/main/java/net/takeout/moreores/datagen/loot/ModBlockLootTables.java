@@ -170,7 +170,7 @@ public class ModBlockLootTables extends BlockLootSubProvider {
          this.add(ModBlocks.GLITCHITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
         this.add(ModBlocks.ANCIENT_VOIDSTONE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.ANCIENT_VOIDSTONE.get(), ModItems.RAW_ENDITE.get()));
+                block -> createDiamondLikeOreDrops(ModBlocks.ANCIENT_VOIDSTONE.get(), ModItems.RAW_ENDITE.get()));
         this.add(ModBlocks.DEEPSLATE_GLITCHITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
         this.add(ModBlocks.END_STONE_GLITCHITE_ORE.get(),
@@ -178,13 +178,13 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.add(ModBlocks.NETHER_GLITCHITE_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.NETHER_GLITCHITE_ORE.get(), ModItems.GLITCHITE_INGOT.get()));
         this.add(ModBlocks.THIMEITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
+                block -> createDiamondLikeOreDrops(ModBlocks.THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
         this.add(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
+                block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
         this.add(ModBlocks.NETHER_THIMEITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.NETHER_THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
+                block -> createDiamondLikeOreDrops(ModBlocks.NETHER_THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
         this.add(ModBlocks.END_STONE_THIMEITE_ORE.get(),
-                block -> createCopperLikeOreDrops(ModBlocks.END_STONE_THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
+                block -> createDiamondLikeOreDrops(ModBlocks.END_STONE_THIMEITE_ORE.get(), ModItems.RAW_THIMEITE.get()));
         this.add(ModBlocks.RUBY_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.RUBY_ORE.get(), ModItems.RAW_RUBY.get()));
         this.add(ModBlocks.DEEPSLATE_RUBY_ORE.get(),
@@ -225,6 +225,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createCopperLikeOreDrops(ModBlocks.NETHER_CHEEKIUM_ORE.get(), ModItems.RAW_CHEEKIUM.get()));
         this.add(ModBlocks.END_STONE_CHEEKIUM_ORE.get(),
                 block -> createCopperLikeOreDrops(ModBlocks.END_STONE_CHEEKIUM_ORE.get(), ModItems.RAW_CHEEKIUM.get()));
+        this.add(ModBlocks.FLAMING_TAKEITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.FLAMING_TAKEITE_ORE.get(), ModItems.FLAMING_TAKEITE.get()));
+        this.add(ModBlocks.DEEPSLATE_FLAMING_TAKEITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_FLAMING_TAKEITE_ORE.get(), ModItems.FLAMING_TAKEITE.get()));
+        this.add(ModBlocks.NETHER_FLAMING_TAKEITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.NETHER_FLAMING_TAKEITE_ORE.get(), ModItems.FLAMING_TAKEITE.get()));
+        this.add(ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get(), ModItems.FLAMING_TAKEITE.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
@@ -232,6 +240,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 this.applyExplosionDecay(pBlock,
                         LootItem.lootTableItem(item)
                                 .apply(SetItemCountFunction.setCount(UniformGenerator.between(2.0F, 5.0F)))
+                                .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
+    }
+
+    protected LootTable.Builder createDiamondLikeOreDrops(Block pBlock, Item item) {
+        return createSilkTouchDispatchTable(pBlock,
+                this.applyExplosionDecay(pBlock,
+                        LootItem.lootTableItem(item)
+                                .apply(SetItemCountFunction.setCount(UniformGenerator.between(1.0F, 3.0F)))
                                 .apply(ApplyBonusCount.addOreBonusCount(Enchantments.BLOCK_FORTUNE))));
     }
 

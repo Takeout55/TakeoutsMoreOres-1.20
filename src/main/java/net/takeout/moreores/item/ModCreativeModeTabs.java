@@ -42,6 +42,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.CHEESIUM_ORE.get());
                         pOutput.accept(ModBlocks.PLUNGITE_ORE.get());
                         pOutput.accept(ModBlocks.CHEEKIUM_ORE.get());
+                        pOutput.accept(ModBlocks.FLAMING_TAKEITE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_GASNITE_ORE.get());
@@ -53,6 +54,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.DEEPSLATE_CHEESIUM_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_PLUNGITE_ORE.get());
                         pOutput.accept(ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get());
+                        pOutput.accept(ModBlocks.DEEPSLATE_FLAMING_TAKEITE_ORE.get());
                         pOutput.accept(ModBlocks.NETHERRACK_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.NETHERRACK_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_GASNITE_ORE.get());
@@ -64,6 +66,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.NETHER_CHEESIUM_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_PLUNGITE_ORE.get());
                         pOutput.accept(ModBlocks.NETHER_CHEEKIUM_ORE.get());
+                        pOutput.accept(ModBlocks.NETHER_FLAMING_TAKEITE_ORE.get());
                         pOutput.accept(ModBlocks.ENDSTONE_ZIRCON_ORE.get());
                         pOutput.accept(ModBlocks.ENDSTONE_SAPPHIRE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_EARIUM_ORE.get());
@@ -75,6 +78,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModBlocks.END_STONE_CHEESIUM_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_PLUNGITE_ORE.get());
                         pOutput.accept(ModBlocks.END_STONE_CHEEKIUM_ORE.get());
+                        pOutput.accept(ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_STAIRS.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_SLAB.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_TRAPDOOR.get());
@@ -231,6 +235,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.OCARITE_AXE.get());
                         pOutput.accept(ModItems.OCARITE_SHOVEL.get());
                         pOutput.accept(ModItems.OCARITE_HOE.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_HELMET.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_LEGGINGS.get());
+                        pOutput.accept(ModItems.FLAMING_TAKEITE_BOOTS.get());
                         pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
                         pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
                         pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());

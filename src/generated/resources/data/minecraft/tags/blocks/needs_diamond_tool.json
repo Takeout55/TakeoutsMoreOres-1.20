@@ -1,5 +1,10 @@
 {
   "values": [
-    "takeoutsmoreores:refined_diamond_block"
+    "takeoutsmoreores:refined_diamond_block",
+    "takeoutsmoreores:flaming_takeite_ore",
+    "takeoutsmoreores:end_stone_flaming_takeite_ore",
+    "takeoutsmoreores:deepslate_flaming_takeite_ore",
+    "takeoutsmoreores:nether_flaming_takeite_ore",
+    "takeoutsmoreores:ancient_voidstone"
   ]
 }

@@ -411,6 +411,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> END_STONE_CHEEKIUM_ORE = registerBlock("end_stone_cheekium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> FLAMING_TAKEITE_ORE = registerBlock("flaming_takeite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> DEEPSLATE_FLAMING_TAKEITE_ORE = registerBlock("deepslate_flaming_takeite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> NETHER_FLAMING_TAKEITE_ORE = registerBlock("nether_flaming_takeite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> END_STONE_FLAMING_TAKEITE_ORE = registerBlock("end_stone_flaming_takeite_ore",
+            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

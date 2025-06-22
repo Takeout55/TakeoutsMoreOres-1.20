@@ -44,6 +44,10 @@
     "takeoutsmoreores:deepslate_cheekium_ore",
     "takeoutsmoreores:nether_cheekium_ore",
     "takeoutsmoreores:nether_cheesium_ore",
+    "takeoutsmoreores:flaming_takeite_ore",
+    "takeoutsmoreores:end_stone_flaming_takeite_ore",
+    "takeoutsmoreores:deepslate_flaming_takeite_ore",
+    "takeoutsmoreores:nether_flaming_takeite_ore",
     "takeoutsmoreores:plungite_ore",
     "#forge:ores"
   ]

@@ -1,6 +1,7 @@
 package net.takeout.moreores.item;
 
 import net.minecraft.world.item.*;
+import net.minecraft.world.item.armortrim.TrimPatterns;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -349,7 +350,7 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FLAMING_TAKEITE = ITEMS.register("flaming_takeite",
-            () -> new Item(new Item.Properties()));
+            () -> new FuelItem(new Item.Properties(), 1500));
 
     public static final RegistryObject<Item> FLAMING_TAKEITE_SWORD = ITEMS.register("flaming_takeite_sword",
             () -> new SwordItem(ModToolTiers.FIRE_TAKEITE, 4, -2.2f, new Item.Properties()));
@@ -369,4 +370,15 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_CHEEKIUM = ITEMS.register("raw_cheekium",
             () -> new Item(new Item.Properties()));
 
+    public static final RegistryObject<Item> FLAMING_TAKEITE_HELMET = ITEMS.register("flaming_takeite_helmet",
+            () -> new ArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> FLAMING_TAKEITE_CHESTPLATE = ITEMS.register("flaming_takeite_chestplate",
+            () -> new ArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> FLAMING_TAKEITE_LEGGINGS = ITEMS.register("flaming_takeite_leggings",
+            () -> new ArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> FLAMING_TAKEITE_BOOTS = ITEMS.register("flaming_takeite_boots",
+            () -> new ArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.BOOTS, new Item.Properties()));
 }

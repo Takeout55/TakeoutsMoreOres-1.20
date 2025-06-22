@@ -993,6 +993,37 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.RUBY.get()), has(ModItems.RUBY.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.FLAMING_TAKEITE_GEM.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("   ")
+                .define('S', ModItems.FLAMING_TAKEITE_GEM.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.FLAMING_TAKEITE_GEM.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.FLAMING_TAKEITE_GEM.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.TORCH)
                 .pattern("G")
                 .pattern("S")
@@ -1368,10 +1399,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.ZIRCON.get()), has(ModItems.ZIRCON.get()))
                 .save(pWriter);
 
-        //ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_BUTTON.get())
-        //        .requires(ModItems.REFINED_DIAMOND.get())
-        //        .unlockedBy(getHasName(ModItems.REFINED_DIAMOND.get()), has(ModItems.REFINED_DIAMOND.get()))
-        //        .save(pWriter);
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.REFINED_DIAMOND_BUTTON.get())
+                .requires(ModItems.REFINED_DIAMOND_SHARD.get())
+                .unlockedBy(getHasName(ModItems.REFINED_DIAMOND_SHARD.get()), has(ModItems.REFINED_DIAMOND_SHARD.get()))
+                .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModBlocks.EARIUM_BUTTON.get())
                 .requires(ModItems.EARIUM.get())
