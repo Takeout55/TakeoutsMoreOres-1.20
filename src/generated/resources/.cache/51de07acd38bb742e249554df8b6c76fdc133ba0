@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-22T17:47:04.7976952	Item Models: takeoutsmoreores
+// 1.20.1	2025-06-22T22:06:28.9541818	Item Models: takeoutsmoreores
 1eb5f83fa8fcfba09b190a4f7a60592f8e38087a assets/takeoutsmoreores/models/item/bar_brawl_music_disc.json
 089766042e606f326177f21f7fe09696edf08149 assets/takeoutsmoreores/models/item/cheekium.json
 4e7dd01c4aa3c2f83934b562fc76ae9bd947f14b assets/takeoutsmoreores/models/item/cheekium_axe.json
@@ -124,6 +124,8 @@ ff0f23638704e0c397ea6eea2f57cf42fc368cbe assets/takeoutsmoreores/models/item/fla
 579a6cf061a1525e2d7dda173530def035d61d0a assets/takeoutsmoreores/models/item/flaming_takeite_pickaxe.json
 65eb6e8a4319793884146e9eac7e2e2cc73b514d assets/takeoutsmoreores/models/item/flaming_takeite_shovel.json
 a0b0796161945a95e97c06a06464943e3a269409 assets/takeoutsmoreores/models/item/flaming_takeite_sword.json
+82fa9ec83960c5b8b6a3cc665b5e103db73c1c3a assets/takeoutsmoreores/models/item/frozen_takeite.json
+1ce5f179b0283781c9b75c9b58f1a5e3dd6f4ddc assets/takeoutsmoreores/models/item/frozen_takeite_gem.json
 553c84175ede44e4e494e41384e6c7b4b6fb4ede assets/takeoutsmoreores/models/item/gasnite.json
 4467eed821a86c2648bd368e611b84ba8327ca65 assets/takeoutsmoreores/models/item/glitchite_axe.json
 707d11a38f4f92d05eaef27d79241c9a8074efdf assets/takeoutsmoreores/models/item/glitchite_boots.json

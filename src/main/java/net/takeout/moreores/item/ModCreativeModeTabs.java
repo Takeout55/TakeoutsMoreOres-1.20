@@ -154,6 +154,7 @@ public class ModCreativeModeTabs {
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_ROD.get());
                         pOutput.accept(ModItems.FLAMING_TAKEITE_GEM.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_GEM.get());
                         pOutput.accept(ModItems.REFINED_DIAMOND.get());
                         pOutput.accept(ModItems.REFINED_DIAMOND_SHARD.get());
                         pOutput.accept(ModItems.ZIRCON.get());
@@ -180,6 +181,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RAW_THIMEITE.get());
                         pOutput.accept(ModItems.RAW_CHEEKIUM.get());
                         pOutput.accept(ModItems.FLAMING_TAKEITE.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE.get());
                         pOutput.accept(ModItems.METAL_DETECTOR.get());
                         pOutput.accept(ModItems.SAPPHIRE_STAFF.get());
                         pOutput.accept(ModItems.VINYL_TEMPLATE.get());

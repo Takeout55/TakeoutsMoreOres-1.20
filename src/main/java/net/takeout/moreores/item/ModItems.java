@@ -1,7 +1,6 @@
 package net.takeout.moreores.item;
 
 import net.minecraft.world.item.*;
-import net.minecraft.world.item.armortrim.TrimPatterns;
 import net.minecraftforge.common.ForgeSpawnEggItem;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -11,6 +10,7 @@ import net.takeout.moreores.MoreOres;
 import net.takeout.moreores.entity.ModEntities;
 import net.takeout.moreores.item.custom.FuelItem;
 import net.takeout.moreores.item.custom.MetalDetectorItem;
+import net.takeout.moreores.item.custom.ModArmorItem;
 import net.takeout.moreores.sounds.ModSounds;
 
 public class ModItems {
@@ -371,14 +371,20 @@ public class ModItems {
             () -> new Item(new Item.Properties()));
 
     public static final RegistryObject<Item> FLAMING_TAKEITE_HELMET = ITEMS.register("flaming_takeite_helmet",
-            () -> new ArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.HELMET, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.HELMET, new Item.Properties()));
 
     public static final RegistryObject<Item> FLAMING_TAKEITE_CHESTPLATE = ITEMS.register("flaming_takeite_chestplate",
-            () -> new ArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
 
     public static final RegistryObject<Item> FLAMING_TAKEITE_LEGGINGS = ITEMS.register("flaming_takeite_leggings",
-            () -> new ArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
 
     public static final RegistryObject<Item> FLAMING_TAKEITE_BOOTS = ITEMS.register("flaming_takeite_boots",
-            () -> new ArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+            () -> new ModArmorItem(ModArmorMaterials.FLAMETAKEITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_GEM = ITEMS.register("frozen_takeite_gem",
+            () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE = ITEMS.register("frozen_takeite",
+            () -> new Item(new Item.Properties()));
 }
