@@ -16,7 +16,10 @@ public class ModArmorItem extends ArmorItem {
     private static final Map<ArmorMaterial, MobEffectInstance> MATERIAL_TO_EFFECT_MAP =
             (new ImmutableMap.Builder<ArmorMaterial, MobEffectInstance>())
                     .put(ModArmorMaterials.FLAMETAKEITE, new MobEffectInstance(MobEffects.FIRE_RESISTANCE, 200, 5,
+                            false,false, true))
+                    .put(ModArmorMaterials.ICETAKEITE, new MobEffectInstance(MobEffects.WATER_BREATHING, 200, 5,
                             false,false, true)).build();
+
 
     public ModArmorItem(ArmorMaterial pMaterial, Type pType, Properties pProperties) {
         super(pMaterial, pType, pProperties);

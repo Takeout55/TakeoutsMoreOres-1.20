@@ -62,5 +62,10 @@ public class ModToolTiers {
     public static final Tier FIRE_TAKEITE = TierSortingRegistry.registerTier(
             new ForgeTier(5, 2929, 9, 4, 25,
                     ModTags.Blocks.NEEDS_FIRE_TAKEITE_TOOL, () -> Ingredient.of(ModItems.FLAMING_TAKEITE_GEM.get())),
-            new ResourceLocation(MoreOres.MOD_ID, "fire_takeite"), List.of(Tiers.NETHERITE), List.of());
+            new ResourceLocation(MoreOres.MOD_ID, "flaming_takeite"), List.of(Tiers.NETHERITE), List.of());
+
+    public static final Tier ICE_TAKEITE = TierSortingRegistry.registerTier(
+            new ForgeTier(5, 3029, 7, 4, 25,
+                    ModTags.Blocks.NEEDS_FIRE_TAKEITE_TOOL, () -> Ingredient.of(ModItems.FLAMING_TAKEITE_GEM.get())),
+            new ResourceLocation(MoreOres.MOD_ID, "frozen_takeite"), List.of(Tiers.NETHERITE), List.of());
 }

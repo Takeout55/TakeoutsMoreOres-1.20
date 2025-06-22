@@ -387,4 +387,31 @@ public class ModItems {
 
     public static final RegistryObject<Item> FROZEN_TAKEITE = ITEMS.register("frozen_takeite",
             () -> new Item(new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_HELMET = ITEMS.register("frozen_takeite_helmet",
+            () -> new ModArmorItem(ModArmorMaterials.ICETAKEITE, ArmorItem.Type.HELMET, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_CHESTPLATE = ITEMS.register("frozen_takeite_chestplate",
+            () -> new ModArmorItem(ModArmorMaterials.ICETAKEITE, ArmorItem.Type.CHESTPLATE, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_LEGGINGS = ITEMS.register("frozen_takeite_leggings",
+            () -> new ModArmorItem(ModArmorMaterials.ICETAKEITE, ArmorItem.Type.LEGGINGS, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_BOOTS = ITEMS.register("frozen_takeite_boots",
+            () -> new ModArmorItem(ModArmorMaterials.ICETAKEITE, ArmorItem.Type.BOOTS, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_SWORD = ITEMS.register("frozen_takeite_sword",
+            () -> new SwordItem(ModToolTiers.ICE_TAKEITE, 4, -2.2f, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_PICKAXE = ITEMS.register("frozen_takeite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.ICE_TAKEITE, 1, -2.7f, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_AXE = ITEMS.register("frozen_takeite_axe",
+            () -> new AxeItem(ModToolTiers.ICE_TAKEITE, 6, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_SHOVEL = ITEMS.register("frozen_takeite_shovel",
+            () -> new ShovelItem(ModToolTiers.ICE_TAKEITE, 1.5f, -3, new Item.Properties()));
+
+    public static final RegistryObject<Item> FROZEN_TAKEITE_HOE = ITEMS.register("frozen_takeite_hoe",
+            () -> new HoeItem(ModToolTiers.ICE_TAKEITE, -2, 0, new Item.Properties()));
 }

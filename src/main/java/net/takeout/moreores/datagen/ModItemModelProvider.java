@@ -188,6 +188,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.FLAMING_TAKEITE_HOE);
         handheldItem(ModItems.FLAMING_TAKEITE_SHOVEL);
 
+        handheldItem(ModItems.FROZEN_TAKEITE_SWORD);
+        handheldItem(ModItems.FROZEN_TAKEITE_PICKAXE);
+        handheldItem(ModItems.FROZEN_TAKEITE_AXE);
+        handheldItem(ModItems.FROZEN_TAKEITE_HOE);
+        handheldItem(ModItems.FROZEN_TAKEITE_SHOVEL);
+
         fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
         buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);
         wallItem(ModBlocks.REFINED_DIAMOND_WALL, ModBlocks.REFINED_DIAMOND_BLOCK);

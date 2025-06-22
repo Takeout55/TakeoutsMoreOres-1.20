@@ -192,6 +192,11 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.FLAMING_TAKEITE_AXE.get());
                         pOutput.accept(ModItems.FLAMING_TAKEITE_SHOVEL.get());
                         pOutput.accept(ModItems.FLAMING_TAKEITE_HOE.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_SWORD.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_PICKAXE.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_AXE.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_SHOVEL.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_HOE.get());
                         pOutput.accept(ModItems.SAPPHIRE_SWORD.get());
                         pOutput.accept(ModItems.SAPPHIRE_PICKAXE.get());
                         pOutput.accept(ModItems.SAPPHIRE_AXE.get());
@@ -241,6 +246,10 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.FLAMING_TAKEITE_CHESTPLATE.get());
                         pOutput.accept(ModItems.FLAMING_TAKEITE_LEGGINGS.get());
                         pOutput.accept(ModItems.FLAMING_TAKEITE_BOOTS.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_HELMET.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_CHESTPLATE.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_LEGGINGS.get());
+                        pOutput.accept(ModItems.FROZEN_TAKEITE_BOOTS.get());
                         pOutput.accept(ModItems.SAPPHIRE_HELMET.get());
                         pOutput.accept(ModItems.SAPPHIRE_CHESTPLATE.get());
                         pOutput.accept(ModItems.SAPPHIRE_LEGGINGS.get());
