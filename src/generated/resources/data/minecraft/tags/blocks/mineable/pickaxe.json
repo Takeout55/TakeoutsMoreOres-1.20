@@ -59,6 +59,10 @@
     "takeoutsmoreores:flaming_takeite_ore",
     "takeoutsmoreores:end_stone_flaming_takeite_ore",
     "takeoutsmoreores:deepslate_flaming_takeite_ore",
+    "takeoutsmoreores:frozen_takeite_ore",
+    "takeoutsmoreores:end_stone_frozen_takeite_ore",
+    "takeoutsmoreores:deepslate_frozen_takeite_ore",
+    "takeoutsmoreores:nether_frozen_takeite_ore",
     "takeoutsmoreores:nether_flaming_takeite_ore"
   ]
 }

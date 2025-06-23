@@ -60,6 +60,8 @@ public class ModPlacedFeatures {
     public static final ResourceKey<PlacedFeature> END_CHEEKIUM_ORE_PLACED_KEY = registerKey("end_cheekium_ore_placed");
 
     public static final ResourceKey<PlacedFeature> NETHER_FLAMING_TAKEITE_ORE_PLACED_KEY = registerKey("nether_flaming_takeite_ore_placed");
+    public static final ResourceKey<PlacedFeature> FROZEN_TAKEITE_ORE_PLACED_KEY = registerKey("nether_frozen_takeite_ore_placed");
+    public static final ResourceKey<PlacedFeature> END_FROZEN_TAKEITE_ORE_PLACED_KEY = registerKey("end_frozen_takeite_ore_placed");
 
     public static void bootstrap(BootstapContext<PlacedFeature> context) {
         HolderGetter<ConfiguredFeature<?, ?>> configuredFeatures = context.lookup(Registries.CONFIGURED_FEATURE);
@@ -151,7 +153,7 @@ public class ModPlacedFeatures {
 
         register(context, FROZEN_TAKEITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_FROZEN_TAKEITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
-                        HeighRangePlacement.uniform(verticalAnchor.absolute(32), VerticalAnchor.absolute(100)))),
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(32), VerticalAnchor.absolute(100))));
         register(context, END_FROZEN_TAKEITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_FROZEN_TAKEITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-5), VerticalAnchor.absolute(80))));

@@ -194,6 +194,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         handheldItem(ModItems.FROZEN_TAKEITE_HOE);
         handheldItem(ModItems.FROZEN_TAKEITE_SHOVEL);
 
+        handheldItem(ModItems.OCARITE_SWORD);
+        handheldItem(ModItems.OCARITE_PICKAXE);
+        handheldItem(ModItems.OCARITE_AXE);
+        handheldItem(ModItems.OCARITE_HOE);
+        handheldItem(ModItems.OCARITE_SHOVEL);
+
         fenceItem(ModBlocks.REFINED_DIAMOND_FENCE, ModBlocks.REFINED_DIAMOND_BLOCK);
         buttonItem(ModBlocks.REFINED_DIAMOND_BUTTON, ModBlocks.REFINED_DIAMOND_BLOCK);
         wallItem(ModBlocks.REFINED_DIAMOND_WALL, ModBlocks.REFINED_DIAMOND_BLOCK);

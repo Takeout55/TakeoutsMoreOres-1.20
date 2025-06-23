@@ -1024,6 +1024,37 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE_GEM.get()), has(ModItems.FLAMING_TAKEITE_GEM.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.FROZEN_TAKEITE_GEM.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE_GEM.get()), has(ModItems.FROZEN_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("   ")
+                .define('S', ModItems.FROZEN_TAKEITE_GEM.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE_GEM.get()), has(ModItems.FROZEN_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_BOOTS.get())
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.FROZEN_TAKEITE_GEM.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE_GEM.get()), has(ModItems.FROZEN_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.FROZEN_TAKEITE_GEM.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE_GEM.get()), has(ModItems.FROZEN_TAKEITE_GEM.get()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, Items.TORCH)
                 .pattern("G")
                 .pattern("S")

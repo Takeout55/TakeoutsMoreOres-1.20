@@ -69,6 +69,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get(),
                         ModBlocks.DEEPSLATE_FLAMING_TAKEITE_ORE.get(),
                         ModBlocks.NETHER_FLAMING_TAKEITE_ORE.get(),
+                        ModBlocks.FROZEN_TAKEITE_ORE.get(),
+                        ModBlocks.END_STONE_FROZEN_TAKEITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE.get(),
+                        ModBlocks.NETHER_FROZEN_TAKEITE_ORE.get(),
                         ModBlocks.PLUNGITE_ORE.get()
                     ).addTag(Tags.Blocks.ORES);
 
@@ -134,6 +138,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.FLAMING_TAKEITE_ORE.get(),
                         ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get(),
                         ModBlocks.DEEPSLATE_FLAMING_TAKEITE_ORE.get(),
+                        ModBlocks.FROZEN_TAKEITE_ORE.get(),
+                        ModBlocks.END_STONE_FROZEN_TAKEITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE.get(),
+                        ModBlocks.NETHER_FROZEN_TAKEITE_ORE.get(),
                         ModBlocks.NETHER_FLAMING_TAKEITE_ORE.get());
 
 
@@ -200,6 +208,10 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get(),
                         ModBlocks.DEEPSLATE_FLAMING_TAKEITE_ORE.get(),
                         ModBlocks.NETHER_FLAMING_TAKEITE_ORE.get(),
+                        ModBlocks.FROZEN_TAKEITE_ORE.get(),
+                        ModBlocks.END_STONE_FROZEN_TAKEITE_ORE.get(),
+                        ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE.get(),
+                        ModBlocks.NETHER_FROZEN_TAKEITE_ORE.get(),
                         ModBlocks.ANCIENT_VOIDSTONE.get());
 
         this.tag(ModTags.Blocks.NEEDS_SAPPHIRE_TOOL);

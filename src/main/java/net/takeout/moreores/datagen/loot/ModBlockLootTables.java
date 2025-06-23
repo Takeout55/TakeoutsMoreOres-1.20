@@ -233,6 +233,14 @@ public class ModBlockLootTables extends BlockLootSubProvider {
                 block -> createDiamondLikeOreDrops(ModBlocks.NETHER_FLAMING_TAKEITE_ORE.get(), ModItems.FLAMING_TAKEITE.get()));
         this.add(ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get(),
                 block -> createDiamondLikeOreDrops(ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get(), ModItems.FLAMING_TAKEITE.get()));
+        this.add(ModBlocks.FROZEN_TAKEITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.FROZEN_TAKEITE_ORE.get(), ModItems.FROZEN_TAKEITE.get()));
+        this.add(ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE.get(), ModItems.FROZEN_TAKEITE.get()));
+        this.add(ModBlocks.NETHER_FROZEN_TAKEITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.NETHER_FROZEN_TAKEITE_ORE.get(), ModItems.FROZEN_TAKEITE.get()));
+        this.add(ModBlocks.END_STONE_FROZEN_TAKEITE_ORE.get(),
+                block -> createDiamondLikeOreDrops(ModBlocks.END_STONE_FROZEN_TAKEITE_ORE.get(), ModItems.FROZEN_TAKEITE.get()));
     }
 
     protected LootTable.Builder createCopperLikeOreDrops(Block pBlock, Item item) {
