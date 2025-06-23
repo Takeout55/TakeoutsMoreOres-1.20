@@ -58,6 +58,10 @@ public class ModBiomeModifiers {
     public static final ResourceKey<BiomeModifier> ADD_NETHER_CHEEKIUM_ORE = registerKey("add_nether_cheekium_ore");
     public static final ResourceKey<BiomeModifier> ADD_END_CHEEKIUM_ORE = registerKey("add_end_cheekium_ore");
 
+    public static final ResourceKey<BiomeModifier> ADD_NETHER_FLAMING_TAKEITE_ORE = registerKey("add_nether_flaming_takeite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_FROZEN_TAKEITE_ORE = registerKey("add_frozen_takeite_ore");
+    public static final ResourceKey<BiomeModifier> ADD_END_FROZEN_TAKEITE_ORE = registerKey("add_end_frozen_takeite_ore");
+
     public static void bootstrap(BootstapContext<BiomeModifier> context) {
         var placedFeatures = context.lookup(Registries.PLACED_FEATURE);
         var biomes = context.lookup(Registries.BIOME);
@@ -225,6 +229,21 @@ public class ModBiomeModifiers {
         context.register(ADD_END_CHEEKIUM_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(BiomeTags.IS_END),
                 HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_CHEEKIUM_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_FROZEN_TAKEITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_OVERWORLD),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.FROZEN_TAKEITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_NETHER_FLAMING_TAKEITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_NETHER),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.NETHER_FLAMING_TAKEITE_ORE_PLACED_KEY)),
+                GenerationStep.Decoration.UNDERGROUND_ORES));
+
+        context.register(ADD_END_FROZEN_TAKEITE_ORE, new ForgeBiomeModifiers.AddFeaturesBiomeModifier(
+                biomes.getOrThrow(BiomeTags.IS_END),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.END_FROZEN_TAKEITE_ORE_PLACED_KEY)),
                 GenerationStep.Decoration.UNDERGROUND_ORES));
     }
 
