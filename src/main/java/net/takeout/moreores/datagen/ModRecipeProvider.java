@@ -1344,6 +1344,60 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE.get()), has(ModItems.FLAMING_TAKEITE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_SWORD.get())
+                .pattern("S")
+                .pattern("S")
+                .pattern("T")
+                .define('S', ModItems.FROZEN_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE_GEM.get()), has(ModItems.FROZEN_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_PICKAXE.get())
+                .pattern("SSS")
+                .pattern(" T ")
+                .pattern(" T ")
+                .define('S', ModItems.FROZEN_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE_GEM.get()), has(ModItems.FROZEN_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_HOE.get())
+                .pattern("SS")
+                .pattern("T ")
+                .pattern("T ")
+                .define('S', ModItems.FROZEN_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE_GEM.get()), has(ModItems.FROZEN_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_SHOVEL.get())
+                .pattern("S")
+                .pattern("T")
+                .pattern("T")
+                .define('S', ModItems.FROZEN_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE_GEM.get()), has(ModItems.FROZEN_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_AXE.get())
+                .pattern("SS")
+                .pattern("ST")
+                .pattern(" T")
+                .define('S', ModItems.FROZEN_TAKEITE_GEM.get())
+                .define('T', ModItems.METAL_ROD.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE_GEM.get()), has(ModItems.FROZEN_TAKEITE_GEM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE_GEM.get())
+                .pattern("FFF")
+                .pattern("FEF")
+                .pattern("FFF")
+                .define('F', ModItems.FROZEN_TAKEITE.get())
+                .define('E', Items.EMERALD)
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE.get()), has(ModItems.FROZEN_TAKEITE.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
