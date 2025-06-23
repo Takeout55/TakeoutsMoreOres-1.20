@@ -254,6 +254,12 @@ public class ModItemModelProvider extends ItemModelProvider {
         trimmedArmorItem(ModItems.FLAMING_TAKEITE_BOOTS);
         trimmedArmorItem(ModItems.FLAMING_TAKEITE_LEGGINGS);
 
+        trimmedArmorItem(ModItems.FROZEN_TAKEITE_HELMET);
+        trimmedArmorItem(ModItems.FROZEN_TAKEITE_CHESTPLATE);
+        trimmedArmorItem(ModItems.FROZEN_TAKEITE_BOOTS);
+        trimmedArmorItem(ModItems.FROZEN_TAKEITE_LEGGINGS);
+
+
         withExistingParent(ModItems.RHINO_SPAWN_EGG.getId().getPath(), mcLoc("item/template_spawn_egg"));
     }
 
