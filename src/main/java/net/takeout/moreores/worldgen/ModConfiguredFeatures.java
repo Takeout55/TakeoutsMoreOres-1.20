@@ -65,6 +65,11 @@ public class ModConfiguredFeatures {
     public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_CHEEKIUM_ORE_KEY = registerKey("nether_cheekium_ore");
     public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_CHEEKIUM_ORE_KEY = registerKey("end_stone_cheekium_ore");
 
+    public static final ResourceKey<ConfiguredFeature<?, ?>> NETHER_FLAMING_TAKEITE_ORE_KEY = registerKey("nether_flaming_takeite_ore");
+
+    public static final ResourceKey<ConfiguredFeature<?, ?>> OVERWORLD_FROZEN_TAKEITE_ORE_KEY = registerKey("frozen_takeite_ore");
+    public static final ResourceKey<ConfiguredFeature<?, ?>> ENDSTONE_FROZEN_TAKEITE_ORE_KEY = registerKey("end_stone_frozen_takeite_ore");
+
 
     public static void bootstrap(BootstapContext<ConfiguredFeature<?, ?>> context) {
         RuleTest stoneReplaceable = new TagMatchTest(BlockTags.STONE_ORE_REPLACEABLES);
@@ -181,6 +186,16 @@ public class ModConfiguredFeatures {
         register(context, ENDSTONE_CHEEKIUM_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
                 ModBlocks.END_STONE_CHEEKIUM_ORE.get().defaultBlockState(),  9));
 
+        List<OreConfiguration.TargetBlockState> overworldIceTakeOres = List.of(OreConfiguration.target(stoneReplaceable,
+                        ModBlocks.FROZEN_TAKEITE_ORE.get().defaultBlockState()),
+            OreConfiguration.target(deepslateReplaceable, ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE.get().defaultBlockState()));
+
+        register(context, OVERWORLD_FROZEN_TAKEITE_ORE_KEY, Feature.ORE, new OreConfiguration(overworldIceTakeOres, 9));
+        register(context, ENDSTONE_FROZEN_TAKEITE_ORE_KEY, Feature.ORE, new OreConfiguration(endstoneReplaceables,
+                ModBlocks.END_STONE_FROZEN_TAKEITE_ORE.get().defaultBlockState(),  9));
+
+        register(context, NETHER_FLAMING_TAKEITE_ORE_KEY, Feature.ORE, new OreConfiguration(netherrackReplaceables,
+                ModBlocks.NETHER_FLAMING_TAKEITE_ORE.get().defaultBlockState(),  9));
     }
 
 
