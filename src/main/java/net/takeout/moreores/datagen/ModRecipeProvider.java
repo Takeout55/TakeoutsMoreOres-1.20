@@ -135,6 +135,22 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.OCARITE.get()), has(ModItems.OCARITE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.FLAMING_TAKEITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.FLAMING_TAKEITE.get())
+                .unlockedBy(getHasName(ModItems.FLAMING_TAKEITE.get()), has(ModItems.FLAMING_TAKEITE.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.FROZEN_TAKEITE_BLOCK.get())
+                .pattern("SSS")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.FROZEN_TAKEITE.get())
+                .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE.get()), has(ModItems.FROZEN_TAKEITE.get()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CHEEKIUM_BLOCK.get())
                 .pattern("SSS")
                 .pattern("SSS")
@@ -1473,6 +1489,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.GLITCHITE_INGOT.get(), 9)
                 .requires(ModBlocks.GLITCHITE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.GLITCHITE_BLOCK.get()), has(ModBlocks.GLITCHITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.FLAMING_TAKEITE.get(), 9)
+                .requires(ModBlocks.FLAMING_TAKEITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.FLAMING_TAKEITE_BLOCK.get()), has(ModBlocks.FLAMING_TAKEITE_BLOCK.get()))
+                .save(pWriter);
+
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.FROZEN_TAKEITE.get(), 9)
+                .requires(ModBlocks.FROZEN_TAKEITE_BLOCK.get())
+                .unlockedBy(getHasName(ModBlocks.FROZEN_TAKEITE_BLOCK.get()), has(ModBlocks.FROZEN_TAKEITE_BLOCK.get()))
                 .save(pWriter);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.REFINED_DIAMOND.get(), 9)
