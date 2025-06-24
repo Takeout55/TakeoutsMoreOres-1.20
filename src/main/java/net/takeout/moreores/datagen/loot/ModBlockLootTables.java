@@ -95,6 +95,8 @@ public class ModBlockLootTables extends BlockLootSubProvider {
         this.dropSelf(ModBlocks.RUBY_BLOCK.get());
         this.dropSelf(ModBlocks.PLUNGITE_BLOCK.get());
         this.dropSelf(ModBlocks.CHEEKIUM_BLOCK.get());
+        this.dropSelf(ModBlocks.FLAMING_TAKEITE_BLOCK.get());
+        this.dropSelf(ModBlocks.FROZEN_TAKEITE_BLOCK.get());
 
         this.add(ModBlocks.SAPPHIRE_SLAB.get(),
                 block -> createSlabItemTable(ModBlocks.SAPPHIRE_SLAB.get()));
