@@ -28,7 +28,6 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.ZIRCON_ORE.get(), ModBlocks.DEEPSLATE_ZIRCON_ORE.get(), ModBlocks.NETHERRACK_ZIRCON_ORE.get(),
             ModBlocks.ENDSTONE_ZIRCON_ORE.get());
 
-
     private static final List<ItemLike> GASNITE_SMELTABLES = List.of(ModBlocks.GASNITE_ORE.get(),
             ModBlocks.END_STONE_GASNITE_ORE.get(), ModBlocks.DEEPSLATE_GASNITE_ORE.get(), ModBlocks.NETHER_GASNITE_ORE.get());
 
@@ -60,6 +59,14 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     private static final List<ItemLike> CHEEKIUM_SMELTABLES = List.of(ModItems.RAW_CHEEKIUM.get(),
             ModBlocks.CHEEKIUM_ORE.get(), ModBlocks.DEEPSLATE_CHEEKIUM_ORE.get(), ModBlocks.NETHER_CHEEKIUM_ORE.get(),
             ModBlocks.END_STONE_CHEEKIUM_ORE.get());
+
+    private static final List<ItemLike> FLAMING_TAKEITE_SMELTABLES = List.of(
+            ModBlocks.FLAMING_TAKEITE_ORE.get(), ModBlocks.DEEPSLATE_FLAMING_TAKEITE_ORE.get(), ModBlocks.NETHER_FLAMING_TAKEITE_ORE.get(),
+            ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get());
+
+    private static final List<ItemLike> FROZEN_TAKEITE_SMELTABLES = List.of(
+            ModBlocks.FLAMING_FROZEN_ORE.get(), ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE.get(), ModBlocks.NETHER_FROZEN_TAKEITE_ORE.get(),
+            ModBlocks.END_STONE_FLAMING_FROZEN_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);
