@@ -20,6 +20,8 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.more_ores_blocks"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModBlocks.REFINED_DIAMOND_BLOCK.get());
+                        pOutput.accept(ModBlocks.FLAMING_TAKEITE_BLOCK.get());
+                        pOutput.accept(ModBlocks.FROZEN_TAKEITE_BLOCK.get());
                         pOutput.accept(ModBlocks.ZIRCON_BLOCK.get());
                         pOutput.accept(ModBlocks.SAPPHIRE_BLOCK.get());
                         pOutput.accept(ModBlocks.RAW_SAPPHIRE_BLOCK.get());

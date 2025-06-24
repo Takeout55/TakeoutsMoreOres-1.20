@@ -1,9 +1,10 @@
-// 1.20.1	2025-06-23T17:50:42.6185722	Tags for minecraft:block mod id takeoutsmoreores
+// 1.20.1	2025-06-24T16:58:07.6314885	Tags for minecraft:block mod id takeoutsmoreores
 759985b58c6151502b4b8022c277ac473ae18f88 data/minecraft/tags/blocks/beacon_base_blocks.json
 223d8c8b5289c5c528aa3b00069759b50f0e38be data/minecraft/tags/blocks/fences.json
 e22171a99679ef16511ae596e1abfc31a4eef5bc data/minecraft/tags/blocks/fence_gates.json
-774a987f91e1292bdac151e8d881e0f8acc97b4b data/minecraft/tags/blocks/mineable/pickaxe.json
-0b5b56bbdf7476c119a804bf728a2c64ea43fb35 data/minecraft/tags/blocks/needs_diamond_tool.json
+7b8538fd6bc25b27cea6a9f27bc889b74548e634 data/minecraft/tags/blocks/infiniburn_overworld.json
+69b3863860a4d4775c5e25556d3f87e37ffac229 data/minecraft/tags/blocks/mineable/pickaxe.json
+be70c53120c2576ab0531d48df24c6555319bfc2 data/minecraft/tags/blocks/needs_diamond_tool.json
 f8c2c5b1ce8bb7bfc9b81bd1cb324678a0b97911 data/minecraft/tags/blocks/needs_iron_tool.json
 c4acbb89fa657e30280c2c94f448bede0e2706be data/minecraft/tags/blocks/needs_stone_tool.json
 8127c6d06cb6e3cbf6a8c3e0aae6f5fcbcc534b6 data/minecraft/tags/blocks/walls.json

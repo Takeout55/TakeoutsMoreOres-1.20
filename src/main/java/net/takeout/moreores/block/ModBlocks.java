@@ -436,10 +436,10 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> FROZEN_TAKEITE_BLOCK = registerBlock("frozen_takeite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ICE).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ICE).requiresCorrectToolForDrops().friction(0.98f).sound(SoundType.NETHERITE_BLOCK)));
 
     public static final RegistryObject<Block> FLAMING_TAKEITE_BLOCK = registerBlock("flaming_takeite_block",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops()));
+            () -> new MagmaBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops()));
 
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

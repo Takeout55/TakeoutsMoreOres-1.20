@@ -65,8 +65,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
             ModBlocks.END_STONE_FLAMING_TAKEITE_ORE.get());
 
     private static final List<ItemLike> FROZEN_TAKEITE_SMELTABLES = List.of(
-            ModBlocks.FLAMING_FROZEN_ORE.get(), ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE.get(), ModBlocks.NETHER_FROZEN_TAKEITE_ORE.get(),
-            ModBlocks.END_STONE_FLAMING_FROZEN_ORE.get());
+            ModBlocks.FROZEN_TAKEITE_ORE.get(), ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE.get(), ModBlocks.NETHER_FROZEN_TAKEITE_ORE.get(),
+            ModBlocks.END_STONE_FROZEN_TAKEITE_ORE.get());
 
     public ModRecipeProvider(PackOutput pOutput) {
         super(pOutput);

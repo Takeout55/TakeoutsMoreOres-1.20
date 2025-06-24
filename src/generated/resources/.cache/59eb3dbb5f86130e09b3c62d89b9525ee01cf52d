@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-23T16:50:10.297308	Loot Tables
+// 1.20.1	2025-06-24T16:36:28.5995119	Loot Tables
 9775769e6c971f02e5b1afed6c52f8ee19beb889 data/takeoutsmoreores/loot_tables/blocks/ancient_voidstone.json
 18cda4e047fd5e3f2d307ce19dcdd6ea20ab58bb data/takeoutsmoreores/loot_tables/blocks/cheekium_block.json
 e7738b067c64d561e92bb2a9e3b97bc58e3a201f data/takeoutsmoreores/loot_tables/blocks/cheekium_ore.json
@@ -52,7 +52,9 @@ c7ce35c01470661fd6cb029aab6422c8c2d82f71 data/takeoutsmoreores/loot_tables/block
 8b58a0ce01f9f2ea84038e8ddb8416e533ae9fd6 data/takeoutsmoreores/loot_tables/blocks/end_stone_plungite_ore.json
 d605892e7b381d44c2e91942a1649d4ef12062ea data/takeoutsmoreores/loot_tables/blocks/end_stone_ruby_ore.json
 0064ec5c8b30941136841a534e23ed631d182f89 data/takeoutsmoreores/loot_tables/blocks/end_stone_thimeite_ore.json
+2c0138cd5fa53f38c2ef92a104f6f94abc82c67a data/takeoutsmoreores/loot_tables/blocks/flaming_takeite_block.json
 d3329c96abba4d64f4552edb1f6955e35eeeb80a data/takeoutsmoreores/loot_tables/blocks/flaming_takeite_ore.json
+8d741c3faa632536dd3ade5bb971feb8d7456d34 data/takeoutsmoreores/loot_tables/blocks/frozen_takeite_block.json
 c548d87e45af7d6ec01807cec788b7fe3f264028 data/takeoutsmoreores/loot_tables/blocks/frozen_takeite_ore.json
 17beb8594683ffb4be5fc175a712bc053fa485b9 data/takeoutsmoreores/loot_tables/blocks/gasnite_ore.json
 776c0a87145e0172967c64163c42d4b98ad4d1df data/takeoutsmoreores/loot_tables/blocks/glitchite_block.json

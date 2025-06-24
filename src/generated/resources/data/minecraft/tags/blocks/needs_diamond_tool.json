@@ -9,6 +9,8 @@
     "takeoutsmoreores:end_stone_frozen_takeite_ore",
     "takeoutsmoreores:deepslate_frozen_takeite_ore",
     "takeoutsmoreores:nether_frozen_takeite_ore",
+    "takeoutsmoreores:frozen_takeite_block",
+    "takeoutsmoreores:flaming_takeite_block",
     "takeoutsmoreores:ancient_voidstone"
   ]
 }

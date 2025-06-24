@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 100,
+  "experience": 0.25,
+  "group": "flaming_takeite",
+  "ingredient": {
+    "item": "takeoutsmoreores:end_stone_flaming_takeite_ore"
+  },
+  "result": "takeoutsmoreores:flaming_takeite"
+}

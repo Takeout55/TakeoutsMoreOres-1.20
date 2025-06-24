@@ -264,5 +264,8 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
                         ModBlocks.OCARITE_BLOCK.get(),
                         ModBlocks.GLITCHITE_BLOCK.get());
 
+        this.tag(BlockTags.INFINIBURN_OVERWORLD)
+                .add(ModBlocks.FLAMING_TAKEITE_BLOCK.get());
+
     }
 }

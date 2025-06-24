@@ -77,6 +77,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.NETHER_FLAMING_TAKEITE_ORE);
         blockWithItem(ModBlocks.FLAMING_TAKEITE_BLOCK);
         blockWithItem(ModBlocks.FROZEN_TAKEITE_BLOCK);
+        blockWithItem(ModBlocks.FROZEN_TAKEITE_ORE);
+        blockWithItem(ModBlocks.DEEPSLATE_FROZEN_TAKEITE_ORE);
+        blockWithItem(ModBlocks.END_STONE_FROZEN_TAKEITE_ORE);
+        blockWithItem(ModBlocks.NETHER_FROZEN_TAKEITE_ORE);
 
 
         stairsBlock(((StairBlock) ModBlocks.SAPPHIRE_STAIRS.get()), blockTexture(ModBlocks.SAPPHIRE_BLOCK.get()));
