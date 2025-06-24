@@ -412,28 +412,34 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> FLAMING_TAKEITE_ORE = registerBlock("flaming_takeite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DEEPSLATE_FLAMING_TAKEITE_ORE = registerBlock("deepslate_flaming_takeite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NETHER_FLAMING_TAKEITE_ORE = registerBlock("nether_flaming_takeite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> END_STONE_FLAMING_TAKEITE_ORE = registerBlock("end_stone_flaming_takeite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> FROZEN_TAKEITE_ORE = registerBlock("frozen_takeite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DEEPSLATE_FROZEN_TAKEITE_ORE = registerBlock("deepslate_frozen_takeite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.DEEPSLATE_IRON_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> NETHER_FROZEN_TAKEITE_ORE = registerBlock("nether_frozen_takeite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHER_GOLD_ORE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> END_STONE_FROZEN_TAKEITE_ORE = registerBlock("end_stone_frozen_takeite_ore",
-            () -> new Block(BlockBehaviour.Properties.copy(ModBlocks.CHEEKIUM_BLOCK.get()).requiresCorrectToolForDrops()));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> FROZEN_TAKEITE_BLOCK = registerBlock("frozen_takeite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.ICE).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> FLAMING_TAKEITE_BLOCK = registerBlock("flaming_takeite_block",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops()));
 
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
