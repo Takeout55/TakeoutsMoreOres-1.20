@@ -159,6 +159,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.more_ores_items"))
                     .displayItems((pParameters, pOutput) -> {
                         pOutput.accept(ModItems.METAL_ROD.get());
+                        pOutput.accept(ModItems.URANIUM_ROD.get());
                         pOutput.accept(ModItems.FLAMING_TAKEITE_GEM.get());
                         pOutput.accept(ModItems.FROZEN_TAKEITE_GEM.get());
                         pOutput.accept(ModItems.REFINED_DIAMOND.get());
@@ -176,6 +177,7 @@ public class ModCreativeModeTabs {
                         pOutput.accept(ModItems.RUBY.get());
                         pOutput.accept(ModItems.PLUNGITE.get());
                         pOutput.accept(ModItems.CHEEKIUM.get());
+                        pOutput.accept(ModItems.REFINED_URANIUM.get());
                         pOutput.accept(ModItems.RAW_ZIRCON.get());
                         pOutput.accept(ModItems.RAW_SAPPHIRE.get());
                         pOutput.accept(ModItems.RAW_EARIUM.get());

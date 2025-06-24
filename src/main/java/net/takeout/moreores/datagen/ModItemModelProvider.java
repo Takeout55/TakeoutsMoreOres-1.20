@@ -76,6 +76,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.FLAMING_TAKEITE_GEM);
         simpleItem(ModItems.FROZEN_TAKEITE_GEM);
         simpleItem(ModItems.RAW_CHEEKIUM);
+        simpleItem(ModItems.REFINED_URANIUM);
+
 
         simpleBlockItem(ModBlocks.SAPPHIRE_DOOR);
         fenceItem(ModBlocks.SAPPHIRE_FENCE, ModBlocks.SAPPHIRE_BLOCK);

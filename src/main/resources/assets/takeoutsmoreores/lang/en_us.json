@@ -271,6 +271,8 @@
   "item.takeoutsmoreores.frozen_takeite_shovel": "Frozen Takeite Shovel",
   "item.takeoutsmoreores.frozen_takeite_hoe": "Frozen Takeite Hoe",
   "block.takeoutsmoreores.frozen_takeite_block": "Frozen Takeite Block",
-  "block.takeoutsmoreores.flaming_takeite_block": "Flaming Takeite Block"
+  "block.takeoutsmoreores.flaming_takeite_block": "Flaming Takeite Block",
+  "item.takeoutsmoreores.refined_uranium": "Refined Uranium",
+  "item.takeoutsmoreores.uranium_rod": "Uranium Rod"
 }
 

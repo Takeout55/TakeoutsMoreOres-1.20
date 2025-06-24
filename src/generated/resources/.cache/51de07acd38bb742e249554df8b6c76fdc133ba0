@@ -1,4 +1,4 @@
-// 1.20.1	2025-06-24T16:36:28.5995119	Item Models: takeoutsmoreores
+// 1.20.1	2025-06-24T17:31:59.4099575	Item Models: takeoutsmoreores
 1eb5f83fa8fcfba09b190a4f7a60592f8e38087a assets/takeoutsmoreores/models/item/bar_brawl_music_disc.json
 089766042e606f326177f21f7fe09696edf08149 assets/takeoutsmoreores/models/item/cheekium.json
 4e7dd01c4aa3c2f83934b562fc76ae9bd947f14b assets/takeoutsmoreores/models/item/cheekium_axe.json
@@ -363,6 +363,7 @@ b565e9569e390342d2cfaf307e55d17cb959d7ba assets/takeoutsmoreores/models/item/ref
 eddb548caea4732c194cf348706ae7071c9998c7 assets/takeoutsmoreores/models/item/refined_diamond_sword.json
 e0b1553547f19b0dfd368b277c89fe87898a5eda assets/takeoutsmoreores/models/item/refined_diamond_trapdoor.json
 53327cf3a35390d656160317bf497adc8b7ae5fb assets/takeoutsmoreores/models/item/refined_diamond_wall.json
+856880e431d795f67ab57fa35167186ec7cad4bd assets/takeoutsmoreores/models/item/refined_uranium.json
 63ec6c618a3a23eab4cab9c52d7d3250de9b516e assets/takeoutsmoreores/models/item/rhino_spawn_egg.json
 ccc818190e58fcc81dade4a4583060e715988321 assets/takeoutsmoreores/models/item/ruby.json
 acefa5c04cb2d92b2e899b7c7d7e2764045e5d56 assets/takeoutsmoreores/models/item/ruby_axe.json
