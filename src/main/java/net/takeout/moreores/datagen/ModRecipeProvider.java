@@ -98,6 +98,10 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pWriter, PLUNGITE_SMELTABLES, RecipeCategory.MISC, ModItems.PLUNGITE.get(), 0.25f, 200, "plungite");
         oreBlasting(pWriter, CHEEKIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEEKIUM.get(), 0.25f, 100, "cheekium");
         oreSmelting(pWriter, CHEEKIUM_SMELTABLES, RecipeCategory.MISC, ModItems.CHEEKIUM.get(), 0.25f, 200, "cheekium");
+        oreBlasting(pWriter, FLAMING_TAKEITE_SMELTABLES, RecipeCategory.MISC, ModItems.FLAMING_TAKEITE.get(), 0.25f, 100, "flaming_takeite");
+        oreSmelting(pWriter, FLAMING_TAKEITE_SMELTABLES, RecipeCategory.MISC, ModItems.FLAMING_TAKEITE.get(), 0.25f, 200, "flaming_takeite");
+        oreBlasting(pWriter, FROZEN_TAKEITE_SMELTABLES, RecipeCategory.MISC, ModItems.FROZEN_TAKEITE.get(), 0.25f, 100, "frozen_takeite");
+        oreSmelting(pWriter, FROZEN_TAKEITE_SMELTABLES, RecipeCategory.MISC, ModItems.FROZEN_TAKEITE.get(), 0.25f, 200, "frozen_takeite");
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SAPPHIRE_BLOCK.get())
                 .pattern("SSS")
