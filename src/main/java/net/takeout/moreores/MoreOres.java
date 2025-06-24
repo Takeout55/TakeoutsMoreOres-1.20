@@ -1,6 +1,7 @@
 package net.takeout.moreores;
 
 import com.mojang.logging.LogUtils;
+import net.minecraft.client.gui.screens.MenuScreens;
 import net.minecraft.client.renderer.entity.EntityRenderers;
 import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
@@ -14,11 +15,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.takeout.moreores.block.ModBlocks;
+import net.takeout.moreores.block.entity.ModBlockEntities;
 import net.takeout.moreores.entity.ModEntities;
 import net.takeout.moreores.entity.client.RhinoRenderer;
 import net.takeout.moreores.item.ModCreativeModeTabs;
 import net.takeout.moreores.item.ModItems;
 import net.takeout.moreores.loot.ModLootModifiers;
+import net.takeout.moreores.screen.ModMenuTypes;
+import net.takeout.moreores.screen.RefineryScreen;
 import net.takeout.moreores.sounds.ModSounds;
 import net.takeout.moreores.villager.ModVillagers;
 import org.slf4j.Logger;
@@ -35,9 +39,9 @@ public class MoreOres {
         ModBlocks.register(modEventBus);
         ModCreativeModeTabs.register(modEventBus);
         ModEntities.register(modEventBus);
-
+        ModBlockEntities.register(modEventBus);
         ModLootModifiers.register(modEventBus);
-
+        ModMenuTypes.register(modEventBus);
         modEventBus.addListener(this::commonSetup);
         ModVillagers.VILLAGER_PROFESSIONS.register(modEventBus);
         ModVillagers.POI_TYPES.register(modEventBus);
@@ -75,6 +79,7 @@ public class MoreOres {
         public static void onClientSetup(FMLClientSetupEvent event) {
             EntityRenderers.register(ModEntities.RHINO.get(), RhinoRenderer::new);
 
+            MenuScreens.register(ModMenuTypes.REFINERY_MENU.get(), RefineryScreen::new);
         }
     }
 }

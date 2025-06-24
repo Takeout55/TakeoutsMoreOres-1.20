@@ -273,6 +273,7 @@
   "block.takeoutsmoreores.frozen_takeite_block": "Frozen Takeite Block",
   "block.takeoutsmoreores.flaming_takeite_block": "Flaming Takeite Block",
   "item.takeoutsmoreores.refined_uranium": "Refined Uranium",
-  "item.takeoutsmoreores.uranium_rod": "Uranium Rod"
+  "item.takeoutsmoreores.uranium_rod": "Uranium Rod",
+  "block.takeoutsmoreores.refinery": "Refinery"
 }
 

@@ -12,6 +12,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.takeout.moreores.MoreOres;
+import net.takeout.moreores.block.custom.RefineryBlock;
 import net.takeout.moreores.item.ModItems;
 
 import java.util.function.Supplier;
@@ -440,6 +441,9 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FLAMING_TAKEITE_BLOCK = registerBlock("flaming_takeite_block",
             () -> new MagmaBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> REFINERY = registerBlock("refinery",
+            () -> new RefineryBlock(BlockBehaviour.Properties.copy(Blocks.FURNACE).noOcclusion()));
 
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

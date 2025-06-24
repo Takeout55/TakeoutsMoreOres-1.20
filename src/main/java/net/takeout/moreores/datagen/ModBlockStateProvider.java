@@ -1,6 +1,7 @@
 package net.takeout.moreores.datagen;
 
 import net.minecraft.world.level.block.*;
+import net.minecraftforge.client.model.generators.ModelFile;
 import net.takeout.moreores.MoreOres;
 import net.takeout.moreores.block.ModBlocks;
 import net.minecraft.data.PackOutput;
@@ -157,6 +158,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         wallBlock(((WallBlock) ModBlocks.THIMEITE_WALL.get()), blockTexture(ModBlocks.THIMEITE_BLOCK.get()));
         doorBlockWithRenderType(((DoorBlock) ModBlocks.THIMEITE_DOOR.get()), modLoc("block/thimeite_door_bottom"), modLoc("block/thimeite_door_top"), "cutout");
         trapdoorBlockWithRenderType(((TrapDoorBlock) ModBlocks.THIMEITE_TRAPDOOR.get()), modLoc("block/thimeite_trapdoor"), true, "cutout");
+
+        simpleBlockWithItem(ModBlocks.REFINERY.get(),
+                new ModelFile.UncheckedModelFile(modLoc("block/refinery")));
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
