@@ -1,6 +1,5 @@
 package net.takeout.moreores.block;
 
-import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
@@ -12,7 +11,7 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.takeout.moreores.MoreOres;
-import net.takeout.moreores.block.custom.RefineryBlock;
+//import net.takeout.moreores.block.custom.RefineryBlock;
 import net.takeout.moreores.item.ModItems;
 
 import java.util.function.Supplier;
@@ -71,7 +70,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> SAPPHIRE_STAIRS = registerBlock("sapphire_stairs",
             () -> new StairBlock(() -> ModBlocks.SAPPHIRE_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()));
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).instabreak()));
 
     public static final RegistryObject<Block> SAPPHIRE_SLAB = registerBlock("sapphire_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).requiresCorrectToolForDrops()));
@@ -85,26 +84,26 @@ public class ModBlocks {
                     BlockSetType.IRON));
 
     public static final RegistryObject<Block> SAPPHIRE_FENCE = registerBlock("sapphire_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).instabreak()));
 
     public static final RegistryObject<Block> SAPPHIRE_FENCE_GATE = registerBlock("sapphire_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).instabreak(), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
 
     public static final RegistryObject<Block> SAPPHIRE_WALL = registerBlock("sapphire_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).instabreak()));
 
     public static final RegistryObject<Block> SAPPHIRE_DOOR = registerBlock("sapphire_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion().instabreak(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> SAPPHIRE_TRAPDOOR = registerBlock("sapphire_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion(), BlockSetType.IRON));
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).sound(SoundType.AMETHYST).noOcclusion().instabreak(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> ZIRCON_STAIRS = registerBlock("zircon_stairs",
             () -> new StairBlock(() -> ModBlocks.ZIRCON_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> ZIRCON_SLAB = registerBlock("zircon_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> ZIRCON_BUTTON = registerBlock("zircon_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
@@ -115,29 +114,29 @@ public class ModBlocks {
                     BlockSetType.IRON));
 
     public static final RegistryObject<Block> ZIRCON_FENCE = registerBlock("zircon_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> ZIRCON_FENCE_GATE = registerBlock("zircon_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak(), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
 
     public static final RegistryObject<Block> ZIRCON_WALL = registerBlock("zircon_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> ZIRCON_DOOR = registerBlock("zircon_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().instabreak(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> ZIRCON_TRAPDOOR = registerBlock("zircon_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().instabreak(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> NETHER_BRICK_FENCE_GATE = registerBlock("nether_brick_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS), SoundEvents.NETHER_BRICKS_PLACE, SoundEvents.NETHER_BRICKS_BREAK));
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.NETHER_BRICKS).instabreak(), SoundEvents.NETHER_BRICKS_PLACE, SoundEvents.NETHER_BRICKS_BREAK));
 
     public static final RegistryObject<Block> REFINED_DIAMOND_STAIRS = registerBlock("refined_diamond_stairs",
             () -> new StairBlock(() -> ModBlocks.REFINED_DIAMOND_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+                    BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> REFINED_DIAMOND_SLAB = registerBlock("refined_diamond_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> REFINED_DIAMOND_BUTTON = registerBlock("refined_diamond_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
@@ -148,19 +147,19 @@ public class ModBlocks {
                     BlockSetType.IRON));
 
     public static final RegistryObject<Block> REFINED_DIAMOND_FENCE = registerBlock("refined_diamond_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> REFINED_DIAMOND_FENCE_GATE = registerBlock("refined_diamond_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).instabreak(), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
 
     public static final RegistryObject<Block> REFINED_DIAMOND_WALL = registerBlock("refined_diamond_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> REFINED_DIAMOND_DOOR = registerBlock("refined_diamond_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).noOcclusion(), BlockSetType.IRON));
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).noOcclusion().instabreak(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> REFINED_DIAMOND_TRAPDOOR = registerBlock("refined_diamond_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).noOcclusion(), BlockSetType.IRON));
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.DIAMOND_BLOCK).noOcclusion().instabreak(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> EARIUM_ORE = registerBlock("earium_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE)));
@@ -191,10 +190,10 @@ public class ModBlocks {
 
      public static final RegistryObject<Block> EARIUM_STAIRS = registerBlock("earium_stairs",
             () -> new StairBlock(() -> ModBlocks.EARIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> EARIUM_SLAB = registerBlock("earium_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak()));
 
     public static final RegistryObject<Block> EARIUM_BUTTON = registerBlock("earium_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
@@ -205,26 +204,26 @@ public class ModBlocks {
                     BlockSetType.IRON));
 
     public static final RegistryObject<Block> EARIUM_FENCE = registerBlock("earium_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> EARIUM_FENCE_GATE = registerBlock("earium_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak(), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
 
     public static final RegistryObject<Block> EARIUM_WALL = registerBlock("earium_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> EARIUM_DOOR = registerBlock("earium_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().instabreak(), BlockSetType.OAK));
 
     public static final RegistryObject<Block> EARIUM_TRAPDOOR = registerBlock("earium_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().instabreak(), BlockSetType.OAK));
     
     public static final RegistryObject<Block> GLITCHITE_STAIRS = registerBlock("glitchite_stairs",
             () -> new StairBlock(() -> ModBlocks.GLITCHITE_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> GLITCHITE_SLAB = registerBlock("glitchite_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> GLITCHITE_BUTTON = registerBlock("glitchite_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
@@ -235,26 +234,26 @@ public class ModBlocks {
                     BlockSetType.IRON));
 
     public static final RegistryObject<Block> GLITCHITE_FENCE = registerBlock("glitchite_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> GLITCHITE_FENCE_GATE = registerBlock("glitchite_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
 
     public static final RegistryObject<Block> GLITCHITE_WALL = registerBlock("glitchite_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> GLITCHITE_DOOR = registerBlock("glitchite_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().instabreak(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> GLITCHITE_TRAPDOOR = registerBlock("glitchite_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.SPRUCE));
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().instabreak(), BlockSetType.SPRUCE));
 
     public static final RegistryObject<Block> CHEESIUM_STAIRS = registerBlock("cheesium_stairs",
             () -> new StairBlock(() -> ModBlocks.CHEESIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.DIRT)));
+                    BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak()));
 
     public static final RegistryObject<Block> CHEESIUM_SLAB = registerBlock("cheesium_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak()));
 
     public static final RegistryObject<Block> CHEESIUM_BUTTON = registerBlock("cheesium_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).instabreak(),
@@ -265,19 +264,19 @@ public class ModBlocks {
                     BlockSetType.OAK));
 
     public static final RegistryObject<Block> CHEESIUM_FENCE = registerBlock("cheesium_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak()));
 
     public static final RegistryObject<Block> CHEESIUM_FENCE_GATE = registerBlock("cheesium_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DIRT), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak(), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
 
     public static final RegistryObject<Block> CHEESIUM_WALL = registerBlock("cheesium_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak()));
 
     public static final RegistryObject<Block> CHEESIUM_DOOR = registerBlock("cheesium_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).noOcclusion(), BlockSetType.OAK));
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).noOcclusion().instabreak(), BlockSetType.OAK));
 
     public static final RegistryObject<Block> CHEESIUM_TRAPDOOR = registerBlock("cheesium_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.OAK));
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().instabreak(), BlockSetType.OAK));
 
     public static final RegistryObject<Block> OCARITE_BLOCK = registerBlock("ocarite_block",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.COPPER_BLOCK).requiresCorrectToolForDrops()));
@@ -310,18 +309,18 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.END_STONE).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DIRT_SLAB = registerBlock("dirt_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak()));
 
     public static final RegistryObject<Block> DIRT_STAIRS = registerBlock("dirt_stairs",
             () -> new StairBlock(Blocks.DIRT.defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.DIRT)));
+                    BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak()));
 
     public static final RegistryObject<Block> THIMEITE_STAIRS = registerBlock("thimeite_stairs",
             () -> new StairBlock(() -> ModBlocks.CHEESIUM_BLOCK.get().defaultBlockState(),
-                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+                    BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> THIMEITE_SLAB = registerBlock("thimeite_slab",
-            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT)));
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.DIRT).instabreak()));
 
     public static final RegistryObject<Block> THIMEITE_BUTTON = registerBlock("thimeite_button",
             () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.STONE_BUTTON).instabreak(),
@@ -332,19 +331,19 @@ public class ModBlocks {
                     BlockSetType.IRON));
 
     public static final RegistryObject<Block> THIMEITE_FENCE = registerBlock("thimeite_fence",
-            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> THIMEITE_FENCE_GATE = registerBlock("thimeite_fence_gate",
-            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak(), SoundEvents.CHAIN_PLACE, SoundEvents.ANVIL_BREAK));
 
     public static final RegistryObject<Block> THIMEITE_WALL = registerBlock("thimeite_wall",
-            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK)));
+            () -> new WallBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).instabreak()));
 
     public static final RegistryObject<Block> THIMEITE_DOOR = registerBlock("thimeite_door",
-            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().instabreak(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> THIMEITE_TRAPDOOR = registerBlock("thimeite_trapdoor",
-            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion(), BlockSetType.IRON));
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.IRON_BLOCK).noOcclusion().instabreak(), BlockSetType.IRON));
 
     public static final RegistryObject<Block> RUBY_ORE = registerBlock("ruby_ore",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.IRON_ORE).requiresCorrectToolForDrops()));
@@ -441,9 +440,6 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FLAMING_TAKEITE_BLOCK = registerBlock("flaming_takeite_block",
             () -> new MagmaBlock(BlockBehaviour.Properties.copy(Blocks.NETHERRACK).requiresCorrectToolForDrops()));
-
-    public static final RegistryObject<Block> REFINERY = registerBlock("refinery",
-            () -> new RefineryBlock(BlockBehaviour.Properties.copy(Blocks.FURNACE).noOcclusion()));
 
     
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

@@ -267,5 +267,7 @@ public class ModBlockTagGenerator extends BlockTagsProvider {
         this.tag(BlockTags.INFINIBURN_OVERWORLD)
                 .add(ModBlocks.FLAMING_TAKEITE_BLOCK.get());
 
+        this.tag(BlockTags.NEEDS_STONE_TOOL)
+                .add(ModBlocks.EARIUM_DOOR.get());
     }
 }

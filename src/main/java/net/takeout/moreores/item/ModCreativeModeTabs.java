@@ -19,7 +19,6 @@ public class ModCreativeModeTabs {
             () -> CreativeModeTab.builder().icon(() -> new ItemStack(ModBlocks.REFINED_DIAMOND_BLOCK.get()))
                     .title(Component.translatable("creativetab.more_ores_blocks"))
                     .displayItems((pParameters, pOutput) -> {
-                        pOutput.accept(ModBlocks.REFINERY.get());
                         pOutput.accept(ModBlocks.REFINED_DIAMOND_BLOCK.get());
                         pOutput.accept(ModBlocks.FLAMING_TAKEITE_BLOCK.get());
                         pOutput.accept(ModBlocks.FROZEN_TAKEITE_BLOCK.get());

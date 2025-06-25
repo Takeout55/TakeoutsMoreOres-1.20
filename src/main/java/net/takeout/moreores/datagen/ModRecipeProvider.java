@@ -1123,6 +1123,38 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEEKIUM_CHESTPLATE.get())
+                .pattern("S S")
+                .pattern("SSS")
+                .pattern("SSS")
+                .define('S', ModItems.CHEEKIUM.get())
+                .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEEKIUM_HELMET.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("   ")
+                .define('S', ModItems.CHEEKIUM.get())
+                .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEEKIUM_BOOTS.get())
+                .pattern("S S")
+                .pattern("A A")
+                .define('S', ModItems.CHEEKIUM.get())
+                .define('A', ModItems.RAW_CHEEKIUM.get())
+                .unlockedBy(getHasName(ModItems.CHEEKIUM.get()), has(ModItems.CHEEKIUM.get()))
+                .save(pWriter);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.CHEEKIUM_LEGGINGS.get())
+                .pattern("SSS")
+                .pattern("S S")
+                .pattern("S S")
+                .define('S', ModItems.THIMEITE.get())
+                .unlockedBy(getHasName(ModItems.THIMEITE.get()), has(ModItems.THIMEITE.get()))
+                .save(pWriter);
+
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.PLUNGITE_SWORD.get())
                 .pattern("S")
                 .pattern("S")
