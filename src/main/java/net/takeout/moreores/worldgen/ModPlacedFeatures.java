@@ -149,11 +149,11 @@ public class ModPlacedFeatures {
 
         register(context, NETHER_FLAMING_TAKEITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.NETHER_FLAMING_TAKEITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-5), VerticalAnchor.absolute(80))));
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(-5), VerticalAnchor.absolute(50))));
 
         register(context, FROZEN_TAKEITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.OVERWORLD_FROZEN_TAKEITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
-                        HeightRangePlacement.uniform(VerticalAnchor.absolute(32), VerticalAnchor.absolute(100))));
+                        HeightRangePlacement.uniform(VerticalAnchor.absolute(80), VerticalAnchor.absolute(100))));
         register(context, END_FROZEN_TAKEITE_ORE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ENDSTONE_FROZEN_TAKEITE_ORE_KEY),
                 ModOrePlacement.commonOrePlacement(12,
                         HeightRangePlacement.uniform(VerticalAnchor.absolute(-5), VerticalAnchor.absolute(80))));
