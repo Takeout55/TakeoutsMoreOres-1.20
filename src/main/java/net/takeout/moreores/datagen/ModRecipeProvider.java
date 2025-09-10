@@ -1488,6 +1488,15 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .unlockedBy(getHasName(ModItems.FROZEN_TAKEITE.get()), has(ModItems.FROZEN_TAKEITE.get()))
                 .save(pWriter);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModItems.URANIUM_ROD.get())
+                .pattern("FFF")
+                .pattern("FEF")
+                .pattern("FFF")
+                .define('F', ModItems.URANIUM_ROD.get())
+                .define('E', ModItems.URANIUM.get())
+                .unlockedBy(getHasName(ModItems.URANIUM.get()))
+                .save(pWriter);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC, ModItems.SAPPHIRE.get(), 9)
                 .requires(ModBlocks.SAPPHIRE_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.SAPPHIRE_BLOCK.get()), has(ModBlocks.SAPPHIRE_BLOCK.get()))
